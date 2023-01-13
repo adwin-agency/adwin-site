@@ -1,0 +1,11 @@
+.el {
+  height: 56px;
+  border-radius: 100px;
+  font-size: 16px;
+  background-color: $color-grey-main;
+  color: #fff;
+}
+
+.bordered {
+  border: 2px solid $color-grey-paper;
+}
