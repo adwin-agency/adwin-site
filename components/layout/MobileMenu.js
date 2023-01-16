@@ -1,8 +1,8 @@
 import cn from 'classnames'
 import Button from '../app/Button'
-import TelegramIcon from '/public/icons/telegram.svg'
-import VkIcon from '/public/icons/vk.svg'
-import WhatsappIcon from '/public/icons/whatsapp.svg'
+import TelegramIcon from '/icons/telegram.svg'
+import VkIcon from '/icons/vk.svg'
+import WhatsappIcon from '/icons/whatsapp.svg'
 import styles from './MobileMenu.module.scss'
 
 export default function MobileMenu({ className }) {
