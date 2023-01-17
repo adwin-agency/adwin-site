@@ -1,5 +1,6 @@
 .el {
   height: 56px;
+  padding: 0 30px;
   border-radius: 100px;
   font-size: 16px;
   background-color: $color-grey-main;
@@ -8,4 +9,12 @@
 
 .bordered {
   border: 2px solid $color-grey-paper;
+}
+
+@include media(xl) {
+  .el {
+    height: 80px;
+    padding: 0 50px;
+    font-size: 22px;
+  }
 }
