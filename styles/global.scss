@@ -1,8 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -10,6 +13,21 @@ html {
   font-family: 'Jost', sans-serif;
   line-height: 1.15;
   -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: $color-grey-paper;
+  color: $color-grey-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
