@@ -46,3 +46,9 @@ button {
 .container {
   padding: 0 20px;
 }
+
+@include media(xl) {
+  .container {
+    padding: 0 60px;
+  }
+}

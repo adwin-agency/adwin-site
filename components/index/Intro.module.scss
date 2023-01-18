@@ -51,7 +51,7 @@
   height: 42px;
 }
 
-.line {
+.services {
   display: flex;
   padding: 25px 0;
   background-color: $color-grey-main;
@@ -65,7 +65,7 @@
   font-size: 11px;
   line-height: 1;
   letter-spacing: .1em;
-  animation: running-line 30s linear infinite;
+  animation: running-line 60s linear infinite;
 }
 
 @keyframes running-line {
@@ -75,5 +75,142 @@
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+@include media(lg) {
+  .main {
+    position: relative;
+    padding: 152px 0 222px;
+  }
+
+  .line1,
+  .line2,
+  .line3,
+  .line4 {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $color-grey-main;
+  }
+
+  .line1 {
+    right: 500px;
+  }
+
+  .line2 {
+    right: 248px;
+  }
+
+  .line3 {
+    right: 124px;
+  }
+
+  .line4 {
+    right: 56px;
+  }
+
+  .heading {
+    max-width: 760px;
+    font-size: 56px;
+
+    br {
+      display: none;
+    }
+  }
+  
+  .hline1 {
+    width: 100%;
+  }
+
+  .hline2 {
+    width: auto;
+  }
+
+  .hline4 {
+    margin-left: 18px;
+    text-align: left;
+  }
+
+  .circles {
+    margin-right: 14px;
+    width: 94px;
+    height: 43px;
+
+    span {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .symbol {
+    margin-left: 10px;
+    margin-right: 0;
+    width: 47px;
+    height: 62px;
+  }
+
+  .running {
+    font-size: 14px;
+  }
+}
+
+@include media(xl) {
+  .main {
+    padding: 230px 0;
+  }
+
+  .line1 {
+    right: 624px;
+  }
+
+  .line2 {
+    right: 312px;
+  }
+
+  .line3 {
+    right: 152px;
+  }
+
+  .line4 {
+    right: 72px;
+  }
+
+  .heading {
+    max-width: 1120px;
+    font-size: 92px;
+  }
+
+  .hline4 {
+    margin-left: 22px;
+  }
+
+  .circles {
+    margin-right: 25px;
+    margin-bottom: 8px;
+    width: 132px;
+    height: 61px;
+
+    span {
+      width: 61px;
+      height: 61px;
+      border-width: 5px;
+    }
+  }
+
+  .symbol {
+    margin-left: 15px;
+    margin-bottom: 4px;
+    width: 62px;
+    height: 68px;
+  }
+
+  .services {
+    padding: 32px 0;
+  }
+
+  .running {
+    font-size: 17px;
   }
 }
