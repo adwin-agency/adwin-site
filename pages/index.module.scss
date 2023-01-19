@@ -2,14 +2,26 @@
   margin-top: 48px;
 }
 
+.calcOffer {
+  margin-top: 38px;
+}
+
 @include media(lg) {
   .topProjects {
     margin-top: 60px;
+  }
+
+  .calcOffer {
+    margin-top: 44px;
   }
 }
 
 @include media(xl) {
   .topProjects {
     margin-top: 140px;
+  }
+
+  .calcOffer {
+    margin-top: 52px;
   }
 }

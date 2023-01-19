@@ -1,0 +1,55 @@
+.el {
+  padding: 40px 0;
+  color: $color-grey-paper;
+  background-color: $color-grey-main;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.icon {
+  margin-left: 30px;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+}
+
+@include media(lg) {
+  .el {
+    padding: 70px 0;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 85px 0;
+  }
+
+  .title {
+    font-size: 81px;
+  }
+
+  .icon {
+    width: 54px;
+    height: 54px;
+  }
+}
