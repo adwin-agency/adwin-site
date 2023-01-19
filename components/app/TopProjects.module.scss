@@ -1,0 +1,24 @@
+.list {
+  margin-top: 32px;
+}
+
+.btn {
+  margin-top: 56px;
+  width: 100%;
+}
+
+@include media(lg) {
+  .btn {
+    margin-top: 68px;
+  }
+}
+
+@include media(xl) {
+  .list {
+    margin-top: 64px;
+  }
+
+  .btn {
+    margin-top: 85px;
+  }
+}

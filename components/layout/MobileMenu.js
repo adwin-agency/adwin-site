@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import Button from '../app/Button'
+import Button from '../ui/Button'
 import TelegramIcon from '/icons/telegram.svg'
 import VkIcon from '/icons/vk.svg'
 import WhatsappIcon from '/icons/whatsapp.svg'

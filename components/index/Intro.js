@@ -11,7 +11,7 @@ export default function Intro() {
         <span className={styles.line3}></span>
         <span className={styles.line4}></span>
         <div className="container">
-          <h1 className={styles.heading}>
+          <h1 className={cn('h1', styles.heading)}>
             <span className={styles.hline1}>Создаём и <br />запускаем</span>
             <span className={styles.circles}>
               <span></span>

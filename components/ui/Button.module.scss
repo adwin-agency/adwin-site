@@ -3,12 +3,27 @@
   padding: 0 30px;
   border-radius: 100px;
   font-size: 16px;
+  line-height: 1;
   background-color: $color-grey-main;
   color: #fff;
 }
 
+.lg {
+  height: 80px;
+  font-size: 22px;
+}
+
 .bordered {
   border: 2px solid $color-grey-paper;
+}
+
+.grey {  
+  color: $color-grey-main;
+  background-color: $color-grey-paper;
+
+  &.bordered {
+    border: 2px solid $color-grey-main;
+  }
 }
 
 @include media(xl) {

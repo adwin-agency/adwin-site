@@ -1,0 +1,28 @@
+.image {
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  margin-top: 15px;
+}
+
+.tag {
+  border: 1px solid $color-grey-main;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 15px;
+}
+
+.desc {
+  margin-top: 8px;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import cn from 'classnames'
 import MobileMenu from './MobileMenu'
-import Button from '../app/Button'
+import Button from '../ui/Button'
 import Logo from '/icons/logo.svg'
 import LogoLg from '/icons/logo-lg.svg'
 import styles from './Header.module.scss'

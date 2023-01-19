@@ -1,0 +1,15 @@
+.topProjects {
+  margin-top: 48px;
+}
+
+@include media(lg) {
+  .topProjects {
+    margin-top: 60px;
+  }
+}
+
+@include media(xl) {
+  .topProjects {
+    margin-top: 140px;
+  }
+}
