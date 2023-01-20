@@ -6,6 +6,10 @@
   margin-top: 38px;
 }
 
+.brieflyAbout {
+  margin-top: 62px;
+}
+
 @include media(lg) {
   .topProjects {
     margin-top: 60px;
@@ -13,6 +17,10 @@
 
   .calcOffer {
     margin-top: 44px;
+  }
+
+  .brieflyAbout {
+    margin-top: 70px;
   }
 }
 

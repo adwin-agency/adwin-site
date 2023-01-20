@@ -1,0 +1,30 @@
+.item {
+  max-width: 205px;
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  line-height: 1;
+}
+
+.em {
+  color: $color-magenta;
+}
+
+.num {
+  font-size: 40px;
+}
+
+.unit {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.3;
+}
