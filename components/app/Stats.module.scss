@@ -15,16 +15,32 @@
   color: $color-magenta;
 }
 
-.num {
-  font-size: 40px;
-}
-
 .unit {
   margin-left: 5px;
-  font-size: 22px;
 }
 
-.desc {
-  font-size: 14px;
-  line-height: 1.3;
+@include media(lg) {
+  .el {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 85px 20px;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+}
+
+@include media(xl) {
+  .el {
+    grid-gap: 116px 20px;
+  }
+  
+  .item {
+    max-width: 300px;
+  }
+
+  .desc {
+    margin-top: 5px;
+  }
 }

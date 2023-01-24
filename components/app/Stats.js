@@ -37,14 +37,14 @@ const items = [
 
 export default function Stats() {
   return (
-    <div>
+    <div className={styles.el}>
       {items.map(item => (
         <div key={item.id} className={styles.item}>
           <p className={cn(styles.title, { [styles.em]: item.em })}>
-            <span className={styles.num}>{item.num}</span>
-            <span className={styles.unit}>{item.unit}</span>
+            <span className={cn('num', styles.num)}>{item.num}</span>
+            <span className={cn('h5', styles.unit)}>{item.unit}</span>
           </p>
-          <p className={styles.desc}>{item.desc}</p>
+          <p className={cn('extra', styles.desc)}>{item.desc}</p>
         </div>
       ))}
     </div>

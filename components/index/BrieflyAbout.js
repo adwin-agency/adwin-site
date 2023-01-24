@@ -15,12 +15,11 @@ export default function BrieflyAbout({ className }) {
                 <img src='/images/about/yandex-cert.png' alt='Яндекс сертификат' className={styles.image} />
               </div>
               <div className={styles.signs}>
-                <img src='/images/about/sign-vk.png' alt='' className={styles.sign} />
-                <img src='/images/about/sign-runet.png' alt='' className={styles.sign} />
-                <img src='/images/about/sign-rating.png' alt='' className={styles.sign} />
-                <img src='/images/about/sign-mail.png' alt='' className={styles.sign} />
-                <img src='/images/about/sign-timeweb.png' alt='' className={styles.sign} />
-                <img src='/images/about/sign-more.png' alt='' className={styles.sign} />
+                <img src='/images/about/sign-vk.svg' alt='' className={styles.sign} />
+                <img src='/images/about/sign-runet.svg' alt='' className={styles.sign} />
+                <img src='/images/about/sign-target.svg' alt='' className={styles.sign} />
+                <img src='/images/about/sign-mail.svg' alt='' className={styles.sign} />
+                <img src='/images/about/sign-timeweb.svg' alt='' className={styles.sign} />
               </div>
             </div>
             <div className={styles.stats}>
