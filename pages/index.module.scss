@@ -8,6 +8,7 @@
 
 .brieflyAbout {
   margin-top: 62px;
+  margin-bottom: 50px;
 }
 
 @include media(lg) {
@@ -21,6 +22,7 @@
 
   .brieflyAbout {
     margin-top: 70px;
+    margin-bottom: 100px;
   }
 }
 
@@ -31,5 +33,10 @@
 
   .calcOffer {
     margin-top: 52px;
+  }
+
+  .brieflyAbout {
+    margin-top: 100px;
+    margin-bottom: 210px;
   }
 }
