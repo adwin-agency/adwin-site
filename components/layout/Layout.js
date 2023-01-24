@@ -1,4 +1,5 @@
 import Header from './Header'
+import Footer from './Footer'
 import styles from './Layout.module.scss'
 
 export default function Layout({ children }) {
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       <div className={styles.main}>
         {children}
       </div>
+      <Footer />
     </>
   )
 }
