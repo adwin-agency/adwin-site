@@ -1,12 +1,20 @@
+.el {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main {
-  padding: 60px 0 160px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 100rem 0 120rem;
 }
 
 .heading {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  max-width: 450px;
 }
 
 .hline2 {
@@ -21,16 +29,16 @@
 .circles {
   display: inline-block;
   position: relative;
-  margin-bottom: 4px;
-  width: 64px;
-  height: 29px;
+  margin-bottom: 4rem;
+  width: 64rem;
+  height: 29rem;
 
   span {
     position: absolute;
     top: 0;
     right: 0;
-    width: 29px;
-    height: 29px;
+    width: 29rem;
+    height: 29rem;
     border: 3px solid $color-grey-light;
     border-radius: 50%;
   }
@@ -43,14 +51,14 @@
 .symbol {
   display: inline-block;
   margin-left: auto;
-  margin-right: 10px;
-  width: 32px;
-  height: 42px;
+  margin-right: 10rem;
+  width: 32rem;
+  height: 42rem;
 }
 
 .services {
   display: flex;
-  padding: 25px 0;
+  padding: 25rem 0;
   background-color: $color-grey-main;
   overflow: hidden;
 }
@@ -59,7 +67,7 @@
   color: $color-grey-paper;
   text-transform: uppercase;
   white-space: nowrap;
-  font-size: 11px;
+  font-size: 11rem;
   line-height: 1;
   letter-spacing: .1em;
   animation: running-line 60s linear infinite;
@@ -78,7 +86,7 @@
 @include media(lg) {
   .main {
     position: relative;
-    padding: 152px 0 222px;
+    padding: 132rem 0 192rem;
   }
 
   .line1,
@@ -87,29 +95,29 @@
   .line4 {
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 1rem;
     height: 100%;
     background-color: $color-grey-main;
   }
 
   .line1 {
-    right: 500px;
+    right: 500rem;
   }
 
   .line2 {
-    right: 248px;
+    right: 248rem;
   }
 
   .line3 {
-    right: 124px;
+    right: 124rem;
   }
 
   .line4 {
-    right: 56px;
+    right: 56rem;
   }
 
   .heading {
-    max-width: 760px;
+    max-width: 760rem;
 
     br {
       display: none;
@@ -125,87 +133,87 @@
   }
 
   .hline4 {
-    margin-left: 18px;
+    margin-left: 18rem;
     text-align: left;
   }
 
   .circles {
-    margin-right: 14px;
-    width: 94px;
-    height: 43px;
+    margin-right: 14rem;
+    width: 94rem;
+    height: 43rem;
 
     span {
-      width: 43px;
-      height: 43px;
+      width: 43rem;
+      height: 43rem;
     }
   }
 
   .symbol {
-    margin-left: 10px;
+    margin-left: 10rem;
     margin-right: 0;
-    width: 47px;
-    height: 62px;
+    width: 47rem;
+    height: 62rem;
   }
 
   .running {
-    font-size: 14px;
+    font-size: 14rem;
   }
 }
 
 @include media(xl) {
   .main {
-    padding: 230px 0;
+    padding: 230rem 0;
   }
 
   .line1 {
-    right: 624px;
+    right: 624rem;
   }
 
   .line2 {
-    right: 312px;
+    right: 312rem;
   }
 
   .line3 {
-    right: 152px;
+    right: 152rem;
   }
 
   .line4 {
-    right: 72px;
+    right: 72rem;
   }
 
   .heading {
-    max-width: 1120px;
+    max-width: 1120rem;
   }
 
   .hline4 {
-    margin-left: 22px;
+    margin-left: 22rem;
   }
 
   .circles {
-    margin-right: 25px;
-    margin-bottom: 8px;
-    width: 132px;
-    height: 61px;
+    margin-right: 25rem;
+    margin-bottom: 8rem;
+    width: 132rem;
+    height: 61rem;
 
     span {
-      width: 61px;
-      height: 61px;
+      width: 61rem;
+      height: 61rem;
       border-width: 5px;
     }
   }
 
   .symbol {
-    margin-left: 15px;
-    margin-bottom: 4px;
-    width: 62px;
-    height: 68px;
+    margin-left: 15rem;
+    margin-bottom: 4rem;
+    width: 62rem;
+    height: 68rem;
   }
 
   .services {
-    padding: 32px 0;
+    padding: 32rem 0;
   }
 
   .running {
-    font-size: 17px;
+    font-size: 17rem;
   }
 }

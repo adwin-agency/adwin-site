@@ -1,5 +1,5 @@
 .el {
-  padding: 54px 0 30px;
+  padding: 54rem 0 30rem;
   color: $color-grey-light;
   background-color: $color-grey-main;
 }
@@ -18,28 +18,28 @@
 }
 
 .linkIcon {
-  width: 16px;
-  height: 16px;
+  width: 16rem;
+  height: 16rem;
   fill: currentColor;
 }
 
 .linkIconLg {
-  width: 26px;
-  height: 26px;
+  width: 26rem;
+  height: 26rem;
 }
 
 .steps {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 44px;
-  max-width: 320px;
+  margin-top: 44rem;
+  max-width: 320rem;
 }
 
 .step {
-  width: 204px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  width: 204rem;
+  margin-bottom: 20rem;
+  font-size: 18rem;
   line-height: 1.6;
 
   &:last-child {
@@ -49,32 +49,32 @@
 
 .side {
   position: relative;
-  margin-top: 52px;
+  margin-top: 52rem;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 114px);
-    height: 1px;
+    width: calc(100% - 114rem);
+    height: 1rem;
     background-color: $color-grey-light;
     opacity: 0.2;
   }
 }
 
 .logo {
-  width: 94px;
+  width: 94rem;
   fill: $color-grey-light;
 }
 
 .contacts {
-  margin-top: 28px;
+  margin-top: 28rem;
 }
 
 .contact {
-  margin-bottom: 22px;
-  font-size: 18px;
+  margin-bottom: 22rem;
+  font-size: 18rem;
   line-height: 1.6;
 
   &:last-child {
@@ -87,7 +87,7 @@
 }
 
 .contactDesc {
-  font-size: 18px;
+  font-size: 18rem;
   line-height: 1.6;
 }
 
@@ -96,12 +96,12 @@
 }
 
 .social {
-  margin-right: 30px;
+  margin-right: 30rem;
 }
 
 @include media(lg) {
   .el {
-    padding: 64px 0 100px;
+    padding: 64rem 0 100rem;
   }
 
   .main {
@@ -111,13 +111,13 @@
   }
 
   .linkIcon {
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
   }
 
   .linkIconLg {
-    width: 36px;
-    height: 36px;
+    width: 36rem;
+    height: 36rem;
   }
 
   .steps {
@@ -128,9 +128,9 @@
   }
 
   .step {
-    margin-right: 24px;
+    margin-right: 24rem;
     margin-bottom: 0;
-    width: 180px;
+    width: 180rem;
 
     &:last-child {
       margin-right: 0;
@@ -141,7 +141,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 114px;
+    margin-top: 114rem;
 
     &::before {
       display: none;
@@ -149,7 +149,7 @@
   }
 
   .logo {
-    width: 167px;
+    width: 167rem;
   }
 
   .contacts {
@@ -159,10 +159,10 @@
 
   .contact {
     border-top: 1px solid $color-grey-light;
-    width: 190px;
-    margin-right: 20px;
+    width: 190rem;
+    margin-right: 20rem;
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 20rem;
 
     &:last-child {
       margin-right: 0;
@@ -171,44 +171,44 @@
 
   .contactTitle {
     display: block;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.3;
   }
 
   .contactDesc {
-    margin-top: 14px;
-    padding-right: 10px;
-    font-size: 14px;
+    margin-top: 14rem;
+    padding-right: 10rem;
+    font-size: 14rem;
     line-height: 1.3;
   }
 }
 
 @include media(xl) {
   .el {
-    padding: 94px 0 124px;
+    padding: 94rem 0 124rem;
   }
 
   .step {
-    width: 270px;
-    margin-right: 36px;
-    padding-right: 10px;
-    font-size: 26px;
+    width: 270rem;
+    margin-right: 36rem;
+    padding-right: 10rem;
+    font-size: 26rem;
     line-height: 1.4;
   }
 
   .side {
-    margin-top: 186px;
+    margin-top: 186rem;
   }
 
   .contact {
-    margin-right: 22px;
-    width: 280px;
-    padding-top: 32px;
+    margin-right: 22rem;
+    width: 280rem;
+    padding-top: 32rem;
   }
 
   .contactDesc {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 20rem;
+    font-size: 18rem;
     line-height: 1.6;
   }
 }

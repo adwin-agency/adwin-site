@@ -1,24 +1,24 @@
 .list {
-  margin-top: 32px;
+  margin-top: 32rem;
 }
 
 .btn {
-  margin-top: 56px;
+  margin-top: 56rem;
   width: 100%;
 }
 
 @include media(lg) {
   .btn {
-    margin-top: 68px;
+    margin-top: 68rem;
   }
 }
 
 @include media(xl) {
   .list {
-    margin-top: 64px;
+    margin-top: 64rem;
   }
 
   .btn {
-    margin-top: 85px;
+    margin-top: 85rem;
   }
 }

@@ -4,7 +4,7 @@ import styles from './Intro.module.scss'
 
 export default function Intro() {
   return (
-    <section>
+    <section className={styles.el}>
       <div className={styles.main}>
         <span className={styles.line1}></span>
         <span className={styles.line2}></span>

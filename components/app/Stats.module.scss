@@ -1,6 +1,6 @@
 .item {
-  max-width: 205px;
-  margin-bottom: 28px;
+  max-width: 205rem;
+  margin-bottom: 28rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -16,14 +16,14 @@
 }
 
 .unit {
-  margin-left: 5px;
+  margin-left: 5rem;
 }
 
 @include media(lg) {
   .el {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 85px 20px;
+    grid-gap: 85rem 20rem;
   }
 
   .item {
@@ -33,14 +33,14 @@
 
 @include media(xl) {
   .el {
-    grid-gap: 116px 20px;
+    grid-gap: 116rem 20rem;
   }
   
   .item {
-    max-width: 300px;
+    max-width: 300rem;
   }
 
   .desc {
-    margin-top: 5px;
+    margin-top: 5rem;
   }
 }

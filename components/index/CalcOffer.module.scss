@@ -1,5 +1,5 @@
 .el {
-  padding: 40px 0;
+  padding: 40rem 0;
   color: $color-grey-paper;
   background-color: $color-grey-main;
 }
@@ -11,45 +11,46 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 30rem;
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .icon {
-  margin-left: 30px;
+  margin-left: 30rem;
   flex-shrink: 0;
-  width: 25px;
-  height: 25px;
+  width: 25rem;
+  height: 25rem;
+  fill: currentColor;
 }
 
 @include media(lg) {
   .el {
-    padding: 70px 0;
+    padding: 70rem 0;
   }
 
   .title {
-    font-size: 50px;
+    font-size: 50rem;
   }
 
   .icon {
-    width: 40px;
-    height: 40px;
+    width: 40rem;
+    height: 40rem;
   }
 }
 
 @include media(xl) {
   .el {
-    padding: 85px 0;
+    padding: 85rem 0;
   }
 
   .title {
-    font-size: 81px;
+    font-size: 81rem;
   }
 
   .icon {
-    width: 54px;
-    height: 54px;
+    width: 54rem;
+    height: 54rem;
   }
 }

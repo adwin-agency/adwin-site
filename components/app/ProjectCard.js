@@ -6,7 +6,7 @@ export default function ProjectCard({ images, tags, title, desc }) {
     <div>
       <div className={styles.box}>
         <picture>
-          <source media='(min-width: 1200px)' srcSet={`/images/projects/${images[1]}`} />
+          <source media='(min-width: 1000px)' srcSet={`/images/projects/${images[1]}`} />
           <img src={`/images/projects/${images[0]}`} alt='' className={styles.image} />
         </picture>
       </div>

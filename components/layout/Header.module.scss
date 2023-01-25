@@ -30,12 +30,12 @@
       }
 
       &::before {
-        top: 4px;
+        top: 4rem;
         transform: rotate(-45deg);
       }
 
       &::after {
-        top: -4px;
+        top: -4rem;
         transform: rotate(45deg);
       }
     }
@@ -67,12 +67,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  height: 50rem;
 }
 
 .logo {
-  width: 100px;
-  height: 28px;
+  width: 100rem;
+  height: 28rem;
   fill: #3D3D3D;
   transition: fill .5s ease;
 }
@@ -86,18 +86,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 30rem;
+  height: 30rem;
 
   &::before,
   &::after {
     content: "";
     position: relative;
     top: 0;
-    margin: 3px 0;
-    width: 28px;
-    height: 2px;
-    border-radius: 1px;
+    margin: 3rem 0;
+    width: 28rem;
+    height: 2rem;
+    border-radius: 1rem;
     background-color: $color-grey-main;
     transition: top .25s ease .25s, transform .25s ease, background-color .5s ease;
   }
@@ -108,14 +108,18 @@
 }
 
 @include media(lg) {
+  .row {
+    height: 62rem;
+  }
+
   .logo {
     display: none;
   }
 
   .logoDesktop {
     display: block;
-    width: 122px;
-    height: 41px;
+    width: 122rem;
+    height: 41rem;
   }
 
   .burger {
@@ -125,28 +129,32 @@
   .menu {
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 40rem;
   }
 
   .link {
-    margin-right: 45px;
-    font-size: 18px;
+    margin-right: 45rem;
+    font-size: 18rem;
     line-height: 1;
     color: $color-grey-main;
   }
 
   .btn {
-    margin-left: 20px;
+    margin-left: 20rem;
   }
 }
 
 @include media(xl) {
+  .row {
+    height: 90rem;
+  }
+
   .logoDesktop {
-    width: 167px;
-    height: 56px;
+    width: 167rem;
+    height: 56rem;
   }
 
   .link {
-    font-size: 22px;
+    font-size: 22rem;
   }
 }

@@ -11,8 +11,8 @@
 }
 
 .item {
-  margin-bottom: 30px;
-  padding: 0 $container-padding 20px;
+  margin-bottom: 30rem;
+  padding: 0 $container-padding 20rem;
   border-bottom: 1px solid $color-grey-main;
 }
 
@@ -40,7 +40,7 @@
 
   .item {
     margin-bottom: 0;
-    padding: 20px;    
+    padding: 20rem;    
     border-right: 1px solid $color-grey-main;
     border-bottom: none;
 
@@ -57,12 +57,12 @@
 
     &:last-child {
       .item {
-        padding-bottom: 30px;
+        padding-bottom: 30rem;
       }
     }
   }
 
   .item {
-    padding: 30px 30px 60px;
+    padding: 30rem 30rem 60rem;
   }
 }
