@@ -1,0 +1,15 @@
+.el {
+  padding-top: 26rem;
+}
+
+@include media(lg) {
+  .el {
+    padding-top: 60rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 82rem;
+  }
+}

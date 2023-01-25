@@ -1,0 +1,15 @@
+.main {
+  padding-top: $header-height;
+}
+
+@include media(lg) {
+  .main {
+    padding-top: $header-height-lg;
+  }
+}
+
+@include media(xl) {
+  .main {
+    padding-top: $header-height-xl;
+  }
+}

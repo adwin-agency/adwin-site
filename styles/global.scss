@@ -101,6 +101,25 @@ button {
   padding: 0 $container-padding;
 }
 
+.row {
+  display: flex;
+}
+
+@for $i from 1 through 6 {
+  .col-#{$i} {
+    width: 100% / 6 * $i;
+    padding: 0 $col-gap / 2;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
 @include media(lg) {
   html {
     font-size: calc(100vw / 1280);
@@ -124,6 +143,12 @@ button {
 
   .num {
     font-size: 48rem;
+  }
+
+  @for $i from 1 through 6 {
+    .col-lg-#{$i} {
+      width: 100% / 6 * $i;
+    }
   }
 }
 
@@ -154,5 +179,11 @@ button {
 
   .container {
     padding: 0 $container-padding-xl;
+  }
+
+  @for $i from 1 through 6 {
+    .col-xl-#{$i} {
+      width: 100% / 6 * $i;
+    }
   }
 }

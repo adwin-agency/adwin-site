@@ -1,5 +1,7 @@
+import MainAbout from "../components/about/MainAbout";
+
 export default function About() {
   return (
-    <div>About</div>
+    <MainAbout />
   )
 }
