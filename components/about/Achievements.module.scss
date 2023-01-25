@@ -1,0 +1,19 @@
+.row {
+  margin-top: 56rem;
+}
+
+@include media(lg) {
+  .row {
+    margin-top: 64rem;
+  }
+
+  .side {
+    display: none;
+  }
+}
+
+@include media(xl) {
+  .row {
+    margin-top: 85rem;
+  }
+}

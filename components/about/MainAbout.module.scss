@@ -3,7 +3,11 @@
 }
 
 .divider1 {
-  margin: 40rem 33rem;
+  margin: 40rem 0 33rem;
+}
+
+.divider2 {
+  margin: 114rem 0 26rem;
 }
 
 @include media(lg) {
@@ -14,6 +18,10 @@
   .divider1 {
     margin: 116rem (-$container-padding) 34rem 0;
   }
+
+  .divider2 {
+    margin: 110rem (-$container-padding) 36rem 0;
+  }
 }
 
 @include media(xl) {
@@ -23,5 +31,9 @@
 
   .divider1 {
     margin: 104rem (-$container-padding-xl) 54rem 0;
+  }
+
+  .divider2 {
+    margin: 135rem (-$container-padding-xl) 56rem 0;
   }
 }
