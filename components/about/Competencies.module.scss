@@ -1,0 +1,76 @@
+.list {
+  margin-top: 40rem;
+}
+
+.item {
+  margin-bottom: 30rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  font-size: 24rem;
+  line-height: 1.1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 10rem;
+  margin-top: 20rem;
+}
+
+.tag {
+  border: 1px solid $color-grey-main;
+  border-radius: 100rem;
+  padding: 10rem;
+  font-size: 12rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tagLink {
+  border: none;
+  background-color: $color-grey-light;
+}
+
+@include media(lg) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 56rem 20rem;
+    margin-top: 58rem;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 36rem;
+  }
+
+  .tags {
+    margin-top: 28rem;
+  }
+
+  .tag {
+    padding: 10rem 20rem;
+    font-size: 13rem;
+  }
+}
+
+@include media(xl) {
+  .list {
+    grid-gap: 84rem 20rem;
+    margin-top: 52rem;
+  }
+
+  .tag {
+    padding: 15rem 30rem;
+    font-size: 14rem;
+  }
+}

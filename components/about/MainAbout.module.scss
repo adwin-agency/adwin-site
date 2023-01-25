@@ -2,14 +2,26 @@
   padding-top: 26rem;
 }
 
+.divider1 {
+  margin: 40rem 33rem;
+}
+
 @include media(lg) {
   .el {
     padding-top: 60rem;
+  }
+
+  .divider1 {
+    margin: 116rem (-$container-padding) 34rem 0;
   }
 }
 
 @include media(xl) {
   .el {
     padding-top: 82rem;
+  }
+
+  .divider1 {
+    margin: 104rem (-$container-padding-xl) 54rem 0;
   }
 }
