@@ -10,6 +10,10 @@
   margin: 114rem 0 26rem;
 }
 
+.divider3 {
+  margin: 42rem 0 56rem;
+}
+
 @include media(lg) {
   .el {
     padding-top: 60rem;
@@ -21,6 +25,10 @@
 
   .divider2 {
     margin: 110rem (-$container-padding) 36rem 0;
+  }
+
+  .divider3 {
+    margin: 80rem (-$container-padding) 56rem 0;
   }
 }
 
@@ -35,5 +43,9 @@
 
   .divider2 {
     margin: 135rem (-$container-padding-xl) 56rem 0;
+  }
+
+  .divider3 {
+    margin: 180rem (-$container-padding-xl) 96rem 0;
   }
 }

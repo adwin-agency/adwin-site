@@ -1,8 +1,9 @@
+import Divider from '../ui/Divider'
 import Partners from './Partners'
 import Competencies from './Competencies'
-import Divider from '../ui/Divider'
-import styles from './MainAbout.module.scss'
 import Achievements from './Achievements'
+import Team from './Team'
+import styles from './MainAbout.module.scss'
 
 export default function MainAbout() {
   return (
@@ -10,12 +11,14 @@ export default function MainAbout() {
       <div className="container">
         <div className="row">
           <div className="col-lg-2"></div>
-          <div className="col-lg-4">
+          <div className="col-6 col-lg-4">
             <Partners />
             <Divider className={styles.divider1} />
             <Competencies />
             <Divider className={styles.divider2} />
             <Achievements />
+            <Divider className={styles.divider3} />
+            <Team />
           </div>
         </div>
       </div>

@@ -103,20 +103,15 @@ button {
 
 .row {
   display: flex;
+  margin-left: (-$col-gap / 2);
+  margin-right: (-$col-gap / 2);
 }
 
 @for $i from 1 through 6 {
   .col-#{$i} {
     width: 100% / 6 * $i;
-    padding: 0 $col-gap / 2;
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
+    padding-left: $col-gap / 2;
+    padding-right: $col-gap / 2;
   }
 }
 
