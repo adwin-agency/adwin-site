@@ -1,6 +1,4 @@
 const nextConfig = {
-  reactStrictMode: true,
-
   sassOptions: {
     additionalData: '@import "styles/imports.scss";'
   },

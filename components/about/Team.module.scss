@@ -19,6 +19,7 @@
   flex-shrink: 0;
   top: 2rem;
   pointer-events: none;
+  user-select: none;
 
   &[data-name="irina"] {
     width: 178rem;
@@ -148,6 +149,18 @@
 }
 
 @include media(lg) {
+  .el {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    align-self: flex-end;
+    width: 100vw;
+    padding-left: 25%;
+    cursor: grab;
+  }
+
   .person {
     &[data-name="irina"] {
       width: 235rem;
@@ -277,7 +290,7 @@
 @include media(xl) {
   .line {
     margin: 20rem (-$container-padding-xl) 0;
-    padding-left: 60px;
+    padding-left: 33%;
     padding-right: 60px;
   }
 

@@ -143,6 +143,8 @@ button {
   @for $i from 1 through 6 {
     .col-lg-#{$i} {
       width: 100% / 6 * $i;
+      padding-left: $col-gap / 2;
+      padding-right: $col-gap / 2;
     }
   }
 }
@@ -179,6 +181,8 @@ button {
   @for $i from 1 through 6 {
     .col-xl-#{$i} {
       width: 100% / 6 * $i;
+      padding-left: $col-gap / 2;
+      padding-right: $col-gap / 2;
     }
   }
 }

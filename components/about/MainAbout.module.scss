@@ -2,6 +2,10 @@
   padding-top: 26rem;
 }
 
+.sideMenu {
+  display: none;
+}
+
 .divider1 {
   margin: 40rem 0 33rem;
 }
@@ -17,6 +21,13 @@
 @include media(lg) {
   .el {
     padding-top: 60rem;
+  }
+
+  .sideMenu {
+    display: block;
+    position: sticky;
+    top: 122rem;
+    padding-bottom: 500rem;
   }
 
   .divider1 {

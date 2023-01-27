@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className={cn(styles.el, { [styles.active]: activeMobile })}>
       <MobileMenu className={styles.mobile} />
-      <div className={styles.panel}>
+      <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
             <Logo className={styles.logo} />

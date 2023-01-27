@@ -2,9 +2,9 @@ import cn from 'classnames'
 import data from '/data/competencies'
 import styles from './Competencies.module.scss'
 
-export default function Competencies() {
+export default function Competencies({ id }) {
   return (
-    <section>
+    <section id={id}>
       <h2 className='h2'>Компетенции</h2>
       <div className={styles.list}>
         {data.map(item => (
