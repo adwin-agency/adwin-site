@@ -1,0 +1,180 @@
+.el {
+  padding-bottom: 30rem;
+  overflow: hidden;
+}
+
+.heading {
+  margin-top: 48rem;
+  margin-bottom: 60rem;
+}
+
+.images {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 120rem;
+  padding: 0 8rem;
+}
+
+.image {
+  margin-right: 10rem;
+  flex-shrink: 0;
+
+  &:nth-child(1) {
+    width: 178rem;
+  }
+
+  &:nth-child(2) {
+    width: 134rem;
+  }
+
+  &:nth-child(3) {
+    width: 52rem;
+  }
+
+  &:nth-child(4) {
+    width: 26rem;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.divider {
+  margin: 0 (-$container-padding);
+  border-top: 1px solid $color-grey-main;
+}
+
+.title {
+  margin-top: 30rem;
+}
+
+.item {
+  margin: 0 (-$container-padding);
+  padding: 30rem $container-padding;
+  border-bottom: 1px solid $color-grey-light;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.dark {
+  color: #fff;
+  background-color: $color-grey-main;
+
+  .divider {
+    border-color: $color-grey-light;
+  }
+
+  .item {
+    border-color: rgba($color-grey-light, .4);
+  }
+}
+
+@include media(lg) {
+  .el {
+    padding-bottom: 36rem;
+  }
+
+  .heading {
+    margin-top: 74rem;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    margin-top: 136rem;
+    margin-left: 0;
+  }
+
+  .images + .divider {
+    margin-top: 0;
+  }
+
+  .images {
+    justify-content: flex-end;
+    padding: 0 14rem;
+  }
+
+  .image {
+    margin-right: 24rem;
+
+    &:nth-child(1) {
+      width: 212rem;
+    }
+
+    &:nth-child(2) {
+      width: 160rem;
+    }
+
+    &:nth-child(3) {
+      width: 62rem;
+    }
+
+    &:nth-child(4) {
+      width: 30rem;
+    }
+  }
+
+  .list {
+    margin-top: 22rem;
+  }
+
+  .item {
+    margin-left: 0;
+    padding: 36rem $container-padding;
+    padding-left: 0;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-bottom: 86rem;
+  }
+
+  .heading {
+    margin-top: 90rem;
+  }
+
+  .images {
+    margin-top: 245rem;
+  }
+
+  .image {
+    margin-right: 35rem;
+
+    &:nth-child(1) {
+      width: 318rem;
+    }
+
+    &:nth-child(2) {
+      width: 240rem;
+    }
+
+    &:nth-child(3) {
+      width: 92rem;
+    }
+
+    &:nth-child(4) {
+      width: 46rem;
+    }
+  }
+
+  .divider {
+    margin-top: 240rem;
+    margin-right: (-$container-padding-xl);
+  }
+
+  .title {
+    margin-top: 60rem;
+  }
+
+  .list {
+    margin-top: 70px;
+  }
+
+  .item {
+    margin-right: (-$container-padding-xl);
+    padding-right: $container-padding-xl;
+  }
+}
