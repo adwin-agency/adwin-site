@@ -4,34 +4,17 @@ import Partners from './Partners'
 import Competencies from './Competencies'
 import Achievements from './Achievements'
 import Team from './Team'
-import styles from './MainAbout.module.scss'
+import menuItems from '/data/aboutmenu'
+import styles from './About.module.scss'
 
-export default function MainAbout() {
-  const items = [
-    {
-      id: 'competencies',
-      href: '#competencies',
-      title: 'Компетенции'
-    },
-    {
-      id: 'achievements',
-      href: '#achievements',
-      title: 'Достижения'
-    },
-    {
-      id: 'team',
-      href: '#team',
-      title: 'Команда'
-    }
-  ]
-
+export default function About() {
   return (
     <div className={styles.el}>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-2'>
             <div className={styles.sideMenu}>
-              <SideMenu items={items} />
+              <SideMenu items={menuItems} />
             </div>
           </div>
           <div className='col-6 col-lg-4'>

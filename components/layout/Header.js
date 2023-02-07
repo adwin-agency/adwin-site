@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import cn from 'classnames'
+import Link from 'next/link'
 import MobileMenu from './MobileMenu'
 import Button from '../ui/Button'
 import Logo from '/icons/logo.svg'
@@ -31,13 +32,15 @@ export default function Header() {
       <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
-            <Logo className={styles.logo} />
-            <LogoLg className={styles.logoDesktop} />
+            <Link href='/'>
+              <Logo className={styles.logo} />
+              <LogoLg className={styles.logoDesktop} />
+            </Link>
             <button className={styles.burger} onClick={toggleMobile}></button>
             <div className={styles.menu}>
-              <a href='/' className={styles.link}>Об агентстве</a>
-              <a href='/' className={styles.link}>Услуги</a>
-              <a href='/' className={styles.link}>Работы</a>
+              <Link href='/about' className={styles.link}>Об агентстве</Link>
+              <Link href='/services' className={styles.link}>Услуги</Link>
+              <Link href='/' className={styles.link}>Работы</Link>
               <Button className={styles.btn}>Связаться с нами</Button>
             </div>
           </div>

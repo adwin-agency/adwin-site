@@ -1,5 +1,7 @@
-import ServicesGroup from '../components/services/ServicesGroup'
+import TopProjects from '../app/TopProjects'
+import ServicesGroup from './ServicesGroup'
 import { advertisement, development } from '/data/services'
+import styles from './Services.module.scss'
 
 export default function Services() {
   return (
@@ -15,7 +17,7 @@ export default function Services() {
         title={development.title}
         items={development.items}
       />
-      <div style={{height: '1000px'}}></div>
+      <TopProjects className={styles.topProjects} />
     </>
   )
 }

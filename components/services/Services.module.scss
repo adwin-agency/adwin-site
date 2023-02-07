@@ -1,0 +1,18 @@
+.topProjects {
+  margin-top: 68rem;
+  margin-bottom: 66rem;
+}
+
+@include media(lg) {
+  .topProjects {
+    margin-top: 110rem;
+    margin-bottom: 46rem;
+  }
+}
+
+@include media(xl) {
+  .topProjects {
+    margin-top: 142rem;
+    margin-bottom: 94rem;
+  }
+}

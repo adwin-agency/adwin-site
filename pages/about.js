@@ -1,7 +1,7 @@
-import MainAbout from "../components/about/MainAbout";
+import About from '../components/about/About'
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <MainAbout />
+    <About />
   )
 }

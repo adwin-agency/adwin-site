@@ -9,6 +9,7 @@ export default function Team({ id }) {
   useEffect(() => {
     let mouseIsDown = false
     let mouseX = null
+    const lineEl = lineRef.current
 
     function handleMouseDown(e) {
       mouseIsDown = true
@@ -18,7 +19,7 @@ export default function Team({ id }) {
     function handleMouseMove(e) {
       if (!mouseIsDown) return
 
-      lineRef.current.scrollLeft += (mouseX - e.clientX)
+      lineEl.scrollLeft += (mouseX - e.clientX)
       mouseX = e.clientX
     }
 
@@ -26,14 +27,14 @@ export default function Team({ id }) {
       mouseIsDown = false
     }
 
-    lineRef.current.addEventListener('mousedown', handleMouseDown)
-    lineRef.current.addEventListener('mousemove', handleMouseMove)
-    lineRef.current.addEventListener('mouseup', handleMouseUp)
+    lineEl.addEventListener('mousedown', handleMouseDown)
+    lineEl.addEventListener('mousemove', handleMouseMove)
+    lineEl.addEventListener('mouseup', handleMouseUp)
 
     return () => {
-      lineRef.current.removeEventListener('mousedown', handleMouseDown)
-      lineRef.current.removeEventListener('mousemove', handleMouseMove)
-      lineRef.current.removeEventListener('mouseup', handleMouseUp)
+      lineEl.removeEventListener('mousedown', handleMouseDown)
+      lineEl.removeEventListener('mousemove', handleMouseMove)
+      lineEl.removeEventListener('mouseup', handleMouseUp)
     }
   }, [])
 
