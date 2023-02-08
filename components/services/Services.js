@@ -12,6 +12,7 @@ export default function Services() {
         items={advertisement.items}
       />
       <ServicesGroup
+        type='development'
         theme='dark'
         images={development.images}
         title={development.title}

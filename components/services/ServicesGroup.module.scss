@@ -19,22 +19,6 @@
   margin-right: 10rem;
   flex-shrink: 0;
 
-  &:nth-child(1) {
-    width: 178rem;
-  }
-
-  &:nth-child(2) {
-    width: 134rem;
-  }
-
-  &:nth-child(3) {
-    width: 52rem;
-  }
-
-  &:nth-child(4) {
-    width: 26rem;
-  }
-
   &:last-child {
     margin-right: 0;
   }
@@ -56,6 +40,26 @@
 
   &:last-child {
     border-bottom: none;
+  }
+}
+
+.development {
+  .image {
+    &:nth-child(1) {
+      width: 178rem;
+    }
+
+    &:nth-child(2) {
+      width: 134rem;
+    }
+
+    &:nth-child(3) {
+      width: 52rem;
+    }
+
+    &:nth-child(4) {
+      width: 26rem;
+    }
   }
 }
 
@@ -87,7 +91,7 @@
     margin-left: 0;
   }
 
-  .images + .divider {
+  .images+.divider {
     margin-top: 0;
   }
 
@@ -98,22 +102,6 @@
 
   .image {
     margin-right: 24rem;
-
-    &:nth-child(1) {
-      width: 212rem;
-    }
-
-    &:nth-child(2) {
-      width: 160rem;
-    }
-
-    &:nth-child(3) {
-      width: 62rem;
-    }
-
-    &:nth-child(4) {
-      width: 30rem;
-    }
   }
 
   .list {
@@ -124,6 +112,26 @@
     margin-left: 0;
     padding: 36rem $container-padding;
     padding-left: 0;
+  }
+
+  .development {
+    .image {
+      &:nth-child(1) {
+        width: 212rem;
+      }
+  
+      &:nth-child(2) {
+        width: 160rem;
+      }
+  
+      &:nth-child(3) {
+        width: 62rem;
+      }
+  
+      &:nth-child(4) {
+        width: 30rem;
+      }
+    }
   }
 }
 
@@ -142,22 +150,6 @@
 
   .image {
     margin-right: 35rem;
-
-    &:nth-child(1) {
-      width: 318rem;
-    }
-
-    &:nth-child(2) {
-      width: 240rem;
-    }
-
-    &:nth-child(3) {
-      width: 92rem;
-    }
-
-    &:nth-child(4) {
-      width: 46rem;
-    }
   }
 
   .divider {
@@ -176,5 +168,25 @@
   .item {
     margin-right: (-$container-padding-xl);
     padding-right: $container-padding-xl;
+  }
+
+  .development {
+    .image {
+      &:nth-child(1) {
+        width: 318rem;
+      }
+  
+      &:nth-child(2) {
+        width: 240rem;
+      }
+  
+      &:nth-child(3) {
+        width: 92rem;
+      }
+  
+      &:nth-child(4) {
+        width: 46rem;
+      }
+    }
   }
 }

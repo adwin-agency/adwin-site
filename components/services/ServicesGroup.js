@@ -2,9 +2,9 @@ import cn from 'classnames'
 import styles from './ServicesGroup.module.scss'
 import ServicesItem from './ServicesItem'
 
-export default function ServicesGroup({ theme, heading, images, title, items }) {
+export default function ServicesGroup({ type, theme, heading, images, title, items }) {
   return (
-    <section className={cn(styles.el, { [styles[theme]]: theme })}>
+    <section className={cn(styles.el, { [styles[type]]: type, [styles[theme]]: theme })}>
       <div className='container'>
         <div className='row'>
           <div className='col col-6 col-lg-2'>
@@ -15,7 +15,7 @@ export default function ServicesGroup({ theme, heading, images, title, items }) 
               {images && (
                 <div className={styles.images}>
                   {images.map(img => (
-                    <img src={`/images/services/${img}`} alt='' className={styles.image} />
+                    <img key={img} src={`/images/services/${img}`} alt='' className={styles.image} />
                   ))}
                 </div>
               )}
