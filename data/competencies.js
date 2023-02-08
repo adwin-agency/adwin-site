@@ -1,6 +1,6 @@
 export default [
   {
-    id: 'a',
+    id: 'с1',
     title: 'Аналитика',
     items: [
       { id: 'a1', title: 'сквозная аналитика', link: '/' },
@@ -10,7 +10,7 @@ export default [
     ]
   },
   {
-    id: 'b',
+    id: 'с2',
     title: 'Работа с брендом',
     items: [
       { id: 'b1', title: 'сувенирная продукция' },
@@ -18,7 +18,7 @@ export default [
     ]
   },
   {
-    id: 'c',
+    id: 'с3',
     title: 'Разработка',
     items: [
       { id: 'c1', title: 'лендинги', link: '/' },
@@ -28,7 +28,7 @@ export default [
     ]
   },
   {
-    id: 'd',
+    id: 'с4',
     title: 'Реклама',
     items: [
       { id: 'd1', title: 'комплексная реклама', link: '/' },
