@@ -1,0 +1,54 @@
+.el {
+  padding: 28rem 0 35rem;
+  color: $color-grey-paper;
+  background-color: $color-grey-main;
+}
+
+.title {
+  font-size: 22rem;
+  line-height: 1;
+}
+
+.btn {
+  margin-top: 28rem;
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 30rem 0 46rem;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40rem;
+  }
+
+  .title {
+    max-width: 600rem;
+    font-size: 28rem;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-right: 34rem;
+    width: 314rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 40rem 0;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .btn {
+    margin-right: 0;
+    width: 374rem;
+  }
+}

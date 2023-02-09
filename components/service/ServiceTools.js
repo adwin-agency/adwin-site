@@ -1,7 +1,9 @@
 import tools from '/data/tools'
 import styles from './ServiceTools.module.scss'
 
-export default function ServiceTools({ type }) {
+export default function ServiceTools({ category }) {
+  const items = tools[category]
+
   return (
     <section>
       <div className={styles.top}>
@@ -9,8 +11,8 @@ export default function ServiceTools({ type }) {
         <p className={styles.desc}>Подбираем стек разработки исходя из потребностей клиента и задач ресурса</p>
       </div>
       <div className={styles.items}>
-        {type && tools[type].map(item => (
-          <img key={item.id} src={`/images/tools/${item}`} alt='' />
+        {items.map(item => (
+          <img key={item.id} src={item.image} alt='' />
         ))}
       </div>
     </section>

@@ -1,4 +1,7 @@
 .el {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   height: 56rem;
   padding: 0 30rem;
   border-radius: 100rem;
@@ -8,7 +11,21 @@
   color: #fff;
 }
 
+.icon {
+  width: 15rem;
+  height: 15rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  flex-shrink: 0;
+  fill: $color-magenta;
+}
+
 .lg {
+  height: 80rem;
+  font-size: 22rem;
+}
+
+.xl {
   height: 80rem;
   font-size: 22rem;
 }
@@ -31,10 +48,31 @@
   }
 }
 
+@include media(lg) {
+  .icon {
+    margin-left: 14rem;
+  }
+
+  .xl {
+    height: 84rem;
+    font-size: 24rem;
+  }
+}
+
 @include media(xl) {
   .el {
     height: 80rem;
     padding: 0 50rem;
     font-size: 22rem;
+  }
+
+  .icon {
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .xl {
+    height: 100rem;
+    font-size: 30rem;
   }
 }

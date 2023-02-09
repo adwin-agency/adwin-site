@@ -1,0 +1,104 @@
+.el {
+  padding-top: 40rem;
+}
+
+.desc {
+  display: flex;
+  margin-top: 7rem;
+  padding-top: 23rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+.arrow {
+  position: relative;
+  flex-shrink: 0;
+  width: 75rem;
+  height: 41rem;
+  margin-top: -23rem;
+  margin-right: 18rem;
+  border-left: 3px solid $color-magenta;
+  border-bottom: 3px solid $color-magenta;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 10rem;
+    height: 2px;
+    border-radius: 100px;
+    background-color: $color-magenta;
+    transform-origin: right;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.image {
+  margin-left: 93rem;
+  margin-top: 28rem;
+  width: 225rem;
+}
+
+@include media(lg) {
+  .el {
+    padding: 72rem 0;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .info {
+    width: 500rem;
+  }
+
+  .desc {
+    margin-top: 11rem;
+  }
+
+  .arrow {
+    margin-right: 22rem;
+    width: 58rem;
+  }
+  
+  .image {
+    margin-left: auto;
+    margin-right: 48rem;
+    margin-bottom: -72rem;
+    width: 420rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 80rem 0;
+  }
+
+  .info {
+    width: 700rem;
+  }
+
+  .desc {
+    font-size: 26rem;
+    line-height: 1.4;
+  }
+
+  .arrow {
+    width: 101rem;
+  }
+  
+  .image {
+    margin-right: 134rem;
+    margin-bottom: -80rem;
+    width: 612rem;
+  }
+}

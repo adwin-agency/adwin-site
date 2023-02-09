@@ -1,0 +1,11 @@
+@include media(lg) {
+  .divider {
+    margin-right: (-$container-padding);
+  }
+}
+
+@include media(xl) {
+  .divider {
+    margin-right: (-$container-padding-xl);
+  }
+}

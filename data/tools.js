@@ -2,75 +2,75 @@ export default {
   development: [
     {
       id: 'td1',
-      image: 'webpack.svg'
+      image: '/images/tools/webpack.svg'
     },
     {
       id: 'td2',
-      image: 'node.svg'
+      image: '/images/tools/node.svg'
     },
     {
       id: 'td3',
-      image: 'html.svg'
+      image: '/images/tools/html.svg'
     },
     {
       id: 'td4',
-      image: 'css.svg'
+      image: '/images/tools/css.svg'
     },
     {
       id: 'td5',
-      image: 'git.svg'
+      image: '/images/tools/git.svg'
     },
     {
       id: 'td6',
-      image: 'bitrix.svg'
+      image: '/images/tools/bitrix.svg'
     },
     {
       id: 'td7',
-      image: 'react.svg'
+      image: '/images/tools/react.svg'
     },
     {
       id: 'td8',
-      image: 'vue.svg'
+      image: '/images/tools/vue.svg'
     },
     {
       id: 'td9',
-      image: 'mysql.svg'
+      image: '/images/tools/mysql.svg'
     },
     {
       id: 'td10',
-      image: 'php.svg'
+      image: '/images/tools/php.svg'
     },
     {
       id: 'td11',
-      image: 'laravel.svg'
+      image: '/images/tools/laravel.svg'
     },
     {
       id: 'td12',
-      image: 'bem.svg'
+      image: '/images/tools/bem.svg'
     },
     {
       id: 'td13',
-      image: 'sass.svg'
+      image: '/images/tools/sass.svg'
     },
     {
       id: 'td14',
-      image: 'js.svg'
+      image: '/images/tools/js.svg'
     },
     {
       id: 'td15',
-      image: 'ts.svg'
+      image: '/images/tools/ts.svg'
     },
     {
       id: 'td16',
-      image: 'redux.svg'
+      image: '/images/tools/redux.svg'
     },
     {
       id: 'td17',
-      image: 'graphql.svg'
+      image: '/images/tools/graphql.svg'
     },
     {
       id: 'td18',
-      image: 'next.svg'
+      image: '/images/tools/next.svg'
     }
   ]
 }

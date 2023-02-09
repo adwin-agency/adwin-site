@@ -15,8 +15,9 @@ export default function TextInput({ className, type, textarea, title, name, plac
     input = (
       <textarea
         name={name}
+        placeholder={placeholder}
         className={cn(styles.el, className)}
-      >{placeholder}</textarea>
+      ></textarea>
     )
   }
 

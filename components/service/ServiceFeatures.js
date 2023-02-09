@@ -1,14 +1,18 @@
+import cn from 'classnames'
+import features from '/data/features'
 import styles from './ServiceFeatures.module.scss'
 
-export default function ServiceFeatures({ heading, items }) {
+export default function ServiceFeatures({ type }) {
+  const { heading, items } = features[type]
+  
   return (
-    <section>
-      <h2 className='h2'>{heading}</h2>
+    <section className={styles.el}>
+      <h2 className={cn('h2', styles.heading)}>{heading}</h2>
       <div className={styles.items}>
         {items.map(item => (
-          <div key={item.id}>
+          <div key={item.id} className={styles.item}>
             <p className={styles.itemTitle}>{item.title}</p>
-            <img src={`/images/services/landing/${item.image}`} alt='' className={styles.itemImage} />
+            <img src={item.image} alt='' className={styles.itemImage} />
           </div>
         ))}
       </div>
