@@ -1,0 +1,58 @@
+.el {
+  padding: 40rem 0 60rem;
+}
+
+.desc {
+  margin-top: 18rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24rem;
+  margin-top: 44rem;
+}
+
+.image {
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 40rem 0 100rem;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .desc {
+    margin-left: 30rem;
+    width: 400rem;
+    flex-shrink: 0;
+  }
+
+  .items {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 50rem 24rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 64rem 0 150rem;
+  }
+
+  .desc {
+    width: 580rem;
+    font-size: 26rem;
+    line-height: 1.4;
+  }
+
+  .items {
+    margin-top: 96rem;
+    grid-gap: 92rem 60rem;
+  }
+}

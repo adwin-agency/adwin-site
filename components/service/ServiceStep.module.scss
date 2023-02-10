@@ -1,0 +1,115 @@
+.top {
+  display: flex;
+  padding: 22rem 0;
+  cursor: pointer;
+}
+
+.num {
+  width: 44rem;
+  margin-right: 12rem;
+  font-size: 26rem;
+  line-height: 1;
+  color: $color-grey-light;
+}
+
+.title {
+  margin-top: 2rem;
+  margin-right: 12rem;
+  font-size: 22rem;
+  line-height: 1;
+}
+
+.icon {
+  position: relative;
+  margin-left: auto;
+  margin-top: 5rem;
+  width: 15rem;
+  height: 15rem;
+  flex-shrink: 0;
+  fill: $color-grey-main;
+  transition: transform .3s ease, fill .3s ease;
+}
+
+.main {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height .3s ease, opacity .3s ease;
+}
+
+.content {
+  padding-bottom: 40rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+.result {
+  margin-top: 12rem;
+  color: $color-magenta;
+}
+
+.active {
+  .icon {
+    fill: $color-magenta;
+    transform: rotate(45deg);
+  }
+
+  .main {
+    opacity: 1;
+  }
+}
+
+@include media(lg) {
+  .top {
+    padding: 32rem 0;
+  }
+
+  .num {
+    width: 60rem;
+    margin-right: 78rem;
+    font-size: 36rem;
+  }
+
+  .title {
+    font-size: 30rem;
+  }
+
+  .icon {
+    margin-top: 10rem;
+  }
+
+  .content {
+    padding-left: 138rem;
+    padding-right: 78rem;
+  }
+
+  .result {
+    margin-top: 28rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding: 26rem 0;
+  }
+
+  .num {
+    width: 90rem;
+    margin-right: 95rem;
+    font-size: 56rem;
+  }
+
+  .title {
+    margin-top: 8rem;
+    font-size: 36rem;
+  }
+
+  .icon {
+    margin-top: 20rem;
+  }
+
+  .content {
+    padding-left: 185rem;
+    padding-right: 200rem;
+  }
+}

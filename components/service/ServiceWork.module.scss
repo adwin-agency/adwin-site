@@ -1,0 +1,72 @@
+.el {
+  padding: 40rem 0 100rem;
+}
+
+.desc {
+  display: flex;
+  margin-top: 30rem;
+  font-size: 18rem;
+  line-height: 1.6;
+
+  span {
+    flex-shrink: 0;
+    margin-left: 46rem;
+    color: $color-magenta;
+  }
+}
+
+.steps {
+  margin-top: 46rem;
+}
+
+.step {
+  border-top: 1px solid $color-grey-light;
+}
+
+@include media(lg) {
+  .el {
+    padding: 40rem 0 68rem;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading {
+    width: 500rem;
+  }
+
+  .desc {
+    flex-direction: column;
+    width: 185rem;
+    margin-left: 30rem;
+    margin-top: 0;
+    flex-shrink: 0;
+
+    span {
+      margin-left: 0;
+      margin-top: 6rem;
+    }
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 84rem 0 126rem;
+  }
+  
+  .heading {
+    width: 600rem;
+  }
+
+  .desc {
+    width: 270rem;
+    font-size: 26rem;
+    line-height: 1.4;
+  }
+
+  .steps {
+    margin-top: 82rem;
+  }
+}
