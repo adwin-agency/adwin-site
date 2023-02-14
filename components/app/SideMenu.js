@@ -21,7 +21,7 @@ export default function SideMenu({ items }) {
   return (
     <div className={styles.el}>
       {items.map(item => (
-        <a key={item.id} href={item.href} className={cn(styles.link, { [styles.active]: activeLink === item.id })} onClick={handleClick(item.id)}>{item.title}</a>
+        <a key={item.id} href={`#${item.id}`} className={cn(styles.link, { [styles.active]: activeLink === item.id })} onClick={handleClick(item.id)}>{item.title}</a>
       ))}
     </div>
   )

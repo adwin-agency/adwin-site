@@ -20,6 +20,10 @@
   fill: $color-magenta;
 }
 
+.send {
+  height: 68rem;
+}
+
 .lg {
   height: 80rem;
   font-size: 22rem;
@@ -48,9 +52,18 @@
   }
 }
 
+.magenta {
+  background-color: $color-magenta;
+}
+
 @include media(lg) {
   .icon {
     margin-left: 14rem;
+  }
+
+  .send {
+    height: 100rem;
+    font-size: 22rem;
   }
 
   .xl {
@@ -69,6 +82,11 @@
   .icon {
     width: 26rem;
     height: 26rem;
+  }
+
+  .send {
+    height: 100rem;
+    font-size: 22rem;
   }
 
   .xl {

@@ -7,7 +7,7 @@ export default function TextInput({ className, type, textarea, title, name, plac
       type={type || 'text'}
       name={name}
       placeholder={placeholder}
-      className={cn(styles.el, className)}
+      className={styles.input}
     />
   )
 
@@ -16,13 +16,13 @@ export default function TextInput({ className, type, textarea, title, name, plac
       <textarea
         name={name}
         placeholder={placeholder}
-        className={cn(styles.el, className)}
+        className={cn(styles.input, styles.textarea)}
       ></textarea>
     )
   }
 
   return (
-    <div>
+    <div className={cn(styles.el, className)}>
       {title && <p className={styles.title}>{title}</p>}
       {input}
     </div>

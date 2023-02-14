@@ -16,7 +16,7 @@ export default function Service({ category, type }) {
     <>
       <ServiceTop type={type} />
       <ServiceOffer />
-      <ServiceMain>
+      <ServiceMain category={category}>
         <ServiceFeatures type={type} />
         <Divider className={styles.divider} />
         <ServiceTools category={category} />

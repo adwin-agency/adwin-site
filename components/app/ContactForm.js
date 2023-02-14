@@ -6,7 +6,7 @@ import styles from './ContactForm.module.scss'
 
 export default function ContactForm() {
   return (
-    <section>
+    <section className={styles.el}>
       <div className={styles.side}>
         <h3 className='h3'>Если у вас остались вопросы или хотите обсудить проект — напишите нам :)</h3>
       </div>
@@ -43,7 +43,7 @@ export default function ContactForm() {
             </div>
           </div>
           <div className={styles.actions}>
-            <Button className={styles.btn}>Отправить</Button>
+            <Button className={styles.btn} mod='send' color='magenta'>Отправить</Button>
             <p className={styles.note}>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
           </div>
         </form>

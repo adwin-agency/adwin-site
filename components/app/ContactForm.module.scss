@@ -1,0 +1,171 @@
+.el {
+  border-top: 1px solid $color-grey-main;
+  padding: 28rem $container-padding 40rem;
+}
+
+.main {
+  margin-top: 80rem;
+}
+
+.title {
+  margin-bottom: 28rem;
+  font-size: 22rem;
+  line-height: 1;
+}
+
+.field {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 26rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about {
+  margin-top: 70rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box {
+  margin-bottom: 18rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.additional {
+  margin-top: 46rem;
+}
+
+.file {
+  margin-top: 38rem;
+}
+
+.actions {
+  margin-top: 44rem;
+}
+
+.btn {
+  width: 100%;
+}
+
+.note {
+  margin-top: 12rem;
+  text-align: center;
+  font-size: 13rem;
+  line-height: 1;
+}
+
+@include media(lg) {
+  .el {
+    display: flex;
+    padding: 0;
+  }
+
+  .side {
+    width: 420rem;
+    padding: 78rem $container-padding;
+    border-right: 1px solid $color-grey-main;
+    flex-shrink: 0;
+  }
+
+  .main {
+    margin-top: 0;
+    flex: 1;
+    padding: 78rem $container-padding 54rem 70rem;
+  }
+
+  .contacts {
+    padding-right: 80rem;
+  }
+
+  .title {
+    font-size: 28rem;
+  }
+
+  .fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 34rem 32rem;
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .about {
+    margin-top: 64rem;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: 328rem 1fr;
+    grid-gap: 32rem;
+  }
+
+  .additional {
+    margin-top: 0;
+  }
+
+  .file {
+    margin-right: 45rem;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .btn {
+    order: 1;
+    width: 298rem;
+  }
+
+  .note {
+    margin-top: 0;
+    max-width: 282rem;
+    margin-right: 28rem;
+    text-align: right;
+  }
+}
+
+@include media(xl) {
+  .side {
+    width: 600rem;
+    padding: 80rem;
+  }
+
+  .main {
+    padding: 80rem 160rem 64rem 100rem;
+  }
+
+  .fields {
+    grid-gap: 34rem 70rem;
+  }
+
+  .about {
+    margin-top: 76rem;
+  }
+
+  .inputs {
+    grid-template-columns: 352rem 1fr;
+    grid-gap: 70rem;
+  }
+
+  .file {
+    margin-top: 64rem;
+  }
+
+  .actions {
+    margin-top: 30rem;
+  }
+}
