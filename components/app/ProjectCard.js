@@ -1,9 +1,9 @@
 import cn from 'classnames'
 import styles from './ProjectCard.module.scss'
 
-export default function ProjectCard({ images, tags, title, desc }) {
+export default function ProjectCard({ className, images, tags, title, desc }) {
   return (
-    <div>
+    <div className={className}>
       <div className={styles.box}>
         <picture>
           <source media='(min-width: 1000px)' srcSet={`/images/projects/${images[1]}`} />

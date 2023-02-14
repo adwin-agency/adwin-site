@@ -1,0 +1,55 @@
+.el {
+  padding: 40rem 0 48rem;
+}
+
+.items {
+  margin-top: 38rem;
+}
+
+.item {
+  margin-bottom: 38rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  margin-top: 35rem;
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 40rem 0 90rem;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20rem;
+    margin-top: 60rem;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin-top: 28rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 72rem 0 78rem;
+  }
+
+  .items {
+    margin-top: 32rem;
+  }
+
+  .btn {
+    margin-top: 68rem;
+  }
+}

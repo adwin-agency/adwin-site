@@ -1,0 +1,66 @@
+.el {
+  padding: 40rem 0;
+}
+
+.main {
+  margin-top: 30rem;
+}
+
+.desc {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+.price {
+  margin-top: 20rem;
+  margin-left: 110rem;
+  font-size: 24rem;
+  line-height: 1.1;
+  color: $color-magenta;
+}
+
+@include media(lg) {
+  .el {
+    padding: 40rem 0 124rem;
+  }
+
+  .main {
+    display: flex;
+    margin-top: 60rem;
+  }
+
+  .desc {
+    margin-right: 85rem;
+  }
+
+  .price {
+    margin-top: 0;
+    margin-left: 0;
+    flex-shrink: 0;
+    font-size: 36px;
+  }
+}
+
+@include media(xl) {
+  .el {
+    display: flex;
+    padding: 120rem 0 165rem;
+  }
+
+  .heading {
+    flex-shrink: 0;
+    margin-right: 85rem;    
+  }
+
+  .main {
+    margin-top: 0;
+  }
+
+  .desc {
+    margin-right: 64rem;
+  }
+
+  .price {
+    font-size: 42rem;
+  }
+}

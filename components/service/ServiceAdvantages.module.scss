@@ -1,0 +1,31 @@
+.el {
+  padding: 40rem 0 78rem;
+}
+
+.main {
+  margin-top: 24rem;
+}
+
+@include media(lg) {
+  .heading {
+    max-width: 680rem;
+  }
+
+  .main {
+    margin-top: 60rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 108rem 0 145rem;
+  }
+
+  .heading {
+    max-width: 850rem;
+  }
+
+  .main {
+    margin-top: 86rem;
+  }
+}
