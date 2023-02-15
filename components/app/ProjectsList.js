@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 import projects from '/data/projects'
 import styles from './ProjectsList.module.scss'
 
-export default function ProjectsList({ className }) {
+export default function ProjectsList({ className, bordered }) {
 
   const rowItems = projects.reduce((acc, curr, index) => {
     if (index % 2 === 0) {
@@ -15,7 +15,7 @@ export default function ProjectsList({ className }) {
   }, [])
 
   return (
-    <div className={cn(styles.el, className)}>
+    <div className={cn(styles.el, { [styles.bordered]: bordered }, className)}>
       {rowItems.map((items, index) => (
         <div key={index} className={styles.row}>
           {items.map(item => (

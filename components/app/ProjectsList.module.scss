@@ -40,12 +40,24 @@
 
   .item {
     margin-bottom: 0;
-    padding: 20rem;    
+    padding: 20rem;
     border-right: 1px solid $color-grey-main;
     border-bottom: none;
 
     &:first-child {
       border-left: 1px solid $color-grey-main;
+    }
+  }
+
+  .bordered {
+    .row {
+      &:first-child {
+        border-top: 1px solid $color-grey-main;
+
+        .item {
+          padding-top: 20rem;
+        }
+      }
     }
   }
 }
@@ -64,5 +76,15 @@
 
   .item {
     padding: 30rem 30rem 60rem;
+  }
+
+  .bordered {
+    .row {
+      &:first-child {
+        .item {
+          padding-top: 30rem;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,100 @@
+.el {
+  padding: 10rem 0 60rem;
+}
+
+.top {
+  overflow: hidden;
+}
+
+.filters {
+  display: flex;
+  margin: 32rem (-$container-padding) 0;
+  padding: 0 $container-padding;
+  overflow-x: auto;
+}
+
+.filter {
+  margin-right: 4rem;
+  padding: 12rem 14rem;
+  border: 1px solid $color-grey-main;
+  border-radius: 100rem;
+  font-size: 12rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  span {
+    color: $color-magenta;
+  }
+
+  &.active {
+    color: #fff;
+    background-color: $color-grey-main;
+  }
+}
+
+.main {
+  margin-top: 48rem;
+}
+
+@include media(lg) {
+  .el {
+    padding: 0 0 80rem;
+  }
+
+  .top {
+    padding: 40rem 0 30rem;
+  }
+
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filters {
+    margin: 0;
+    margin-right: -10rem;
+    margin-bottom: -6rem;
+    padding: 0;
+    max-width: 600rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    overflow-x: visible;
+  }
+
+  .filter {
+    margin-right: 10rem;
+    margin-bottom: 6rem;
+    padding: 14rem 16rem;
+
+
+    &:last-child {
+      margin-right: 10rem;
+    }
+  }
+
+  .main {
+    margin-top: 0;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding: 80rem 0 108rem;
+  }
+
+  .filters {
+    margin-bottom: -8rem;
+    max-width: 830rem;
+  }
+
+  .filter {
+    margin-bottom: 8rem;
+    padding: 16rem 20rem;
+  }
+}
