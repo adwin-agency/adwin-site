@@ -10,6 +10,7 @@ import ServiceTools from './ServiceTools'
 import ServiceTop from './ServiceTop'
 import ServiceWork from './ServiceWork'
 import styles from './Service.module.scss'
+import ServiceMethods from './ServiceMethods'
 
 export default function Service({ category, type }) {
   return (
@@ -17,17 +18,38 @@ export default function Service({ category, type }) {
       <ServiceTop type={type} />
       <ServiceOffer />
       <ServiceMain category={category}>
-        <ServiceFeatures type={type} />
-        <Divider className={styles.divider} />
-        <ServiceTools category={category} />
-        <Divider className={styles.divider} />
-        <ServiceWork category={category} />
-        <Divider className={styles.divider} />
-        <ServiceProjects />
-        <Divider className={styles.divider} />
-        <ServiceAdvantages />
-        <Divider className={styles.divider} />
-        <ServicePrice />
+        {category === 'development' && (
+          <>
+            <ServiceFeatures type={type} />
+            <Divider className={styles.divider} />
+            <ServiceTools category={category} />
+            <Divider className={styles.divider} />
+            <ServiceWork category={category} />
+            <Divider className={styles.divider} />
+            <ServiceProjects />
+            <Divider className={styles.divider} />
+            <ServiceAdvantages />
+            <Divider className={styles.divider} />
+            <ServicePrice />
+          </>
+        )}
+        {category === 'advertisement' && (
+          <>
+            <ServiceFeatures type={type} />
+            <Divider className={styles.divider} />
+            <ServiceMethods category={category} />
+            <Divider className={styles.divider} />
+            <ServiceTools category={category} />
+            <Divider className={styles.divider} />
+            <ServiceAdvantages />
+            <Divider className={styles.divider} />
+            <ServiceProjects />
+            <Divider className={styles.divider} />
+            <ServiceWork category={category} />
+            <Divider className={styles.divider} />
+            <ServicePrice />
+          </>
+        )}
       </ServiceMain>
       <ContactForm />
     </>

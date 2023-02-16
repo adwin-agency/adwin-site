@@ -1,0 +1,18 @@
+.sideMenu {
+  display: none;
+}
+
+@include media(lg) {
+  .sideMenu {
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: 100rem 0;
+  }
+}
+
+@include media(xl) {
+  .sideMenu {
+    padding: 120rem 0;
+  }
+}

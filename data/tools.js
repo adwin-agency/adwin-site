@@ -72,5 +72,51 @@ export default {
       id: 'td18',
       image: '/images/tools/next.svg'
     }
+  ],
+  advertisement: [
+    {
+      id: 'ta1',
+      image: '/images/tools/comagic.svg'
+    },
+    {
+      id: 'ta2',
+      image: '/images/tools/vk-pixel.svg'
+    },
+    {
+      id: 'ta3',
+      image: '/images/tools/telegram.svg'
+    },
+    {
+      id: 'ta4',
+      image: '/images/tools/calltouch.svg'
+    },
+    {
+      id: 'ta5',
+      image: '/images/tools/ya-direct.svg'
+    },
+    {
+      id: 'ta6',
+      image: '/images/tools/mytarget.svg'
+    },
+    {
+      id: 'ta7',
+      image: '/images/tools/vk.svg'
+    },
+    {
+      id: 'ta8',
+      image: '/images/tools/whatsapp.svg'
+    },
+    {
+      id: 'ta9',
+      image: '/images/tools/yametrika.svg'
+    },
+    {
+      id: 'ta10',
+      image: '/images/tools/puls.svg'
+    },
+    {
+      id: 'ta11',
+      image: '/images/tools/odnoklassniki.svg'
+    }
   ]
 }

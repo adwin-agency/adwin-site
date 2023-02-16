@@ -1,0 +1,93 @@
+.el {
+  padding: 65rem 0 98rem;
+}
+
+.list {
+  margin-top: 40rem;
+}
+
+.item {
+  margin-top: 34rem;
+  border-top: 1px solid $color-grey-light;
+  padding-top: 12rem;
+
+  &:first-child {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.num {
+  font-size: 36rem;
+  line-height: 1;
+  color: $color-grey-light;
+}
+
+.title {
+  margin-top: 14rem;
+  font-size: 30rem;
+  line-height: 1;
+}
+
+.desc {
+  margin-top: 18rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+@include media(lg) {
+  .el {
+    padding: 85rem 0 128rem;
+  }
+
+  .list {
+    margin-top: 60rem;
+  }
+
+  .item {
+    display: flex;
+    margin-top: 38rem;
+    padding-top: 32rem;
+  }
+
+  .num {
+    margin-right: 34rem;
+    width: 45rem;
+    flex-shrink: 0;
+  }
+
+  .title {
+    margin-top: 3rem;
+    margin-right: 50rem;
+    width: 300rem;
+    flex-shrink: 0;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 85rem 0;
+  }
+
+  .num {
+    margin-right: 220rem;
+    width: 85rem;
+    font-size: 70rem;
+  }
+
+  .title {
+    margin-top: 18rem;
+    margin-right: 115rem;
+    width: 492rem;
+    font-size: 36rem;
+  }
+
+  .desc {
+    margin-top: 18rem;
+  }
+}

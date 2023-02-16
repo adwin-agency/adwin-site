@@ -10,6 +10,10 @@ import styles from './Header.module.scss'
 export default function Header() {
   const [activeMobile, setActivemobile] = useState()
 
+  function closeMobile() {
+    setActivemobile(false)
+  }
+
   function toggleMobile() {
     setActivemobile(!activeMobile)
   }
@@ -28,11 +32,11 @@ export default function Header() {
 
   return (
     <header className={cn(styles.el, { [styles.active]: activeMobile })}>
-      <MobileMenu className={styles.mobile} />
+      <MobileMenu className={styles.mobile} onLinkClick={closeMobile} />
       <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
-            <Link href='/'>
+            <Link href='/' onClick={closeMobile}>
               <Logo className={styles.logo} />
               <LogoLg className={styles.logoDesktop} />
             </Link>
@@ -40,8 +44,8 @@ export default function Header() {
             <div className={styles.menu}>
               <Link href='/about' className={styles.link}>Об агентстве</Link>
               <Link href='/services' className={styles.link}>Услуги</Link>
-              <Link href='/' className={styles.link}>Работы</Link>
-              <Button className={styles.btn}>Связаться с нами</Button>
+              <Link href='/projects' className={styles.link}>Работы</Link>
+              <Button className={styles.btn} link='/contacts'>Связаться с нами</Button>
             </div>
           </div>
         </div>

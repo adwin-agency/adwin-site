@@ -1,6 +1,6 @@
 import TopProjects from '../app/TopProjects'
 import ServicesGroup from './ServicesGroup'
-import { advertisement, development } from '/data/services'
+import services from '/data/services'
 import styles from './Services.module.scss'
 
 export default function Services() {
@@ -8,15 +8,15 @@ export default function Services() {
     <>
       <ServicesGroup
         heading='Услуги'
-        title={advertisement.title}
-        items={advertisement.items}
+        title={services.advertisement.title}
+        items={services.advertisement.items}
       />
       <ServicesGroup
         type='development'
         theme='dark'
-        images={development.images}
-        title={development.title}
-        items={development.items}
+        images={services.development.images}
+        title={services.development.title}
+        items={services.development.items}
       />
       <TopProjects className={styles.topProjects} />
     </>

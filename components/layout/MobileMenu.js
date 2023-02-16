@@ -1,46 +1,47 @@
 import cn from 'classnames'
+import Link from 'next/link'
 import Button from '../ui/Button'
 import TelegramIcon from '/icons/telegram.svg'
 import VkIcon from '/icons/vk.svg'
 import WhatsappIcon from '/icons/whatsapp.svg'
 import styles from './MobileMenu.module.scss'
 
-export default function MobileMenu({ className }) {
+export default function MobileMenu({ className, onLinkClick }) {
   return (
     <div className={cn(styles.el, className)}>
       <div className={styles.main}>
-        <div className="container">
+        <div className='container'>
           <div className={styles.menu}>
             <div className={styles.item}>
-              <a href='/' className={styles.link}>Об агентстве</a>
+              <Link href='/about' className={styles.link} onClick={onLinkClick}>Об агентстве</Link>
             </div>
             <div className={styles.item}>
-              <a href='/' className={styles.link}>Услуги</a>
+              <Link href='/services' className={styles.link} onClick={onLinkClick}>Услуги</Link>
               <div className={styles.submenu}>
                 <div className={styles.subgroup}>
-                  <a href='/' className={styles.sublink}>Лендинги</a>
-                  <a href='/' className={styles.sublink}>Корпоративные сайты</a>
-                  <a href='/' className={styles.sublink}>Интернет-магазины</a>
+                  <Link href='/services/landing' className={styles.sublink} onClick={onLinkClick}>Лендинги</Link>
+                  <Link href='/services/corporate' className={styles.sublink} onClick={onLinkClick}>Корпоративные сайты</Link>
+                  <Link href='/services/store' className={styles.sublink} onClick={onLinkClick}>Интернет-магазины</Link>
                 </div>
                 <div className={styles.subgroup}>
-                  <a href='/' className={styles.sublink}>Комплексная реклама</a>
-                  <a href='/' className={styles.sublink}>Контекстная реклама</a>
-                  <a href='/' className={styles.sublink}>Таргетированная реклама</a>
+                  <Link href='/services/complex' className={styles.sublink} onClick={onLinkClick}>Комплексная реклама</Link>
+                  <Link href='/services/context' className={styles.sublink} onClick={onLinkClick}>Контекстная реклама</Link>
+                  <Link href='/services/target' className={styles.sublink} onClick={onLinkClick}>Таргетированная реклама</Link>
                 </div>
               </div>
             </div>
             <div className={styles.item}>
-              <a href='/' className={styles.link}>Работы</a>
+              <Link href='/projects' className={styles.link} onClick={onLinkClick}>Работы</Link>
             </div>
             <div className={styles.item}>
-              <a href='/' className={styles.link}>Контакты</a>
+              <Link href='/contacts' className={styles.link} onClick={onLinkClick}>Контакты</Link>
             </div>
           </div>
-          <Button className={styles.btn} bordered>Связаться с нами</Button>
+          <Button className={styles.btn} link='/contacts' bordered onClick={onLinkClick}>Связаться с нами</Button>
         </div>
       </div>
       <div className={styles.side}>
-        <div className="container">
+        <div className='container'>
           <div className={styles.contacts}>
             <a href='tel:+7 (812) 999 99 99' className={styles.phone}>+7 (812) 999 99 99</a>
             <a href='mailto:sample@sample.com' className={styles.mail}>sample@sample.com</a>

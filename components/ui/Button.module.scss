@@ -5,10 +5,19 @@
   height: 56rem;
   padding: 0 30rem;
   border-radius: 100rem;
+  border: 2px solid transparent;
   font-size: 16rem;
   line-height: 1;
   background-color: $color-grey-main;
   color: #fff;
+  transition: border-color .3s ease, color .3s ease, background-color .3s ease;
+
+  &:hover {
+    border-color: $color-grey-main;
+    color: $color-grey-main;
+    background-color: $color-grey-paper;
+    opacity: 1;
+  }
 }
 
 .icon {
@@ -46,6 +55,10 @@
 .grey {  
   color: $color-grey-main;
   background-color: $color-grey-paper;
+
+  &:hover {
+    background-color: $color-grey-light;
+  }
 
   &.bordered {
     border: 2px solid $color-grey-main;

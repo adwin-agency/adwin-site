@@ -141,6 +141,7 @@
 
   .btn {
     margin-left: 20rem;
+    min-width: 180rem;
   }
 }
 
@@ -156,5 +157,9 @@
 
   .link {
     font-size: 22rem;
+  }
+
+  .btn {
+    min-width: 262rem;
   }
 }
