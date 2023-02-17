@@ -12,9 +12,9 @@ export default function Footer() {
           <p className={cn('h3', styles.title)}>
             Хотите обсудить проект? 
             <br />
-            Напишите нам в <a href='/' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
+            Напишите нам в <a href='#' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
             <br />
-            или <a href='/' className={cn(styles.link, styles.linkColored)}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></a>
+            или <a href='#' className={cn(styles.link, styles.linkColored)}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></a>
           </p>
           <div className={styles.steps}>
             <p className={styles.step}>1. <br />Созвонимся и обсудим ваш проект</p>

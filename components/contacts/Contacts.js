@@ -17,7 +17,7 @@ export default function Contacts() {
             <div className={styles.group}>
               <p className={styles.address}>
                 {contacts.address}
-                <a href='/' className={styles.mapLink}>
+                <a href='#' className={styles.mapLink}>
                   <DashedArrow className={styles.mapLinkArrow} />
                   <Pin className={styles.mapLinkIcon} />
                   Посмотреть на карте
@@ -39,6 +39,7 @@ export default function Contacts() {
                     key={item.title}
                     href={item.href}
                     target='_blank'
+                    rel='noreferrer'
                     className={styles.socialLink}
                   >
                     {item.title}

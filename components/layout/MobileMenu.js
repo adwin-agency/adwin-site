@@ -46,13 +46,13 @@ export default function MobileMenu({ className, onLinkClick }) {
             <a href='tel:+7 (812) 999 99 99' className={styles.phone}>+7 (812) 999 99 99</a>
             <a href='mailto:sample@sample.com' className={styles.mail}>sample@sample.com</a>
             <div className={styles.social}>
-              <a href='/' className={styles.socialItem}>
+              <a href='#' className={styles.socialItem}>
                 <TelegramIcon className={styles.socialIcon} />
               </a>
-              <a href='/' className={styles.socialItem}>
+              <a href='#' className={styles.socialItem}>
                 <VkIcon className={styles.socialIcon} />
               </a>
-              <a href='/' className={styles.socialItem}>
+              <a href='#' className={styles.socialItem}>
                 <WhatsappIcon className={styles.socialIcon} />
               </a>
             </div>

@@ -9,7 +9,7 @@ export default function ServicesItem({ tag, title, price }) {
       <p className={cn('h3', styles.title)}>{title}</p>
       <div className={styles.side}>
         <p className={cn('h3', styles.price)}>{price}</p>
-        <a href='/' className={styles.link}>Заявка <Arrow className={styles.arrow} /></a>
+        <a href='#' className={styles.link}>Заявка <Arrow className={styles.arrow} /></a>
       </div>
     </div>
   )
