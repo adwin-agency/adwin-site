@@ -1,27 +1,24 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
 import MobileMenu from './MobileMenu'
 import Button from '../ui/Button'
 import Logo from '/icons/logo.svg'
 import LogoLg from '/icons/logo-lg.svg'
+import AppContext from '../../context/AppContext'
 import styles from './Header.module.scss'
 
 export default function Header() {
-  const [activeMobile, setActivemobile] = useState()
+  const headerRef = useRef()
 
-  function closeMobile() {
-    setActivemobile(false)
-  }
-
-  function toggleMobile() {
-    setActivemobile(!activeMobile)
-  }
+  const ctx = useContext(AppContext)
+  const activeMobile = ctx.activeMobileMenu
+  const activeModal = ctx.activeModal
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 1200 && activeMobile) {
-        setActivemobile(false)
+      if (window.innerWidth > 1000 && activeMobile) {
+        ctx.toggleMobileMenu()
       }
     }
 
@@ -30,17 +27,27 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize)
   }, [activeMobile])
 
+  useEffect(() => {
+    if (activeModal) {
+      headerRef.current.style.right = window.innerWidth - document.documentElement.clientWidth + 'px'
+    } else {      
+      setTimeout(() => {
+        headerRef.current.style.right = ''
+      }, 300)
+    }
+  }, [activeModal])
+
   return (
-    <header className={cn(styles.el, { [styles.active]: activeMobile })}>
-      <MobileMenu className={styles.mobile} onLinkClick={closeMobile} />
+    <header className={cn(styles.el, { [styles.active]: activeMobile })} ref={headerRef}>
+      <MobileMenu className={styles.mobile} onLinkClick={ctx.toggleMobileMenu} />
       <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
-            <Link href='/' onClick={closeMobile}>
+            <Link href='/' onClick={ctx.toggleMobileMenu}>
               <Logo className={styles.logo} />
               <LogoLg className={styles.logoDesktop} />
             </Link>
-            <button className={styles.burger} onClick={toggleMobile}></button>
+            <button className={styles.burger} onClick={ctx.toggleMobileMenu}></button>
             <div className={styles.menu}>
               <Link href='/about' className={styles.link}>Об агентстве</Link>
               <Link href='/services' className={styles.link}>Услуги</Link>

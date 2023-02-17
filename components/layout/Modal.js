@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import cn from 'classnames'
 import TextInput from '../ui/TextInput'
 import CheckBox from '../ui/CheckBox'
@@ -10,9 +10,12 @@ import styles from './Modal.module.scss'
 
 export default function Modal() {
   const [activeAbout, setActiveAbout] = useState(false)
+
+  const modalRef = useRef()
   const aboutRef = useRef()
 
   const ctx = useContext(AppContext)
+  const activeModal = ctx.activeModal
 
   function toggleAbout() {
     if (activeAbout) {
@@ -24,8 +27,24 @@ export default function Modal() {
     }
   }
 
+  useEffect(() => {
+    if (activeModal) {      
+      modalRef.current.style.display = 'block'
+
+      setTimeout(() => {
+        modalRef.current.style.opacity = '1'
+      })
+    } else {
+      modalRef.current.style.opacity = ''
+
+      setTimeout(() => {
+        modalRef.current.style.display = ''        
+      }, 300)
+    }
+  }, [activeModal])
+
   return (
-    <div className={cn(styles.el, { [styles.active]: ctx.activeModal })}>
+    <div className={styles.el} ref={modalRef}>
       <div className={styles.area}>
         <div className={styles.overlay} onClick={ctx.toggleModal}></div>
         <div className={styles.box}>
