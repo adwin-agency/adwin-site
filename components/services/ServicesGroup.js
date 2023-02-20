@@ -24,7 +24,7 @@ export default function ServicesGroup({ type, theme, heading, images, title, ite
               <ul className={styles.list}>
                 {items.map(item => (
                   <li key={item.id} className={styles.item}>
-                    <ServicesItem tag={item.tag} title={item.title} price={item.price} />
+                    <ServicesItem id={item.id} tag={item.tag} title={item.title} price={item.price} />
                   </li>
                 ))}
               </ul>

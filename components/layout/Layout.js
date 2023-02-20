@@ -14,6 +14,10 @@ export default function Layout({ children }) {
     setActiveMobileMenu(!activeMobileMenu)
   }
 
+  function closeMobileMenu() {
+    setActiveMobileMenu(false)
+  }
+
   function toggleModal() {
     setActiveModal(!activeModal)
   }
@@ -38,6 +42,7 @@ export default function Layout({ children }) {
     <AppContext.Provider value={{
       activeMobileMenu,
       toggleMobileMenu,
+      closeMobileMenu,
       activeModal,
       toggleModal
     }}>

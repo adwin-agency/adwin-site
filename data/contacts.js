@@ -12,5 +12,6 @@ export default {
       title: 'behance',
       href: '/'
     }
-  ]
+  ],
+  telegram: '/'
 }

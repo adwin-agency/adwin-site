@@ -26,7 +26,7 @@ export default function BrieflyAbout({ className }) {
               <Stats />
             </div>
           </div>
-          <Button className={styles.btn} size='textlg' color='grey' bordered>Узнать больше о нас</Button>
+          <Button className={styles.btn} link='/about' size='textlg' color='grey' bordered>Узнать больше о нас</Button>
         </div>
       </div>
     </section>

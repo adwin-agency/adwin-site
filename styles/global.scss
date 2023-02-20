@@ -50,8 +50,14 @@ button {
   padding: 0;
   border: none;
   font-family: inherit;
+  font-size: inherit;
   background-color: transparent;
+  transition: opacity .3s ease;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 input, textarea {

@@ -3,7 +3,12 @@
   flex-direction: column;
   position: relative;
   padding-left: 44rem;
+  transition: opacity .3s ease;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .input {

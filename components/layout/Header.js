@@ -39,11 +39,11 @@ export default function Header() {
 
   return (
     <header className={cn(styles.el, { [styles.active]: activeMobile })} ref={headerRef}>
-      <MobileMenu className={styles.mobile} onLinkClick={ctx.toggleMobileMenu} />
+      <MobileMenu className={styles.mobile} onLinkClick={ctx.closeMobileMenu} />
       <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
-            <Link href='/' onClick={ctx.toggleMobileMenu}>
+            <Link href='/' onClick={ctx.closeMobileMenu}>
               <Logo className={styles.logo} />
               <LogoLg className={styles.logoDesktop} />
             </Link>

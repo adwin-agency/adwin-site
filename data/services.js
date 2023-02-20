@@ -3,18 +3,18 @@ export default {
     title: 'Реклама',
     items: [
       {
-        id: 'sa1',
+        id: 'complex',
         tag: 'самый обстоятельный подход',
         title: 'Комплексная реклама',
         price: 'от 100 500 ₽'
       },
       {
-        id: 'sa2',
+        id: 'context',
         title: 'Контекстная реклама',
         price: 'от 100 500 ₽'
       },
       {
-        id: 'sa3',
+        id: 'target',
         title: 'Таргетированная реклама',
         price: 'от 100 500 ₽'
       }
@@ -25,17 +25,17 @@ export default {
     title: 'Разработка',
     items: [
       {
-        id: 'sd1',
+        id: 'landing',
         title: 'Лендинг или промо-страница',
         price: 'от 100 500 ₽'
       },
       {
-        id: 'sd2',
+        id: 'corporate',
         title: 'Корпоративный сайт',
         price: 'от 100 500 ₽'
       },
       {
-        id: 'sd3',
+        id: 'store',
         title: 'Интернет-магазин',
         price: 'от 100 500 ₽'
       }

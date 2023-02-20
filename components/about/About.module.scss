@@ -1,7 +1,3 @@
-.el {
-  padding-top: 26rem;
-}
-
 .sideMenu {
   display: none;
 }
@@ -19,14 +15,11 @@
 }
 
 @include media(lg) {
-  .el {
-    padding-top: 60rem;
-  }
-
   .sideMenu {
     display: block;
     position: sticky;
-    top: 122rem;
+    top: 62rem;
+    padding-top: 60rem;
     padding-bottom: 500rem;
   }
 
@@ -44,7 +37,8 @@
 }
 
 @include media(xl) {
-  .el {
+  .sideMenu {
+    top: 90rem;
     padding-top: 82rem;
   }
 

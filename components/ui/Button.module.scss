@@ -50,6 +50,10 @@
 
 .bordered {
   border: 2px solid $color-grey-paper;
+
+  &:hover {
+    border-color: $color-grey-paper;
+  }
 }
 
 .grey {  
@@ -67,6 +71,12 @@
 
 .magenta {
   background-color: $color-magenta;
+
+  &:hover {
+    border-color: transparent;
+    color: #fff;
+    background-color: #E24466;
+  }
 }
 
 @include media(lg) {

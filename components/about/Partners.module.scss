@@ -1,3 +1,7 @@
+.el {
+  padding-top: 26rem;
+}
+
 .heading {
   font-weight: 400;
   font-size: 34rem;
@@ -36,6 +40,7 @@
     grid-template-columns: 48% 1fr;
     grid-gap: 40rem 34rem;
     align-items: start;
+    padding-top: 60rem;
   }
 
   .heading {
@@ -58,6 +63,7 @@
   .el {
     grid-template-columns: 1fr 38%;
     grid-gap: 96rem 50rem;
+    padding-top: 82rem;
   }
 
   .heading {
