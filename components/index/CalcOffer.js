@@ -10,7 +10,7 @@ export default function CalcOffer({className}) {
   return (
     <section className={cn(styles.el, className)}>
       <div className='container'>
-        <div className={styles.row} onClick={ctx.toggleModal}>
+        <div className={styles.row} onClick={ctx.openModal('request')}>
           <p className={styles.title}>Хотите, <br />рассчитаем ваш проект?</p>
           <ArrowIcon className={styles.icon} />
         </div>

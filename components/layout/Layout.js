@@ -7,7 +7,8 @@ import AppContext from '../../context/AppContext'
 
 export default function Layout({ children }) {
   const [activeMobileMenu, setActiveMobileMenu] = useState(false)
-  const [activeModal, setActiveModal] = useState(false)
+  const [activeModal, setActiveModal] = useState(null)
+  const [closingModal, setClosingModal] = useState(false)
   const [lockedScroll, setLockedScroll] = useState(false)
 
   function toggleMobileMenu() {
@@ -18,8 +19,19 @@ export default function Layout({ children }) {
     setActiveMobileMenu(false)
   }
 
-  function toggleModal() {
-    setActiveModal(!activeModal)
+  function openModal(id) {
+    return function () {
+      setActiveModal(id)
+    }
+  }
+
+  function closeModal() {
+    setClosingModal(true)
+
+    setTimeout(() => {
+      setClosingModal(false)
+      setActiveModal(null)
+    }, 300)
   }
 
   useEffect(() => {
@@ -29,14 +41,14 @@ export default function Layout({ children }) {
       setLockedScroll(true)
     }
 
-    if (!activeMobileMenu && !activeModal && lockedScroll) {
+    if (!activeMobileMenu && closingModal && lockedScroll) {
       setTimeout(() => {
         document.body.style.paddingRight = ''
         document.body.style.overflow = ''
         setLockedScroll(false)
       }, 300)
     }
-  }, [activeMobileMenu, activeModal])
+  }, [activeMobileMenu, activeModal, closingModal])
 
   return (
     <AppContext.Provider value={{
@@ -44,7 +56,9 @@ export default function Layout({ children }) {
       toggleMobileMenu,
       closeMobileMenu,
       activeModal,
-      toggleModal
+      closingModal,
+      openModal,
+      closeModal
     }}>
       <Header />
       <div className={styles.main}>

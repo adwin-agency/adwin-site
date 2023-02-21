@@ -27,7 +27,7 @@ export default function SideMenu({ items, modal }) {
       {items.map(item => (
         <a key={item.id} href={`#${item.id}`} className={cn(styles.link, { [styles.active]: activeLink === item.id })} onClick={handleClick(item.id)}>{item.title}</a>
       ))}
-      {modal && <button className={cn(styles.link, styles.btn)} onClick={ctx.toggleModal}>Работать вместе <Arrow className={styles.icon} /></button>}
+      {modal && <button className={cn(styles.link, styles.btn)} onClick={ctx.openModal('request')}>Работать вместе <Arrow className={styles.icon} /></button>}
     </div>
   )
 }

@@ -12,8 +12,7 @@ export default function Header() {
   const headerRef = useRef()
 
   const ctx = useContext(AppContext)
-  const activeMobile = ctx.activeMobileMenu
-  const activeModal = ctx.activeModal
+  const {activeMobile, activeModal, closingModal} = ctx
 
   useEffect(() => {
     function handleResize() {
@@ -28,14 +27,14 @@ export default function Header() {
   }, [activeMobile])
 
   useEffect(() => {
-    if (activeModal) {
-      headerRef.current.style.right = window.innerWidth - document.documentElement.clientWidth + 'px'
-    } else {      
+    if (closingModal) {
       setTimeout(() => {
         headerRef.current.style.right = ''
       }, 300)
+    } else if (activeModal) {
+      headerRef.current.style.right = window.innerWidth - document.documentElement.clientWidth + 'px'
     }
-  }, [activeModal])
+  }, [activeModal, closingModal])
 
   return (
     <header className={cn(styles.el, { [styles.active]: activeMobile })} ref={headerRef}>

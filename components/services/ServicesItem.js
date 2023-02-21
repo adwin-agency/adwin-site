@@ -14,7 +14,7 @@ export default function ServicesItem({ id, tag, title, price }) {
       <Link href={`/services/${id}`} className={cn('h3', styles.title)}>{title}</Link>
       <div className={styles.side}>
         <p className={cn('h3', styles.price)}>{price}</p>
-        <button className={styles.link} onClick={ctx.toggleModal}>Заявка <Arrow className={styles.arrow} /></button>
+        <button className={styles.link} onClick={ctx.openModal('request')}>Заявка <Arrow className={styles.arrow} /></button>
       </div>
     </div>
   )

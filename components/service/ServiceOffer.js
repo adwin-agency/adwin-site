@@ -11,7 +11,7 @@ export default function ServiceOffer() {
       <div className='container'>
         <div className={styles.main}>
           <p className={styles.title}>Оставьте заявку и получите медиа-план продвижения БЕСПЛАТНО</p>
-          <Button className={styles.btn} size='xl' bordered icon='arrow' onClick={ctx.toggleModal}>Хочу медиа-план</Button>
+          <Button className={styles.btn} size='xl' bordered icon='arrow' onClick={ctx.openModal('request')}>Хочу медиа-план</Button>
         </div>
       </div>
     </section>

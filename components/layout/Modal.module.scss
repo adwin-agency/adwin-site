@@ -30,13 +30,29 @@
 
 .box {
   position: relative;
-  width: 100%;
-  max-width: 1160rem;
-  padding: 30rem 20rem;
+  max-width: 100%;
   background-color: $color-grey-paper;
 }
 
+.request {
+  width: 1160rem;
+  max-width: 100%;
+  padding: 30rem 20rem;
+}
+
+.callback {
+  width: 500rem;
+  max-width: 100%;
+  padding: 30rem 20rem;
+}
+
 .form {
+  .disabled {
+    pointer-events: none;
+  }
+}
+
+.fields {
   margin-top: 30rem;
 }
 
@@ -168,27 +184,98 @@
   }
 }
 
+.inner {
+  position: relative;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-grey-paper;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.successIcon {
+  width: 78rem;
+  height: 78rem;
+}
+
+.successTitle {
+  margin-top: 25rem;
+  font-size: 26rem;
+  line-height: 1;
+}
+
+.successBtn {
+  margin-top: 36rem;
+  width: 100%;
+}
+
 @include media(lg) {
   .area {
     padding: 50rem;
   }
 
-  .box {
+  .request {
     padding: 90rem 64rem 45rem;
+
+    .fields {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50rem 65rem;
+      margin-top: 50rem;
+    }
+
+    .field {
+      margin-bottom: 0;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .btn {
+      order: 1;
+      width: 300rem;
+    }
+
+    .note {
+      margin-top: 0;
+      margin-right: 30rem;
+      max-width: 282rem;
+      text-align: right;
+    }
   }
 
-  .form {
-    margin-top: 50rem;
-  }
+  .callback {
+    padding: 110rem 50rem 100rem;
 
-  .fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50rem 65rem;
-  }
+    .field {
+      margin-bottom: 44rem;
+    }
 
-  .field {
-    margin-bottom: 0;
+    .note {
+      margin-top: 22rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 282rem;
+    }
   }
 
   .expand {
@@ -232,21 +319,12 @@
     margin-top: 40rem;
   }
 
-  .actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  .successIcon {
+    width: 116rem;
+    height: 118rem;
   }
 
-  .btn {
-    order: 1;
-    width: 300rem;
-  }
-
-  .note {
-    margin-top: 0;
-    margin-right: 30rem;
-    max-width: 282rem;
-    text-align: right;
+  .successTitle {
+    font-size: 36rem;
   }
 }

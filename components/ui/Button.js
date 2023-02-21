@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Arrow from '/icons/arrow.svg'
 import styles from './Button.module.scss'
 
-export default function Button({ className, link, mod, size, color, bordered, icon, onClick, children }) {
+export default function Button({ className, link, mod, size, color, bordered, type, icon, onClick, children }) {
   if (link) {
     return (
       <Link
@@ -38,6 +38,7 @@ export default function Button({ className, link, mod, size, color, bordered, ic
         },
         className
       )}
+      type={type || 'button'}
       onClick={onClick}
     >
       {children}

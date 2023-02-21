@@ -1,4 +1,6 @@
+import { useContext } from 'react'
 import cn from 'classnames'
+import AppContext from '../../context/AppContext'
 import Button from '../ui/Button'
 import ContactForm from '../app/ContactForm'
 import Arrow from '/icons/arrow.svg'
@@ -24,6 +26,8 @@ export default function Contacts() {
     }
   }
 
+  const ctx = useContext(AppContext)
+
   return (
     <section>
       <div className={styles.main}>
@@ -45,7 +49,7 @@ export default function Contacts() {
             <div className={styles.group}>
               <a href={`tel:${contacts.phone}`} className={styles.phone}>{contacts.phone}</a>
               <p className={styles.time}>{contacts.time}</p>
-              <Button className={styles.btn} size='lg' color='grey' bordered>Перезвоните мне</Button>
+              <Button className={styles.btn} size='lg' color='grey' bordered onClick={ctx.openModal('callback')}>Перезвоните мне</Button>
             </div>
             <div className={styles.group}>
               <a href={`mailto:${contacts.email}`} className={styles.mail}>{contacts.email}</a>

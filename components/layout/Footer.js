@@ -20,7 +20,7 @@ export default function Footer() {
             <br />
             Напишите нам в <a href={contacts.telegram} target='_blank' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
             <br />
-            или <button className={cn(styles.link, styles.linkColored)} onClick={ctx.toggleModal}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
+            или <button className={cn(styles.link, styles.linkColored)} onClick={ctx.openModal('request')}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
           </p>
           <div className={styles.steps}>
             <p className={styles.step}>1. <br />Созвонимся и обсудим ваш проект</p>
