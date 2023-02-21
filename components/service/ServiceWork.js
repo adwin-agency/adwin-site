@@ -20,7 +20,7 @@ export default function ServiceWork({ category }) {
   }
 
   return (
-    <section className={styles.el}>
+    <section className={styles.el} id='work'>
       <div className={styles.top}>
         <h2 className={cn('h2', styles.heading)}>Как проходит работа над проектом</h2>
         <p className={styles.desc}>Срок разработки проекта: <br /><span>от 20 дней</span></p>

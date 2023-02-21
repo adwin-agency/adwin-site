@@ -5,7 +5,7 @@ export default function ServiceTools({ category }) {
   const items = tools[category]
 
   return (
-    <section className={styles.el}>
+    <section className={styles.el} id='tools'>
       <div className={styles.top}>
         <h2 className='h2'>Используемые инструменты</h2>
         <p className={styles.desc}>Подбираем стек разработки исходя из потребностей клиента и задач ресурса</p>

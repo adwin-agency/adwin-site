@@ -1,0 +1,56 @@
+<svg width="426" height="494" viewBox="0 0 426 494" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="11" y="412" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="411" width="74" height="74" rx="7" transform="rotate(90 417 411)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="412" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="411" width="75" height="74" rx="7" transform="rotate(90 251 411)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="411" width="75" height="74" rx="7" transform="rotate(90 334 411)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="11" y="330" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="329" width="74" height="74" rx="7" transform="rotate(90 417 329)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="330" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="329" width="75" height="74" rx="7" transform="rotate(90 251 329)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="329" width="75" height="74" rx="7" transform="rotate(90 334 329)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="11" y="248" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="247" width="74" height="74" rx="7" transform="rotate(90 417 247)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="248" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="247" width="75" height="74" rx="7" transform="rotate(90 251 247)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="247" width="75" height="74" rx="7" transform="rotate(90 334 247)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="11" y="166" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="165" width="74" height="74" rx="7" transform="rotate(90 417 165)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="166" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="165" width="75" height="74" rx="7" transform="rotate(90 251 165)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="165" width="75" height="74" rx="7" transform="rotate(90 334 165)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="11" y="84" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="83" width="74" height="74" rx="7" transform="rotate(90 417 83)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="84" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="83" width="75" height="74" rx="7" transform="rotate(90 251 83)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="83" width="75" height="74" rx="7" transform="rotate(90 334 83)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="11" y="2" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="417" y="1" width="74" height="74" rx="7" transform="rotate(90 417 1)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="94" y="2" width="75" height="74" rx="7" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="251" y="1" width="75" height="74" rx="7" transform="rotate(90 251 1)" stroke="#DBDBDB" stroke-width="2"/>
+<rect x="334" y="1" width="75" height="74" rx="7" transform="rotate(90 334 1)" stroke="#DBDBDB" stroke-width="2"/>
+<mask id="path-31-inside-1_104_60" fill="white">
+<path d="M426 41L426 486C426 490.418 422.418 494 418 494L8.00001 494C3.58173 494 1.08729e-05 490.418 1.1066e-05 486L3.05176e-05 41L426 41Z"/>
+</mask>
+<path d="M428 41L428 486C428 491.523 423.523 496 418 496L418 492C421.314 492 424 489.314 424 486L424 41L428 41ZM8.00001 496C2.47716 496 -1.99999 491.523 -1.99999 486L-1.99997 41L2.00003 41L2.00001 486C2.00001 489.314 4.6863 492 8.00001 492L8.00001 496ZM3.05176e-05 41L426 41L3.05176e-05 41ZM428 486C428 491.523 423.523 496 418 496L8.00001 496C2.47716 496 -1.99999 491.523 -1.99999 486L2.00001 486C2.00001 489.314 4.6863 492 8.00001 492L418 492C421.314 492 424 489.314 424 486L428 486Z" fill="#1B1A1A" mask="url(#path-31-inside-1_104_60)"/>
+<rect x="258.5" y="412.5" width="74" height="73" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="258.5" y="329.5" width="74" height="73" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="341.5" y="412.5" width="74" height="73" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="341.5" y="329.5" width="74" height="73" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="94.5" y="331.5" width="73" height="74" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="11.5" y="248.5" width="73" height="74" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="177.5" y="331.5" width="73" height="74" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="94.5" y="248.5" width="73" height="74" rx="6.5" stroke="#D2113A" stroke-width="3"/>
+<rect x="260.5" y="247.5" width="73" height="74" rx="6.5" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="177.5" y="247.5" width="73" height="74" rx="6.5" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="343.5" y="247.5" width="73" height="74" rx="6.5" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="260.5" y="164.5" width="73" height="74" rx="6.5" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="85.5" y="329.5" width="73" height="73" rx="6.5" transform="rotate(90 85.5 329.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="251.5" y="411.5" width="73" height="73" rx="6.5" transform="rotate(90 251.5 411.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="85.5" y="411.5" width="74" height="73" rx="6.5" transform="rotate(90 85.5 411.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="168.5" y="411.5" width="74" height="73" rx="6.5" transform="rotate(90 168.5 411.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="85.5" y="82.5" width="73" height="73" rx="6.5" transform="rotate(90 85.5 82.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="251.5" y="164.5" width="73" height="73" rx="6.5" transform="rotate(90 251.5 164.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="85.5" y="164.5" width="74" height="73" rx="6.5" transform="rotate(90 85.5 164.5)" stroke="#1B1A1A" stroke-width="3"/>
+<rect x="168.5" y="164.5" width="74" height="73" rx="6.5" transform="rotate(90 168.5 164.5)" stroke="#1B1A1A" stroke-width="3"/>
+</svg>

@@ -5,7 +5,7 @@ import styles from './ServiceProjects.module.scss'
 
 export default function ServiceProjects() {
   return (
-    <section className={styles.el}>
+    <section className={styles.el} id='projects'>
       <h2 className='h2'>Реализованные проекты</h2>
       <div className={styles.items}>
         <ProjectCard
@@ -23,7 +23,7 @@ export default function ServiceProjects() {
           desc={projects[1].desc}
         />
       </div>
-      <Button className={styles.btn} color='grey' bordered>Больше проектов</Button>
+      <Button className={styles.btn} link='/projects' color='grey' bordered>Больше проектов</Button>
     </section>
   )
 }

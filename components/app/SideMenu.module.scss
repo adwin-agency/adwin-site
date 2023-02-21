@@ -13,3 +13,16 @@
     font-weight: 600;
   }
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: $color-magenta;
+}
+
+.icon {
+  margin-left: 8rem;
+  width: 12rem;
+  height: 12rem;
+  fill: currentColor;
+}

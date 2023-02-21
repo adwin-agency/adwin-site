@@ -11,7 +11,7 @@ export default function ServiceMain({ children, category }) {
         <div className='row'>
           <div className='col col-6 col-lg-2'>
             <div className={styles.sideMenu}>
-              <SideMenu items={menuItems} />
+              <SideMenu items={menuItems} modal />
             </div>
           </div>
           <div className='col col-6 col-lg-4'>{children}</div>

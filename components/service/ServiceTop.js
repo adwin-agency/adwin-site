@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import details from '/data/details'
 import styles from './ServiceTop.module.scss'
 
@@ -5,7 +6,7 @@ export default function ServiceTop({ type }) {
   const { heading, desc, image } = details[type]
   
   return (
-    <section className={styles.el}>
+    <section className={cn(styles.el, styles[type])}>
       <div className='container'>
         <div className={styles.main}>
           <div className={styles.info}>

@@ -2,11 +2,11 @@ import cn from 'classnames'
 import features from '/data/features'
 import styles from './ServiceFeatures.module.scss'
 
-export default function ServiceFeatures({ type }) {
+export default function ServiceFeatures({ id, type }) {
   const { heading, items } = features[type]
   
   return (
-    <section className={styles.el}>
+    <section className={styles.el} id='features'>
       <h2 className={cn('h2', styles.heading)}>{heading}</h2>
       <div className={styles.items}>
         {items.map(item => (

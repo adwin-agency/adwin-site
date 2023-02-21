@@ -1,11 +1,11 @@
 import methods from '/data/methods'
 import styles from './ServiceMethods.module.scss'
 
-export default function ServiceMethods({ category }) {
+export default function ServiceMethods({ id, category }) {
   const items = methods[category]
 
   return (
-    <section className={styles.el}>
+    <section className={styles.el} id='methods'>
       <h2 className='h2'>Метод работы</h2>
       <div className={styles.list}>
         {items.map((item, index) => (
