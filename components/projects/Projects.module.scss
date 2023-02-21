@@ -23,6 +23,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: color .3s ease, background-color .3s ease;
 
   &:last-child {
     margin-right: 0;
@@ -30,6 +31,10 @@
 
   span {
     color: $color-magenta;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 
   &.active {

@@ -1,11 +1,10 @@
 import cn from 'classnames'
 import ProjectCard from './ProjectCard'
-import projects from '/data/projects'
 import styles from './ProjectsList.module.scss'
 
-export default function ProjectsList({ className, bordered }) {
+export default function ProjectsList({ className, bordered, items }) {
 
-  const rowItems = projects.reduce((acc, curr, index) => {
+  const rowItems = items.reduce((acc, curr, index) => {
     if (index % 2 === 0) {
       acc.push([curr])
     } else {
