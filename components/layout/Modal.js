@@ -31,7 +31,15 @@ export default function Modal() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    setSuccess(true)
+
+    if (activeModal === 'request') {
+      ctx.closeModal()
+      setTimeout(() => ctx.openPopup(), 300)
+    }
+
+    if (activeModal === 'callback') {
+      setSuccess(true)
+    }
   }
 
   useEffect(() => {
@@ -59,7 +67,7 @@ export default function Modal() {
         <div className={styles.box}>
           {activeModal === 'request' && (
             <div className={styles.request}>
-              <form className={styles.form}>
+              <form className={styles.form} onSubmit={handleSubmit}>
                 <p className='h3'>Оставить заявку</p>
                 <div className={styles.fields}>
                   <TextInput className={styles.field} name='name' placeholder='Ваше имя' />

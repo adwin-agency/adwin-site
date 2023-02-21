@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react'
+import AppContext from '../../context/AppContext'
 import Header from './Header'
 import Footer from './Footer'
-import styles from './Layout.module.scss'
 import Modal from './Modal'
-import AppContext from '../../context/AppContext'
+import Popup from './Popup'
+import styles from './Layout.module.scss'
 
 export default function Layout({ children }) {
   const [activeMobileMenu, setActiveMobileMenu] = useState(false)
   const [activeModal, setActiveModal] = useState(null)
   const [closingModal, setClosingModal] = useState(false)
   const [lockedScroll, setLockedScroll] = useState(false)
+  const [activePopup, setActivePopup] = useState(false)
 
   function toggleMobileMenu() {
     setActiveMobileMenu(!activeMobileMenu)
@@ -32,6 +34,14 @@ export default function Layout({ children }) {
       setClosingModal(false)
       setActiveModal(null)
     }, 300)
+  }
+
+  function openPopup() {
+    setActivePopup(true)
+  }
+
+  function closePopup() {
+    setActivePopup(false)
   }
 
   useEffect(() => {
@@ -58,7 +68,10 @@ export default function Layout({ children }) {
       activeModal,
       closingModal,
       openModal,
-      closeModal
+      closeModal,
+      activePopup,
+      openPopup,
+      closePopup
     }}>
       <Header />
       <div className={styles.main}>
@@ -66,6 +79,7 @@ export default function Layout({ children }) {
       </div>
       <Footer />
       <Modal />
+      <Popup />
     </AppContext.Provider>
   )
 }

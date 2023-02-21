@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import AppContext from '../../context/AppContext'
 import Button from '../ui/Button'
 import CheckBox from '../ui/CheckBox'
 import FileInput from '../ui/FileInput'
@@ -5,13 +7,21 @@ import TextInput from '../ui/TextInput'
 import styles from './ContactForm.module.scss'
 
 export default function ContactForm() {
+  const ctx = useContext(AppContext)
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    e.target.reset()
+    ctx.openPopup()
+  }
+
   return (
     <section className={styles.el}>
       <div className={styles.side}>
         <h3 className='h3'>Если у вас остались вопросы или хотите обсудить проект — напишите нам :)</h3>
       </div>
       <div className={styles.main}>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.contacts}>
             <p className={styles.title}>Ваши контакты</p>
             <div className={styles.fields}>
@@ -43,7 +53,7 @@ export default function ContactForm() {
             </div>
           </div>
           <div className={styles.actions}>
-            <Button className={styles.btn} mod='send' color='magenta'>Отправить</Button>
+            <Button className={styles.btn} mod='send' color='magenta' type='submit'>Отправить</Button>
             <p className={styles.note}>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
           </div>
         </form>
