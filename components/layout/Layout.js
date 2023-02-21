@@ -37,7 +37,12 @@ export default function Layout({ children }) {
   }
 
   function openPopup() {
-    setActivePopup(true)
+    if (activePopup) {
+      setActivePopup(false)
+      setTimeout(() => setActivePopup(true), 300)
+    } else {
+      setActivePopup(true)
+    }
   }
 
   function closePopup() {

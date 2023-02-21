@@ -2,18 +2,21 @@
   display: flex;
   align-items: center;
   position: fixed;
-  left: 50%;
+  left: 0;
   bottom: 32rem;
+  right: 0;
+  margin: auto;
   width: calc(100% - 40px);
   border: 1px solid $color-grey-main;
   border-radius: 1000rem;
   padding: 16rem 30rem;
   background-color: #fff;
-  transform: translate(-50%, 200%);
+  transform: translate(0, 200%);
   transition: transform .3s ease;
+  z-index: 10;
 
   &.active {
-    transform: translate(-50%, 0);
+    transform: translate(0, 0);
   }
 }
 
@@ -61,7 +64,7 @@
 
 @include media(lg) {
   .el {
-    width: auto;
+    width: 478rem;
   }
 
   .icon {
