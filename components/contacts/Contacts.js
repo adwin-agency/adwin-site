@@ -8,6 +8,22 @@ import contacts from '/data/contacts'
 import styles from './Contacts.module.scss'
 
 export default function Contacts() {
+  let status = {
+    ok: true,
+    title: 'Сейчас работаем'
+  }
+
+  const date = new Date()
+  const day = date.getDay()
+  const hours = date.getHours()
+
+  if (day < 1 || day > 5 || hours < 9 || hours > 17) {
+    status = {
+      ok: false,
+      title: 'В офисе никого нет'
+    }
+  }
+
   return (
     <section>
       <div className={styles.main}>
@@ -17,14 +33,14 @@ export default function Contacts() {
             <div className={styles.group}>
               <p className={styles.address}>
                 {contacts.address}
-                <a href='#' className={styles.mapLink}>
+                <a href='https://yandex.ru/maps/-/CCUGiPxRlC' target='_blank' className={styles.mapLink}>
                   <DashedArrow className={styles.mapLinkArrow} />
                   <Pin className={styles.mapLinkIcon} />
                   Посмотреть на карте
                 </a>
               </p>
               <p className={styles.time}>{contacts.time}</p>
-              <p className={styles.status}>Сейчас работаем</p>
+              <p className={cn(styles.status, { [styles.ok]: status.ok })}>{status.title}</p>
             </div>
             <div className={styles.group}>
               <a href={`tel:${contacts.phone}`} className={styles.phone}>{contacts.phone}</a>
