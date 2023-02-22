@@ -82,7 +82,7 @@ export default function Layout({ children }) {
       <div className={styles.main}>
         {children}
       </div>
-      <Footer />
+      <Footer className={styles.footer} />
       <Modal />
       <Popup />
     </AppContext.Provider>

@@ -10,7 +10,8 @@ import LogoLg from '/icons/logo-lg.svg'
 import styles from './Header.module.scss'
 
 export default function Header() {
-  const [scrolling, setScrolling] = useState(true)
+  const [fixedHeader, setFixedHeader] = useState(false)
+  const [activeHeader, setActiveHeader] = useState(false)
 
   const headerRef = useRef()
 
@@ -31,24 +32,23 @@ export default function Header() {
     function handleResize() {
       if (window.innerWidth > media.lg) {
         ctx.closeMobileMenu()
-      }      
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  useEffect(() => {
-    function handleScroll() {
-      if (window.innerWidth > media.lg) {
-        setScrolling(window.scrollY > 0)
       }
     }
 
+    function handleScroll() {
+      if (window.innerWidth > media.lg) {
+        setFixedHeader(window.scrollY > window.innerHeight / 2)
+        setActiveHeader(window.scrollY > window.innerHeight)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
     window.addEventListener('scroll', handleScroll)
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', handleScroll)
+    }
   }, [])
 
   return (
@@ -62,7 +62,7 @@ export default function Header() {
               <LogoLg className={styles.logoDesktop} />
             </Link>
             <button className={styles.burger} onClick={ctx.toggleMobileMenu}></button>
-            <div className={cn(styles.menu, { [styles.scroll]: scrolling })}>
+            <div className={cn(styles.menu, { [styles.fixed]: fixedHeader, [styles.active]: activeHeader })}>
               <Link href='/about' className={styles.link}>Об агентстве</Link>
               <Link href='/services' className={styles.link}>Услуги</Link>
               <Link href='/projects' className={styles.link}>Работы</Link>

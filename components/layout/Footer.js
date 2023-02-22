@@ -8,11 +8,11 @@ import AppContext from '../../context/AppContext'
 import contacts from '/data/contacts'
 import styles from './Footer.module.scss'
 
-export default function Footer() {
+export default function Footer({ className }) {
   const ctx = useContext(AppContext)
 
   return (
-    <footer className={styles.el}>
+    <footer className={cn(className, styles.el)}>
       <div className='container'>
         <div className={styles.main}>
           <p className={cn('h3', styles.title)}>

@@ -129,18 +129,22 @@
   .menu {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 1rem;
-    right: $container-padding;
     padding: 1rem;
     padding-left: 40rem;
     border-radius: 100rem;
     border: 1px solid transparent;
-    background-color: $color-grey-paper;
-    transition: border-color .3s ease;
+    background-color: $color-grey-paper;    
 
-    &.scroll {
-      border-color: $color-grey-light;
+    &.fixed {
+      position: fixed;
+      top: -100rem;
+      right: $container-padding;
+      border-color: $color-grey-main;
+      transition: transform .3s ease;
+    }
+
+    &.active {
+      transform: translateY(110rem);
     }
   }
 
@@ -168,10 +172,12 @@
   }
 
   .menu {
-    top: 2rem;
-    right: $container-padding-xl;
     padding: 2rem;
     padding-left: 50rem;
+
+    &.fixed {
+      right: $container-padding-xl;
+    }
   }
 
   .link {

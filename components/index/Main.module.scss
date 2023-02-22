@@ -8,7 +8,7 @@
 
 .brieflyAbout {
   margin-top: 62rem;
-  margin-bottom: 50rem;
+  padding-bottom: 50rem;
 }
 
 @include media(lg) {
@@ -22,7 +22,7 @@
 
   .brieflyAbout {
     margin-top: 70rem;
-    margin-bottom: 100rem;
+    padding-bottom: 100rem;
   }
 }
 
@@ -37,6 +37,6 @@
 
   .brieflyAbout {
     margin-top: 100rem;
-    margin-bottom: 210rem;
+    padding-bottom: 210rem;
   }
 }
