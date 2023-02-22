@@ -138,7 +138,8 @@
     &.fixed {
       position: fixed;
       top: -100rem;
-      right: $container-padding;
+      right: 0;
+      margin-right: $container-padding;
       border-color: $color-grey-main;
       transition: transform .3s ease;
     }
@@ -176,7 +177,7 @@
     padding-left: 50rem;
 
     &.fixed {
-      right: $container-padding-xl;
+      margin-right: $container-padding-xl;
     }
 
     &.active {

@@ -14,6 +14,7 @@ export default function Header() {
   const [activeHeader, setActiveHeader] = useState(false)
 
   const headerRef = useRef()
+  const menuRef = useRef()
 
   const ctx = useContext(AppContext)
   const { activeModal, closingModal } = ctx
@@ -22,9 +23,11 @@ export default function Header() {
     if (closingModal) {
       setTimeout(() => {
         headerRef.current.style.right = ''
+        menuRef.current.style.right = ''
       }, 300)
     } else if (activeModal) {
       headerRef.current.style.right = window.innerWidth - document.documentElement.clientWidth + 'px'
+      menuRef.current.style.right = window.innerWidth - document.documentElement.clientWidth + 'px'
     }
   }, [activeModal, closingModal])
 
@@ -62,7 +65,7 @@ export default function Header() {
               <LogoLg className={styles.logoDesktop} />
             </Link>
             <button className={styles.burger} onClick={ctx.toggleMobileMenu}></button>
-            <div className={cn(styles.menu, { [styles.fixed]: fixedHeader, [styles.active]: activeHeader })}>
+            <div className={cn(styles.menu, { [styles.fixed]: fixedHeader, [styles.active]: activeHeader })} ref={menuRef}>
               <Link href='/about' className={styles.link}>Об агентстве</Link>
               <Link href='/services' className={styles.link}>Услуги</Link>
               <Link href='/projects' className={styles.link}>Работы</Link>
