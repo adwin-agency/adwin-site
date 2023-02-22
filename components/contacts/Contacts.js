@@ -37,7 +37,7 @@ export default function Contacts() {
             <div className={styles.group}>
               <p className={styles.address}>
                 {contacts.address}
-                <a href='https://yandex.ru/maps/-/CCUGiPxRlC' target='_blank' className={styles.mapLink}>
+                <a href='https://yandex.ru/maps/-/CCUGiPxRlC' target='_blank' rel='noreferrer' className={styles.mapLink}>
                   <DashedArrow className={styles.mapLinkArrow} />
                   <Pin className={styles.mapLinkIcon} />
                   Посмотреть на карте

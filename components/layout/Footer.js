@@ -18,7 +18,7 @@ export default function Footer({ className }) {
           <p className={cn('h3', styles.title)}>
             Хотите обсудить проект?
             <br />
-            Напишите нам в <a href={contacts.telegram} target='_blank' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
+            Напишите нам в <a href={contacts.telegram} target='_blank' rel='noreferrer' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
             <br />
             или <button className={cn(styles.link, styles.linkColored)} onClick={ctx.openModal('request')}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
           </p>
@@ -49,7 +49,7 @@ export default function Footer({ className }) {
               <p className={styles.contactTitle}>Давайте дружить</p>
               <div className={styles.contactDesc}>
                 {contacts.social.map(item => (
-                  <a key={item.title} href={item.href} className={styles.social} target='_blank'>{item.title}</a>
+                  <a key={item.title} href={item.href} className={styles.social} target='_blank' rel='noreferrer'>{item.title}</a>
                 ))}
               </div>
             </div>
