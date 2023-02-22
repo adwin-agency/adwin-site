@@ -56,7 +56,7 @@ export default function Layout({ children }) {
       setLockedScroll(true)
     }
 
-    if (!activeMobileMenu && closingModal && lockedScroll) {
+    if ((!activeMobileMenu || closingModal) && lockedScroll) {
       setTimeout(() => {
         document.body.style.paddingRight = ''
         document.body.style.overflow = ''

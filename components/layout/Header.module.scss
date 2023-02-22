@@ -104,6 +104,10 @@
 }
 
 @include media(lg) {
+  .el {
+    position: absolute;
+  }
+
   .row {
     height: $header-height-lg;
   }
@@ -125,7 +129,19 @@
   .menu {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: $container-padding;
+    padding: 1rem;
     padding-left: 40rem;
+    border-radius: 100rem;
+    border: 1px solid transparent;
+    background-color: $color-grey-paper;
+    transition: border-color .3s ease;
+
+    &.scroll {
+      border-color: $color-grey-light;
+    }
   }
 
   .link {
@@ -149,6 +165,13 @@
   .logoDesktop {
     width: 167rem;
     height: 56rem;
+  }
+
+  .menu {
+    top: 2rem;
+    right: $container-padding-xl;
+    padding: 2rem;
+    padding-left: 50rem;
   }
 
   .link {
