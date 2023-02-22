@@ -1,7 +1,13 @@
+import Head from 'next/head'
 import Service from '../../components/service/Service'
 
 export default function ComplexPage() {
   return (
-    <Service category='advertisement' type='complex' />
+    <>
+      <Head>
+        <title>Комплексная реклама</title>
+      </Head>
+      <Service category='advertisement' type='complex' />
+    </>
   )
 }

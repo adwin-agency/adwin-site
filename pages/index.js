@@ -1,7 +1,13 @@
-import Main from '../components/index/Main'
+import Head from 'next/head'
+import Home from '../components/index/Home'
 
-export default function MainPage() {
+export default function HomePage() {
   return (
-    <Main />
+    <>
+      <Head>
+        <title>Главная</title>
+      </Head>
+      <Home />
+    </>
   )
 }

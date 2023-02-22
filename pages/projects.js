@@ -1,7 +1,13 @@
+import Head from 'next/head'
 import Projects from '../components/projects/Projects'
 
 export default function ProjectsPage() {
   return (
-    <Projects />
+    <>
+      <Head>
+        <title>Работы</title>
+      </Head>
+      <Projects />
+    </>
   )
 }

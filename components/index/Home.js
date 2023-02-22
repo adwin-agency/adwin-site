@@ -2,9 +2,9 @@ import TopProjects from '../app/TopProjects'
 import BrieflyAbout from './BrieflyAbout'
 import CalcOffer from './CalcOffer'
 import Intro from './Intro'
-import styles from './Main.module.scss'
+import styles from './Home.module.scss'
 
-export default function Main() {
+export default function Home() {
   return (
     <>
       <Intro />

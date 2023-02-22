@@ -1,4 +1,6 @@
 const nextConfig = {
+  trailingSlash: true,
+
   sassOptions: {
     additionalData: '@import "styles/imports.scss";'
   },
