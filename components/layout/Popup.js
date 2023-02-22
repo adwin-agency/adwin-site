@@ -22,7 +22,9 @@ export default function Popup() {
 
   return (
     <div className={cn(styles.el, { [styles.active]: ctx.activePopup })} ref={popupRef}>
-      <SendSm className={styles.icon} />
+      <div className={styles.box}>
+        <SendSm className={styles.icon} />
+      </div>
       <p className={styles.title}>Заявка отправлена. <br />Менеджер перезвонит вам в ближайшее время</p>
       <button className={styles.close} onClick={ctx.closePopup}></button>
     </div>

@@ -12,6 +12,7 @@ export default function Layout({ children }) {
   const [closingModal, setClosingModal] = useState(false)
   const [lockedScroll, setLockedScroll] = useState(false)
   const [activePopup, setActivePopup] = useState(false)
+  const [popupTimer, setPopupTimer] = useState(null)
 
   function toggleMobileMenu() {
     setActiveMobileMenu(!activeMobileMenu)
@@ -37,12 +38,9 @@ export default function Layout({ children }) {
   }
 
   function openPopup() {
-    if (activePopup) {
-      setActivePopup(false)
-      setTimeout(() => setActivePopup(true), 300)
-    } else {
-      setActivePopup(true)
-    }
+    clearTimeout(popupTimer)
+    setActivePopup(true)
+    setPopupTimer(setTimeout(closePopup, 10000))
   }
 
   function closePopup() {

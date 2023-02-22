@@ -144,7 +144,7 @@
     }
 
     &.active {
-      transform: translateY(110rem);
+      transform: translateY(101rem);
     }
   }
 
@@ -177,6 +177,10 @@
 
     &.fixed {
       right: $container-padding-xl;
+    }
+
+    &.active {
+      transform: translateY(102rem);
     }
   }
 
