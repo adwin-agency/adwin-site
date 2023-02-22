@@ -17,6 +17,14 @@
 @include media(lg) {
   .el {
     padding: 30rem 0 46rem;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: opacity .6s ease, transform .6s ease;
+
+    &.anim {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   .main {
@@ -29,12 +37,30 @@
   .title {
     max-width: 600rem;
     font-size: 28rem;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity .65s ease 2.75s, transform .65s ease 2.75s;
   }
 
   .btn {
     margin-top: 0;
     margin-right: 34rem;
     width: 314rem;
+  }
+
+  .side {
+    opacity: 0;
+    transform: translateX(50rem);
+    transition: opacity .65s ease 2.75s, transform .65s ease 2.75s;
+  }
+
+  .anim {
+
+    .title,
+    .side {
+      opacity: 1;
+      transform: none;
+    }
   }
 }
 

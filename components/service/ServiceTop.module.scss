@@ -43,11 +43,16 @@
   }
 }
 
+.image {
+  display: block;
+}
+
 .landing {
   .image {
     margin-left: 93rem;
     margin-top: 28rem;
     width: 225rem;
+    height: 198rem;
   }
 }
 
@@ -61,7 +66,6 @@
 
 .store {
   .image {
-    display: block;
     margin-left: auto;
     margin-top: 24rem;
     width: 240rem;
@@ -70,7 +74,6 @@
 
 .complex {
   .image {
-    display: block;
     margin-top: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -81,7 +84,6 @@
 
 .context {
   .image {
-    display: block;
     margin-top: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -92,7 +94,6 @@
 
 .target {
   .image {
-    display: block;
     margin-top: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -114,21 +115,44 @@
     width: 500rem;
   }
 
+  .heading {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity .5s ease .5s, transform .5s ease .5s;
+  }
+
   .desc {
     margin-top: 11rem;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity .5s ease .75s, transform .5s ease .75s;
   }
 
   .arrow {
     margin-right: 22rem;
     width: 58rem;
+    opacity: 0;
+    transform: translateX(-25rem);
+    transition: opacity .35s ease 1s, transform .35s ease 1s;
+  }
+
+  .image path,
+  .image rect {
+    opacity: 0;
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .landing {
     .image {
       margin-left: auto;
       margin-right: 48rem;
-      margin-bottom: -72rem;
+      margin-bottom: -73rem;
       width: 420rem;
+      height: 370rem;
+      opacity: 0;
+      transform: scale(1.5);
+      transform-origin: bottom;
+      transition: opacity .5s ease 1.25s, transform .5s ease 1.25s;
     }
   }
 
@@ -176,6 +200,21 @@
       width: 400rem;
     }
   }
+
+  .anim {
+    .heading,
+    .desc,
+    .arrow,
+    .image {
+      opacity: 1;
+      transform: none;
+    }
+
+    .image path,
+    .image rect {
+      opacity: 1;
+    }
+  }
 }
 
 @include media(xl) {
@@ -199,8 +238,9 @@
   .landing {
     .image {
       margin-right: 134rem;
-      margin-bottom: -80rem;
+      margin-bottom: -82rem;
       width: 612rem;
+      height: 541rem;
     }
   }
 
