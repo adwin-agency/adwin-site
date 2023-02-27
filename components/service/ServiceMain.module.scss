@@ -6,14 +6,14 @@
   .sideMenu {
     display: block;
     position: sticky;
-    top: 62rem;
+    top: 0;
     padding: 100rem 0;
   }
 }
 
 @include media(xl) {
   .sideMenu {
-    top: 90rem;
+    top: 0;
     padding: 120rem 0;
   }
 }

@@ -6,11 +6,30 @@
 }
 
 .link {
+  position: relative;
   font-size: 16rem;
   line-height: 1;
+  transition: opacity .3s ease, transform .3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -12rem;
+    top: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100rem;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
 
   &.active {
-    font-weight: 600;
+    transform: translateX(12rem);
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 

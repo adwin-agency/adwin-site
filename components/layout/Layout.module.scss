@@ -5,14 +5,14 @@
   z-index: 1;
 }
 
-.footer {
-  position: sticky;
-  bottom: 0;
-}
-
 @include media(lg) {
   .main {
     padding-top: $header-height-lg;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0;
   }
 }
 
