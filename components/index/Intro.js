@@ -1,16 +1,19 @@
 import cn from 'classnames'
 import Ampersand from '/icons/ampersand.svg'
 import styles from './Intro.module.scss'
+import useAnim from '../../helpers/useAnim'
 
 export default function Intro() {
+  const anim = useAnim()
+
   return (
-    <section className={styles.el}>
+    <section className={cn(styles.el, { [styles.anim]: anim })}>
       <div className={styles.main}>
         <span className={styles.line1}></span>
         <span className={styles.line2}></span>
         <span className={styles.line3}></span>
         <span className={styles.line4}></span>
-        <div className="container">
+        <div className='container'>
           <h1 className={cn('h1', styles.heading)}>
             <span className={styles.hline1}>Создаём и <br />запускаем</span>
             <span className={styles.circles}>

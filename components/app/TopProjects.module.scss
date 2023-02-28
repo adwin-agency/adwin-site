@@ -1,5 +1,9 @@
-.list {
-  margin-top: 32rem;
+.top {
+  padding: 48rem 0 32rem;
+}
+
+.main {
+  padding-bottom: 38rem;
 }
 
 .btn {
@@ -8,14 +12,38 @@
 }
 
 @include media(lg) {
+  .top {
+    display: flex;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    margin-bottom: 700rem;
+    height: 144rem;
+    padding: 32rem 0 32rem;
+    background-color: $color-grey-paper;
+    z-index: 1;
+  }
+
+  .main {
+    margin-top: -700rem;
+    padding-bottom: 44rem;
+  }
+
   .btn {
     margin-top: 68rem;
   }
 }
 
 @include media(xl) {
-  .list {
-    margin-top: 64rem;
+  .top {
+    margin-bottom: 940rem;
+    height: 212rem;
+    padding: 64rem 0 64rem;
+  }
+
+  .main {
+    margin-top: -940rem;
+    padding-bottom: 52rem;
   }
 
   .btn {

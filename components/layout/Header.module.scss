@@ -53,10 +53,18 @@
 }
 
 .panel {
-  position: relative;
-  border-bottom: 1px solid $color-grey-main;
+  position: relative;  
   background-color: $color-grey-paper;
   transition: background-color .5s ease, border-color .5s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid $color-grey-main;
+  }
 }
 
 .row {
@@ -106,6 +114,29 @@
 @include media(lg) {
   .el {
     position: absolute;
+
+    &.anim {
+      .panel {
+        &::after {
+          transform: none;
+        }
+      }
+
+      .logoDesktop,
+      .links,
+      .btnBox {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .panel {
+    &::after {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1s ease;
+    }
   }
 
   .row {
@@ -120,6 +151,9 @@
     display: block;
     width: 122rem;
     height: 41rem;
+    opacity: 0;
+    transform: translateX(-28rem);
+    transition: opacity 1s ease, transform 1s ease;
   }
 
   .burger {
@@ -133,7 +167,7 @@
     padding-left: 40rem;
     border-radius: 100rem;
     border: 1px solid transparent;
-    background-color: $color-grey-paper;    
+    background-color: $color-grey-paper;
 
     &.fixed {
       position: fixed;
@@ -149,6 +183,12 @@
     }
   }
 
+  .links {
+    opacity: 0;
+    transform: translateX(11rem);
+    transition: opacity 1s ease .4s, transform 1s ease .4s;
+  }
+
   .link {
     margin-right: 45rem;
     font-size: 18rem;
@@ -156,8 +196,14 @@
     color: $color-grey-main;
   }
 
-  .btn {
+  .btnBox {
     margin-left: 20rem;
+    opacity: 0;
+    transform: translateX(40rem);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .btn {
     min-width: 180rem;
   }
 }

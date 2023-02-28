@@ -1,16 +1,12 @@
-import { useEffect, useState } from 'react'
 import cn from 'classnames'
-import details from '/data/details'
 import styles from './ServiceTop.module.scss'
+import details from '../../data/details'
+import useAnim from '../../helpers/useAnim'
 
 export default function ServiceTop({ type }) {
   const { heading, desc } = details[type]
 
-  const [anim, setAnim] = useState(false)
-
-  useEffect(() => {
-    setAnim(true)
-  }, [])
+  const anim = useAnim()
 
   return (
     <section className={cn(styles.el, styles[type], { [styles.anim]: anim })}>

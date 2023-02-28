@@ -20,18 +20,21 @@
   .row {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    position: sticky;
+    top: 144rem;
     padding: 0 $container-padding;
-    border-bottom: 1px solid $color-grey-main;
+    border-top: 1px solid $color-grey-main;
+    background-color: $color-grey-paper;
 
     &:first-child {
+      border-top: none;
+
       .item {
-        padding-top: 0;
+        padding-top: 2rem;
       }
     }
 
     &:last-child {
-      border-bottom: none;
-
       .item {
         padding-bottom: 0;
       }
@@ -64,6 +67,7 @@
 
 @include media(xl) {
   .row {
+    top: 212rem;
     margin: 0 (-$container-padding-xl);
     padding: 0 $container-padding-xl;
 

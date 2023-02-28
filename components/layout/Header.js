@@ -1,17 +1,20 @@
 import { useContext, useEffect, useRef, useState } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
-import AppContext from '../../context/AppContext'
-import media from '/data/media'
 import MobileMenu from './MobileMenu'
 import Button from '../ui/Button'
 import Logo from '/icons/logo.svg'
 import LogoLg from '/icons/logo-lg.svg'
+import AppContext from '../../context/AppContext'
+import media from '../../data/media'
+import useAnim from '../../helpers/useAnim'
 import styles from './Header.module.scss'
 
 export default function Header() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [activeHeader, setActiveHeader] = useState(false)
+
+  const anim = useAnim()
 
   const headerRef = useRef()
   const menuRef = useRef()
@@ -55,7 +58,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={cn(styles.el, { [styles.active]: ctx.activeMobileMenu })} ref={headerRef}>
+    <header className={cn(styles.el, { [styles.active]: ctx.activeMobileMenu, [styles.anim]: anim })} ref={headerRef}>
       <MobileMenu className={styles.mobile} onLinkClick={ctx.closeMobileMenu} />
       <div className={styles.panel} id='header'>
         <div className='container'>
@@ -66,10 +69,14 @@ export default function Header() {
             </Link>
             <button className={styles.burger} onClick={ctx.toggleMobileMenu}></button>
             <div className={cn(styles.menu, { [styles.fixed]: fixedHeader, [styles.active]: activeHeader })} ref={menuRef}>
-              <Link href='/about' className={styles.link}>Об агентстве</Link>
-              <Link href='/services' className={styles.link}>Услуги</Link>
-              <Link href='/projects' className={styles.link}>Работы</Link>
-              <Button className={styles.btn} link='/contacts'>Связаться с нами</Button>
+              <div className={styles.links}>
+                <Link href='/about' className={styles.link}>Об агентстве</Link>
+                <Link href='/services' className={styles.link}>Услуги</Link>
+                <Link href='/projects' className={styles.link}>Работы</Link>
+              </div>
+              <div className={styles.btnBox}>
+                <Button className={styles.btn} link='/contacts'>Связаться с нами</Button>
+              </div>
             </div>
           </div>
         </div>

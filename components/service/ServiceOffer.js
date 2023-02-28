@@ -1,17 +1,14 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import cn from 'classnames'
-import AppContext from '../../context/AppContext'
 import Button from '../ui/Button'
+import AppContext from '../../context/AppContext'
+import useAnim from '../../helpers/useAnim'
 import styles from './ServiceOffer.module.scss'
 
 export default function ServiceOffer() {
   const ctx = useContext(AppContext)
 
-  const [anim, setAnim] = useState(false)
-
-  useEffect(() => {
-    setAnim(true)
-  }, [])
+  const anim = useAnim()
 
   return (
     <section className={cn(styles.el, { [styles.anim]: anim })}>

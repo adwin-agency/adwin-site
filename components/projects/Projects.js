@@ -32,8 +32,6 @@ export default function Projects() {
     }
   }
 
-  console.log('tr')
-
   return (
     <section className={styles.el}>
       <div className={styles.top}>

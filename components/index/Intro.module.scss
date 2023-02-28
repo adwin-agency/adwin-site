@@ -40,6 +40,19 @@
     height: 29rem;
     border: 3px solid $color-grey-light;
     border-radius: 50%;
+
+    &:nth-child(2) {
+      right: 11rem;
+    }
+
+    &:nth-child(3) {
+      right: 22rem;
+    }
+
+    &:nth-child(4) {
+      right: 33rem;
+      border-color: $color-grey-main;
+    }
   }
 }
 
@@ -57,7 +70,8 @@
 
 .services {
   display: flex;
-  padding: 25rem 0;
+  align-items: center;
+  height: 60rem;
   background-color: $color-grey-main;
   overflow: hidden;
 }
@@ -83,6 +97,36 @@
 }
 
 @include media(lg) {
+  .el {
+    &.anim {
+      .line1,
+      .line2,
+      .line3,
+      .line4 {
+        transform: none;
+      }
+
+      .services {
+        &::after {
+          transform: translateY(100%);
+        }
+      }
+
+      .heading,
+      .symbol {
+        opacity: 1;
+        transform: none;
+      }
+
+      .circles {
+        span {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+  }
+  
   .main {
     position: relative;
     padding: 132rem 0 192rem;
@@ -97,26 +141,36 @@
     width: 1rem;
     height: 100%;
     background-color: $color-grey-main;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .8s ease;
   }
 
   .line1 {
     right: 500rem;
+    transition-delay: .5s;
   }
 
   .line2 {
     right: 248rem;
+    transition-delay: .75s;
   }
 
   .line3 {
     right: 124rem;
+    transition-delay: .9s;
   }
 
   .line4 {
     right: 56rem;
+    transition-delay: 1.05s;
   }
 
   .heading {
     max-width: 760rem;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 1s ease 1.5s, transform 1s ease 1.5s;
 
     br {
       display: none;
@@ -144,6 +198,28 @@
     span {
       width: 43rem;
       height: 43rem;
+      opacity: 0;
+      transform: translateX(30rem);
+      transition: opacity .3s ease 2.5s, transform .3s ease 2.5s;
+
+      &:nth-child(1) {
+        transform: none;
+      }
+
+      &:nth-child(2) {
+        right: 17rem;
+        transition-delay: 2.7s;
+      }
+
+      &:nth-child(3) {
+        right: 34rem;
+        transition-delay: 2.9s;
+      }
+
+      &:nth-child(4) {
+        right: 51rem;
+        transition-delay: 3.1s;
+      }
     }
   }
 
@@ -152,6 +228,24 @@
     margin-right: 0;
     width: 47rem;
     height: 62rem;
+    opacity: 0;
+    transform: translateX(-36rem);
+    transition: opacity .3s ease 2.3s, transform .3s ease 2.3s;
+  }
+
+  .services {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-grey-paper;
+      transition: transform 1s ease 1s;
+    }
   }
 
   .running {
@@ -198,6 +292,18 @@
       width: 61rem;
       height: 61rem;
       border-width: 5px;
+
+      &:nth-child(2) {
+        right: 23rem;
+      }
+
+      &:nth-child(3) {
+        right: 46rem;
+      }
+
+      &:nth-child(4) {
+        right: 69rem;
+      }
     }
   }
 
@@ -209,7 +315,7 @@
   }
 
   .services {
-    padding: 32rem 0;
+    height: 80rem;
   }
 
   .running {
