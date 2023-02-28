@@ -4,7 +4,7 @@ import styles from './Intro.module.scss'
 import useAnim from '../../helpers/useAnim'
 
 export default function Intro() {
-  const anim = useAnim()
+  const { anim } = useAnim()
 
   return (
     <section className={cn(styles.el, { [styles.anim]: anim })}>

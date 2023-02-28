@@ -14,7 +14,7 @@ export default function Header() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [activeHeader, setActiveHeader] = useState(false)
 
-  const anim = useAnim()
+  const { anim } = useAnim()
 
   const headerRef = useRef()
   const menuRef = useRef()

@@ -41,6 +41,12 @@
 }
 
 @include media(lg) {
+  .el {
+    &.anim {
+      opacity: 1;
+    }
+  }
+
   .main {
     display: grid;
     grid-template-columns: 32% 1fr;

@@ -8,7 +8,7 @@ import styles from './ServiceOffer.module.scss'
 export default function ServiceOffer() {
   const ctx = useContext(AppContext)
 
-  const anim = useAnim()
+  const { anim } = useAnim()
 
   return (
     <section className={cn(styles.el, { [styles.anim]: anim })}>

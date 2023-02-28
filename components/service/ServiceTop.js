@@ -6,7 +6,7 @@ import useAnim from '../../helpers/useAnim'
 export default function ServiceTop({ type }) {
   const { heading, desc } = details[type]
 
-  const anim = useAnim()
+  const { anim } = useAnim()
 
   return (
     <section className={cn(styles.el, styles[type], { [styles.anim]: anim })}>

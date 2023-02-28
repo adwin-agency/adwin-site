@@ -1,11 +1,14 @@
 import cn from 'classnames'
 import Stats from '../app/Stats'
 import Button from '../ui/Button'
+import useAnim from '../../helpers/useAnim'
 import styles from './BrieflyAbout.module.scss'
 
 export default function BrieflyAbout({ className }) {
+  const { anim, animRef } = useAnim(true)
+
   return (
-    <section className={className}>
+    <section className={cn(className, styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className='container'>
         <div className={styles.main}>
           <h2 className={cn('h2', styles.heading)}>Кратко про нас</h2>
