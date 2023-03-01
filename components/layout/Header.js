@@ -13,8 +13,7 @@ import styles from './Header.module.scss'
 export default function Header() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [activeHeader, setActiveHeader] = useState(false)
-
-  const { anim, animRef } = useAnim()
+  const [anim, setAnim] = useState(false)
 
   const headerRef = useRef()
   const menuRef = useRef()
@@ -51,6 +50,8 @@ export default function Header() {
     window.addEventListener('resize', handleResize)
     window.addEventListener('scroll', handleScroll)
 
+    setAnim(true)
+
     return () => {
       window.removeEventListener('resize', handleResize)
       window.removeEventListener('resize', handleScroll)
@@ -60,7 +61,7 @@ export default function Header() {
   return (
     <header className={cn(styles.el, { [styles.active]: ctx.activeMobileMenu, [styles.anim]: anim })} ref={headerRef}>
       <MobileMenu className={styles.mobile} onLinkClick={ctx.closeMobileMenu} />
-      <div className={styles.panel} id='header' ref={animRef}>
+      <div className={styles.panel} id='header'>
         <div className='container'>
           <div className={styles.row}>
             <Link href='/' onClick={ctx.closeMobileMenu}>

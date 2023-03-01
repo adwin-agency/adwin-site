@@ -1,3 +1,7 @@
+.el {
+  padding: 33rem 0 114rem;
+}
+
 .list {
   margin-top: 40rem;
 }
@@ -38,11 +42,32 @@
 }
 
 @include media(lg) {
+  .el {
+    padding: 34rem 0 110rem;
+
+    &.anim {
+      .heading,
+      .list {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+  
+  .heading {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+
   .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 56rem 20rem;
     margin-top: 58rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .item {
@@ -64,6 +89,10 @@
 }
 
 @include media(xl) {
+  .el {
+    padding: 54rem 0 135rem;
+  }
+
   .list {
     grid-gap: 84rem 20rem;
     margin-top: 52rem;

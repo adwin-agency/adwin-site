@@ -1,11 +1,14 @@
 import cn from 'classnames'
-import data from '/data/competencies'
+import data from '../../data/competencies'
+import useAnim from '../../helpers/useAnim'
 import styles from './Competencies.module.scss'
 
 export default function Competencies({ id }) {
+  const { anim, animRef } = useAnim()
+
   return (
-    <section id={id}>
-      <h2 className='h2'>Компетенции</h2>
+    <section className={cn(styles.el, { [styles.anim]: anim })} id={id} ref={animRef}>
+      <h2 className={cn('h2', styles.heading)}>Компетенции</h2>
       <div className={styles.list}>
         {data.map(item => (
           <div key={item.id} className={styles.item}>

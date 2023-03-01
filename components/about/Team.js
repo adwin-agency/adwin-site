@@ -1,10 +1,14 @@
 import { useEffect, useRef } from 'react'
-import data from '/data/team'
+import cn from 'classnames'
 import DashedArrow from '/icons/dashed-arrow.svg'
+import data from '../../data/team'
+import useAnim from '../../helpers/useAnim'
 import styles from './Team.module.scss'
 
 export default function Team({ id }) {
   const lineRef = useRef()
+
+  const { anim, animRef } = useAnim()
 
   useEffect(() => {
     let mouseIsDown = false
@@ -39,8 +43,8 @@ export default function Team({ id }) {
   }, [])
 
   return (
-    <section className={styles.el} id={id}>
-      <h2 className='h2'>Команда</h2>
+    <section className={cn(styles.el, { [styles.anim]: anim })} id={id} ref={animRef}>
+      <h2 className={cn('h2', styles.heading)}>Команда</h2>
       <div className={styles.line} ref={lineRef}>
         {data.map(item => {
           const FigureCmp = item.figure

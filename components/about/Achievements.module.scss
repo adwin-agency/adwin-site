@@ -1,10 +1,36 @@
+.el {
+  padding: 26rem 0 42rem;
+}
+
 .row {
   margin-top: 56rem;
 }
 
 @include media(lg) {
+  .el {
+    padding: 36rem 0 80rem;
+
+    &.anim {
+
+      .heading,
+      .row {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .heading {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+
   .row {
     margin-top: 64rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .side {
@@ -13,6 +39,10 @@
 }
 
 @include media(xl) {
+  .el {
+    padding: 56rem 0 180rem;
+  }
+
   .row {
     margin-top: 85rem;
   }

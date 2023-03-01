@@ -2,18 +2,6 @@
   display: none;
 }
 
-.divider1 {
-  margin: 40rem 0 33rem;
-}
-
-.divider2 {
-  margin: 114rem 0 26rem;
-}
-
-.divider3 {
-  margin: 42rem 0 56rem;
-}
-
 @include media(lg) {
   .sideMenu {
     display: block;
@@ -21,18 +9,25 @@
     top: 62rem;
     padding-top: 60rem;
     padding-bottom: 500rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease .25s, transform .5s ease .25s;
+
+    &.anim {
+      opacity: 1;
+      transform: none;
+    }
   }
 
-  .divider1 {
-    margin: 116rem (-$container-padding) 34rem 0;
-  }
+  .divider {
+    margin-right: (-$container-padding);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
 
-  .divider2 {
-    margin: 110rem (-$container-padding) 36rem 0;
-  }
-
-  .divider3 {
-    margin: 80rem (-$container-padding) 56rem 0;
+    &.anim {
+      transform: none;
+    }
   }
 }
 
@@ -42,15 +37,7 @@
     padding-top: 82rem;
   }
 
-  .divider1 {
-    margin: 104rem (-$container-padding-xl) 54rem 0;
-  }
-
-  .divider2 {
-    margin: 135rem (-$container-padding-xl) 56rem 0;
-  }
-
-  .divider3 {
-    margin: 180rem (-$container-padding-xl) 96rem 0;
+  .divider {
+    margin-right: (-$container-padding-xl);
   }
 }
