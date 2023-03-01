@@ -136,6 +136,13 @@
     transition: opacity .35s ease 1s, transform .35s ease 1s;
   }
 
+  .image {
+    opacity: 0;
+    transform: scale(1.5);
+    transform-origin: bottom;
+    transition: opacity .5s ease 1.25s, transform .5s ease 1.25s;
+  }
+
   .image path,
   .image rect {
     opacity: 0;
@@ -148,11 +155,7 @@
       margin-right: 48rem;
       margin-bottom: -73rem;
       width: 420rem;
-      height: 370rem;
-      opacity: 0;
-      transform: scale(1.5);
-      transform-origin: bottom;
-      transition: opacity .5s ease 1.25s, transform .5s ease 1.25s;
+      height: 370rem;      
     }
   }
 

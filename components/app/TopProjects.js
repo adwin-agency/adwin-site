@@ -14,7 +14,7 @@ export default function TopProjects({ className }) {
       </div>
       <div className={styles.main}>
         <div className='container'>
-          <ProjectsList className={styles.list} items={projects} />
+          <ProjectsList className={styles.list} items={projects} slide />
           <Button className={styles.btn} link='/projects' size='lg' color='grey' bordered>Больше проектов</Button>
         </div>
       </div>

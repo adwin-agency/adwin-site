@@ -50,10 +50,20 @@
 @include media(lg) {
   .el {
     padding: 0 0 80rem;
+
+    &.anim {
+      .top {
+        opacity: 1;
+        transform: none;
+      }
+    }
   }
 
   .top {
     padding: 40rem 0 30rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .topRow {

@@ -1,12 +1,16 @@
+import cn from 'classnames'
 import ProjectCard from '../app/ProjectCard'
 import Button from '../ui/Button'
-import projects from '/data/projects'
+import projects from '../../data/projects'
+import useAnim from '../../helpers/useAnim'
 import styles from './ServiceProjects.module.scss'
 
 export default function ServiceProjects() {
+  const { anim, animRef } = useAnim()
+
   return (
-    <section className={styles.el} id='projects'>
-      <h2 className='h2'>Реализованные проекты</h2>
+    <section className={cn(styles.el, { [styles.anim]: anim })} id='projects' ref={animRef}>
+      <h2 className={cn('h2', styles.heading)}>Реализованные проекты</h2>
       <div className={styles.items}>
         <ProjectCard
           className={styles.item}

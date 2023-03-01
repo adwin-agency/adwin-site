@@ -22,6 +22,21 @@
 @include media(lg) {
   .el {
     padding: 40rem 0 90rem;
+
+    &.anim {
+
+      .heading,
+      .items {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .heading {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .items {
@@ -29,6 +44,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20rem;
     margin-top: 60rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .item {

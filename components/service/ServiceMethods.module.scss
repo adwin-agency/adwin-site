@@ -39,10 +39,27 @@
 @include media(lg) {
   .el {
     padding: 85rem 0 128rem;
+
+    &.anim {
+      .heading,
+      .list {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .heading {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .list {
     margin-top: 60rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .item {

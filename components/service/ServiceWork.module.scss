@@ -26,11 +26,23 @@
 @include media(lg) {
   .el {
     padding: 40rem 0 68rem;
+
+    &.anim {
+
+      .top,
+      .steps {
+        opacity: 1;
+        transform: none;
+      }
+    }
   }
 
   .top {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .heading {
@@ -49,13 +61,19 @@
       margin-top: 6rem;
     }
   }
+
+  .steps {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
+  }
 }
 
 @include media(xl) {
   .el {
     padding: 84rem 0 126rem;
   }
-  
+
   .heading {
     width: 600rem;
   }

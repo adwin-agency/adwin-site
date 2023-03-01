@@ -22,11 +22,29 @@
 @include media(lg) {
   .el {
     padding: 40rem 0 124rem;
+
+    &.anim {
+
+      .heading,
+      .main {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
+  .heading {
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .main {
     display: flex;
     margin-top: 60rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .desc {
@@ -49,7 +67,7 @@
 
   .heading {
     flex-shrink: 0;
-    margin-right: 85rem;    
+    margin-right: 85rem;
   }
 
   .main {

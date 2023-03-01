@@ -1,10 +1,52 @@
+import { useEffect, useState } from 'react'
 import cn from 'classnames'
-import styles from './ServicesGroup.module.scss'
 import ServicesItem from './ServicesItem'
+import useAnim from '../../helpers/useAnim'
+import styles from './ServicesGroup.module.scss'
 
 export default function ServicesGroup({ type, theme, heading, images, title, items }) {
+  const { anim, animRef } = useAnim()
+
+  const [active, setActive] = useState(false)
+
+  useEffect(() => {
+    let observer = null
+    const target = animRef.current
+
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActive(true)
+        } else {
+          setActive(false)
+        }
+      })
+    }, {
+      threshold: 0.25
+    })
+
+    observer.observe(target)
+
+    return () => {
+      if (observer) {
+        observer.unobserve(target)
+      }
+    }
+  }, [])
+
   return (
-    <section className={cn(styles.el, { [styles[type]]: type, [styles[theme]]: theme })}>
+    <section
+      className={cn(
+        styles.el,
+        {
+          [styles[type]]: type,
+          [styles[theme]]: theme,
+          [styles.anim]: anim,
+          [styles.active]: active
+        }
+      )}
+      ref={animRef}
+    >
       <div className='container'>
         <div className='row'>
           <div className='col col-6 col-lg-2'>

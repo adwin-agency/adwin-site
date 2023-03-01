@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import cn from 'classnames'
 import ServiceStep from './ServiceStep'
-import work from '/data/work'
+import work from '../../data/work'
+import useAnim from '../../helpers/useAnim'
 import styles from './ServiceWork.module.scss'
 
 export default function ServiceWork({ category }) {
@@ -9,8 +10,10 @@ export default function ServiceWork({ category }) {
 
   const [activeStep, setActiveStep] = useState(null)
 
+  const { anim, animRef } = useAnim()
+
   function handleStepClick(id) {
-    return function() {
+    return function () {
       if (activeStep === id) {
         setActiveStep(null)
       } else {
@@ -20,7 +23,7 @@ export default function ServiceWork({ category }) {
   }
 
   return (
-    <section className={styles.el} id='work'>
+    <section className={cn(styles.el, { [styles.anim]: anim })} id='work' ref={animRef}>
       <div className={styles.top}>
         <h2 className={cn('h2', styles.heading)}>Как проходит работа над проектом</h2>
         <p className={styles.desc}>Срок разработки проекта: <br /><span>от 20 дней</span></p>

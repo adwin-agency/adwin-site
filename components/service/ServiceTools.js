@@ -1,11 +1,15 @@
-import tools from '/data/tools'
+import cn from 'classnames'
+import tools from '../../data/tools'
+import useAnim from '../../helpers/useAnim'
 import styles from './ServiceTools.module.scss'
 
 export default function ServiceTools({ category }) {
   const items = tools[category]
 
+  const { anim, animRef } = useAnim()
+
   return (
-    <section className={styles.el} id='tools'>
+    <section className={cn(styles.el, { [styles.anim]: anim })} id='tools' ref={animRef}>
       <div className={styles.top}>
         <h2 className='h2'>Используемые инструменты</h2>
         <p className={styles.desc}>Подбираем стек разработки исходя из потребностей клиента и задач ресурса</p>

@@ -1,12 +1,13 @@
 import { useContext } from 'react'
 import cn from 'classnames'
-import AppContext from '../../context/AppContext'
 import Button from '../ui/Button'
 import ContactForm from '../app/ContactForm'
 import Arrow from '/icons/arrow.svg'
 import DashedArrow from '/icons/dashed-arrow-2.svg'
 import Pin from '/icons/pin.svg'
-import contacts from '/data/contacts'
+import AppContext from '../../context/AppContext'
+import contacts from '../../data/contacts'
+import useAnim from '../../helpers/useAnim'
 import styles from './Contacts.module.scss'
 
 export default function Contacts() {
@@ -28,8 +29,10 @@ export default function Contacts() {
 
   const ctx = useContext(AppContext)
 
+  const { anim, animRef } = useAnim()
+
   return (
-    <section>
+    <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className={styles.main}>
         <div className='container'>
           <h1 className={cn('h1', styles.heading)}>Связаться с нами</h1>

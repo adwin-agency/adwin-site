@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import cn from 'classnames'
 import ProjectsList from '../app/ProjectsList'
-import projects from '/data/projects'
+import projects from '../../data/projects'
+import useAnim from '../../helpers/useAnim'
 import styles from './Projects.module.scss'
 
 const filters = projects.reduce((acc, cur) => {
@@ -20,6 +21,8 @@ export default function Projects() {
   const [activeProjects, setActiveProjects] = useState(projects)
   const [activeFilter, setActiveFilter] = useState(null)
 
+  const { anim, animRef } = useAnim()
+
   function filterProjects(id) {
     return function () {
       if (id === null) {
@@ -33,7 +36,7 @@ export default function Projects() {
   }
 
   return (
-    <section className={styles.el}>
+    <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className={styles.top}>
         <div className='container'>
           <div className={styles.topRow}>
@@ -60,7 +63,7 @@ export default function Projects() {
       </div>
       <div className={styles.main}>
         <div className='container'>
-          <ProjectsList className={styles.list} bordered items={activeProjects} />
+          <ProjectsList className={styles.list} bordered items={activeProjects} animated />
         </div>
       </div>
     </section >

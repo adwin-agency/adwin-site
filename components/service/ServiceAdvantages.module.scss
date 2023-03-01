@@ -7,12 +7,29 @@
 }
 
 @include media(lg) {
+  .el {
+    &.anim {
+
+      .heading,
+      .main {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+
   .heading {
     max-width: 680rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .main {
     margin-top: 60rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 }
 

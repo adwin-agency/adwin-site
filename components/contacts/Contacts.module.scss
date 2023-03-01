@@ -110,12 +110,24 @@
 }
 
 @include media(lg) {
+  .el {
+    &.anim {
+      .heading,
+      .groups {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
   .main {
     padding: 100rem 0 58rem;
   }
 
   .heading {
     max-width: 280rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity .5s ease, transform .5s ease;
   }
 
   .groups {
@@ -123,6 +135,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 86rem;
     margin-top: 200rem;
+    opacity: 0;
+    transform: translateY(50rem);
+    transition: opacity 1s ease .5s, transform 1s ease .5s;
   }
 
   .group {

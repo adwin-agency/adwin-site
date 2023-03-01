@@ -17,11 +17,33 @@
 }
 
 @include media(lg) {
+  .el {
+    &.slide {
+      .row {
+        position: sticky;
+        top: 144rem;
+      }
+    }
+
+    &.animated {
+      .card {
+        opacity: 0;
+        transform: translateY(50rem);
+        transition: opacity .5s ease .5s, transform .5s ease .5s;
+      }
+
+      .anim {
+        .card {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+  }
+
   .row {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    position: sticky;
-    top: 144rem;
     padding: 0 $container-padding;
     border-top: 1px solid $color-grey-main;
     background-color: $color-grey-paper;
@@ -66,8 +88,16 @@
 }
 
 @include media(xl) {
-  .row {
-    top: 212rem;
+  .el {
+    &.slide {
+      .row {
+        position: sticky;
+        top: 212rem;
+      }
+    }
+  }
+
+  .row {    
     margin: 0 (-$container-padding-xl);
     padding: 0 $container-padding-xl;
 
