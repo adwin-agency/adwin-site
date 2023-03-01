@@ -17,7 +17,8 @@ export default function ProjectsList({ className, bordered, items, slide, animat
   const { anim, animRef } = useAnim()
 
   return (
-    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide, [styles.animated]: animated }, className)} ref={animRef}>
+    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide, [styles.animated]: animated }, className)}>
+      <div ref={animRef}></div>
       {rowItems.map((items, index) => (
         <div key={index} className={cn(styles.row, { [styles.anim]: anim })}>
           {items.map(item => (
