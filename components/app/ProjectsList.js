@@ -14,15 +14,12 @@ export default function ProjectsList({ className, bordered, items, slide, animat
     return acc
   }, [])
 
-  const animations = rowItems.map(() => {
-    const { anim, animRef } = useAnim()
-    return { anim, animRef }
-  })
+  const { anim, animRef } = useAnim()
 
   return (
-    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide, [styles.animated]: animated }, className)}>
+    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide, [styles.animated]: animated }, className)} ref={animRef}>
       {rowItems.map((items, index) => (
-        <div key={index} className={cn(styles.row, { [styles.anim]: animations[index].anim })} ref={animations[index].animRef}>
+        <div key={index} className={cn(styles.row, { [styles.anim]: anim })}>
           {items.map(item => (
             <div key={item.id} className={styles.item}>
               <ProjectCard
