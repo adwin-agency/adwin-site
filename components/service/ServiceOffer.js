@@ -8,10 +8,10 @@ import styles from './ServiceOffer.module.scss'
 export default function ServiceOffer() {
   const ctx = useContext(AppContext)
 
-  const { anim } = useAnim()
+  const { anim, animRef } = useAnim()
 
   return (
-    <section className={cn(styles.el, { [styles.anim]: anim })}>
+    <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className='container'>
         <div className={styles.main}>
           <p className={styles.title}>Оставьте заявку и получите медиа-план продвижения БЕСПЛАТНО</p>

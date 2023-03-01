@@ -35,15 +35,24 @@
   padding-left: 115rem;
 }
 
-.btn {
+.actions {
   margin-top: 50rem;
+}
+
+.btn {
   width: 100%;
 }
 
 @include media(lg) {
   .el {
     &.anim {
-      opacity: 1;
+      .heading,
+      .awards,
+      .stats,
+      .actions {
+        opacity: 1;
+        transform: none;
+      }
     }
   }
 
@@ -56,8 +65,11 @@
 
   .heading {
     max-width: 210rem;
+    opacity: 0;
+    transform: translateY(190rem);
+    transition: opacity 1s ease, transform 1s ease;
   }
-  
+
   .info {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -70,12 +82,18 @@
     margin-right: (-$container-padding);
     padding-right: $container-padding;
     padding-bottom: 56rem;
+    opacity: 0;
+    transform: translateY(190rem);
+    transition: opacity 1s ease, transform 1s ease;
   }
 
-  .btn {
+  .actions {
     grid-column: 1/2;
     margin-top: 24rem;
     max-width: 270rem;
+    opacity: 0;
+    transform: translateX(-40rem);
+    transition: opacity 0.75s ease 2s, transform 0.75s ease 2s;
   }
 
   .cert {
@@ -96,6 +114,9 @@
     margin-top: 60rem;
     max-width: none;
     padding-left: 0;
+    opacity: 0;
+    transform: translateY(190rem);
+    transition: opacity 1s ease 0.9s, transform 1s ease 0.9s;
   }
 }
 
@@ -126,7 +147,7 @@
     margin-top: 125rem;
   }
 
-  .btn {
+  .actions {
     margin-top: 44rem;
     max-width: 316rem;
   }

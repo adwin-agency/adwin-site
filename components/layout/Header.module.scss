@@ -56,6 +56,7 @@
   position: relative;  
   background-color: $color-grey-paper;
   transition: background-color .5s ease, border-color .5s ease;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -180,6 +181,13 @@
 
     &.active {
       transform: translateY(101rem);
+
+      .links,
+      .btnBox {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
     }
   }
 

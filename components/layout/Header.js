@@ -14,7 +14,7 @@ export default function Header() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [activeHeader, setActiveHeader] = useState(false)
 
-  const { anim } = useAnim()
+  const { anim, animRef } = useAnim()
 
   const headerRef = useRef()
   const menuRef = useRef()
@@ -60,7 +60,7 @@ export default function Header() {
   return (
     <header className={cn(styles.el, { [styles.active]: ctx.activeMobileMenu, [styles.anim]: anim })} ref={headerRef}>
       <MobileMenu className={styles.mobile} onLinkClick={ctx.closeMobileMenu} />
-      <div className={styles.panel} id='header'>
+      <div className={styles.panel} id='header' ref={animRef}>
         <div className='container'>
           <div className={styles.row}>
             <Link href='/' onClick={ctx.closeMobileMenu}>

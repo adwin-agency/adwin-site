@@ -5,7 +5,7 @@ import useAnim from '../../helpers/useAnim'
 import styles from './BrieflyAbout.module.scss'
 
 export default function BrieflyAbout({ className }) {
-  const { anim, animRef } = useAnim(true)
+  const { anim, animRef } = useAnim()
 
   return (
     <section className={cn(className, styles.el, { [styles.anim]: anim })} ref={animRef}>
@@ -29,7 +29,9 @@ export default function BrieflyAbout({ className }) {
               <Stats />
             </div>
           </div>
-          <Button className={styles.btn} link='/about' size='textlg' color='grey' bordered>Узнать больше о нас</Button>
+          <div className={styles.actions}>
+            <Button className={styles.btn} link='/about' size='textlg' color='grey' bordered>Узнать больше о нас</Button>
+          </div>
         </div>
       </div>
     </section>

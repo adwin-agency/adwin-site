@@ -1,27 +1,25 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function useAnim(isObserve) {
+export default function useAnim() {
   const [anim, setAnim] = useState(false)
-
   const animRef = useRef()
 
   useEffect(() => {
     let observer = null
     const target = animRef.current
 
-    if (isObserve) {
-      observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            observer.unobserve(target)
-            setAnim(true)
-          }
-        })
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          observer.unobserve(target)
+          setAnim(true)
+        }
       })
-      observer.observe(target)
-    } else {
-      setAnim(true)
-    }
+    }, {
+      threshold: 0.25
+    })
+    
+    observer.observe(target)
 
     return () => {
       if (observer) {

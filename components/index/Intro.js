@@ -4,10 +4,10 @@ import styles from './Intro.module.scss'
 import useAnim from '../../helpers/useAnim'
 
 export default function Intro() {
-  const { anim } = useAnim()
+  const { anim, animRef } = useAnim()
 
   return (
-    <section className={cn(styles.el, { [styles.anim]: anim })}>
+    <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className={styles.main}>
         <span className={styles.line1}></span>
         <span className={styles.line2}></span>
