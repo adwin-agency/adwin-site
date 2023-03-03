@@ -63,7 +63,7 @@ export default function Projects() {
       </div>
       <div className={styles.main}>
         <div className='container'>
-          <ProjectsList className={styles.list} bordered items={activeProjects} animated />
+          <ProjectsList className={styles.list} bordered items={activeProjects} fade />
         </div>
       </div>
     </section >

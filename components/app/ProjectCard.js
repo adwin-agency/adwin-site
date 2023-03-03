@@ -1,9 +1,12 @@
 import cn from 'classnames'
+import useAnim from '../../helpers/useAnim'
 import styles from './ProjectCard.module.scss'
 
-export default function ProjectCard({ className, images, tags, title, desc }) {
+export default function ProjectCard({ className, images, tags, title, desc, fade }) {
+  const { anim, animRef } = useAnim()
+
   return (
-    <div className={className}>
+    <div className={cn(className, styles.el, { [styles.fade]: fade, [styles.anim]: anim })} ref={animRef}>
       <div className={styles.box}>
         <picture>
           <source media='(min-width: 1000px)' srcSet={`/images/projects/${images[1]}`} />

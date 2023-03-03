@@ -26,3 +26,18 @@
 .desc {
   margin-top: 8rem;
 }
+
+@include media(lg) {
+  .el {
+    &.fade {
+      opacity: 0;
+      transform: translateY(50rem);
+      transition: opacity .5s ease .5s, transform .5s ease .5s;
+
+      &.anim {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+}

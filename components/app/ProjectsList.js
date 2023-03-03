@@ -1,9 +1,8 @@
 import cn from 'classnames'
 import ProjectCard from './ProjectCard'
-import useAnim from '../../helpers/useAnim'
 import styles from './ProjectsList.module.scss'
 
-export default function ProjectsList({ className, bordered, items, slide, animated }) {
+export default function ProjectsList({ className, bordered, items, slide, fade }) {
 
   const rowItems = items.reduce((acc, curr, index) => {
     if (index % 2 === 0) {
@@ -14,13 +13,10 @@ export default function ProjectsList({ className, bordered, items, slide, animat
     return acc
   }, [])
 
-  const { anim, animRef } = useAnim()
-
   return (
-    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide, [styles.animated]: animated }, className)}>
-      <div ref={animRef}></div>
+    <div className={cn(styles.el, { [styles.bordered]: bordered, [styles.slide]: slide }, className)}>
       {rowItems.map((items, index) => (
-        <div key={index} className={cn(styles.row, { [styles.anim]: anim })}>
+        <div key={index} className={styles.row}>
           {items.map(item => (
             <div key={item.id} className={styles.item}>
               <ProjectCard
@@ -29,6 +25,7 @@ export default function ProjectsList({ className, bordered, items, slide, animat
                 tags={item.tags}
                 title={item.title}
                 desc={item.desc}
+                fade={fade}
               />
             </div>
           ))}
