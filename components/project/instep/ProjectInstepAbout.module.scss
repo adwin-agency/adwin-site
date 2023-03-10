@@ -1,0 +1,49 @@
+.el {
+  padding: 26rem 0;
+  background: radial-gradient(97.88% 68.9% at 34.9% 15.75%, #E9DEFA 0%, #FBFCDB 100%);
+  overflow: hidden;
+}
+
+.top {
+  position: relative;
+}
+
+.heading {
+  margin-top: 44rem;
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 1.1;
+}
+
+.desc {
+  margin-top: 14rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+.arrow {
+  position: absolute;
+  top: 45rem;
+  right: -15px;
+  width: 90rem;
+  transform: rotate(25deg);
+}
+
+.screen {
+  margin-top: 46rem;
+  width: 100%;
+}
+
+.stars {
+  display: block;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: -15px;
+  width: 40rem;
+}
+
+@include media(lg) {
+  .el {
+    padding: 150rem 0 44rem;
+  }
+}

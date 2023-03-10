@@ -40,5 +40,13 @@ export default [
     tags: ['разработка', 'Корпоративный сайт', 'анализ ниши', 'брендинг'],
     title: 'WOW Kitchen',
     desc: 'вкусный сайт'
+  },
+  {
+    id: 'instep',
+    images: ['instep.png', 'instep-lg.png'],
+    tags: ['разработка', 'интернет-магазин', 'брендинг', 'анализ ниши'],
+    title: 'InStep',
+    detailTitle: 'InStep: разработка лендинга',
+    desc: 'instep'
   }
 ]

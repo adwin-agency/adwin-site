@@ -1,0 +1,19 @@
+.el {
+  padding: 30rem 0 18rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem 10rem;
+  margin-top: 30px;
+}
+
+.tag {
+  border: 1px solid currentColor;
+  border-radius: 100rem;
+  padding: 9rem 20rem;
+  font-size: 12rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
