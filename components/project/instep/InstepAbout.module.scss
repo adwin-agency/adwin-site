@@ -6,10 +6,10 @@
 
 .top {
   position: relative;
+  margin-top: 44rem;
 }
 
 .heading {
-  margin-top: 44rem;
   font-weight: 400;
   font-size: 24rem;
   line-height: 1.1;
@@ -30,6 +30,7 @@
 }
 
 .screen {
+  display: block;
   margin-top: 46rem;
   width: 100%;
 }
@@ -44,6 +45,51 @@
 
 @include media(lg) {
   .el {
+    padding: 75rem 0 44rem;
+    background: radial-gradient(64.06% 124.55% at 34.9% 15.75%, #E9DEFA 0%, #FBFCDB 100%)
+  }
+
+  .top {
+    margin: 0 auto;
+    max-width: 560rem;
+  }
+
+  .heading {
+    font-size: 42rem;
+  }
+
+  .desc {
+    margin-top: 24rem;
+  }
+
+  .arrow {
+    top: 55rem;
+    right: -35rem;
+    width: 120rem;
+    transform: none;
+  }
+
+  .screen {
+    margin: 100rem auto 0;
+    width: 1100rem;
+  }
+
+  .stars {
+    margin-right: 30rem;
+  }
+}
+
+@include media(xl) {
+  .el {
     padding: 150rem 0 44rem;
+  }
+
+  .screen {
+    width: 1344rem;
+  }
+
+  .stars {
+    margin-right: 150rem;
+    width: 65rem;
   }
 }

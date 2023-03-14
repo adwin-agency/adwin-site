@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5rem 10rem;
-  margin-top: 30px;
+  margin-top: 30rem;
 }
 
 .tag {
@@ -16,4 +16,29 @@
   font-size: 12rem;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@include media(lg) {
+  .el {
+    padding: 82rem 0;
+  }
+
+  .titleCol {
+    order: 1;
+  }
+
+  .tags {
+    margin-top: 0;
+    padding-right: 50rem;
+  }
+}
+
+@include media(xl) {
+  .tags {
+    padding-right: 200rem;
+  }
+
+  .title {
+    padding-right: 100rem;
+  }
 }

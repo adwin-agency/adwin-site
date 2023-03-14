@@ -1,0 +1,91 @@
+.el {
+  position: relative;
+  padding: 66rem 0 34rem;
+  color: #fff;
+  background-color: #3E4D86;
+}
+
+.shape {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  height: 78rem;
+  background-image: url('/images/projects/instep/border-shape.png');
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+}
+
+.headingIcon {
+  position: absolute;
+  top: -20rem;
+  right: -20rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+.items {
+  margin-top: 25rem;
+}
+
+.item {
+  padding: 30rem;
+  margin-bottom: 10rem;
+  background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.3) 28.69%, rgba(255, 255, 255, 0.2) 100%);
+  border-radius: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemIcon {
+  width: 60rem;
+  height: 50rem;
+}
+
+.text {
+  margin-top: 12rem;
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+@include media(lg) {
+  .el {
+    padding: 80rem 0;
+  }
+
+  .items {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .item {
+    flex: 1;
+    margin-right: 20rem;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .text {
+    margin-top: 30rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 160rem 0;
+  }
+
+  .text {
+    margin-top: 60rem;
+  }
+}
