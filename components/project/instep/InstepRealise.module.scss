@@ -108,14 +108,30 @@
   width: calc(100% + $container-padding * 2);
 }
 
+.designChange {
+  display: none;
+}
+
 .styleImage {
   margin: 6rem (-$container-padding) 40rem;
   width: calc(100% + $container-padding * 2);
 }
 
+.styleImageLg {
+  display: none;
+}
+
 .styleGraphic {
   margin: 14rem (-$container-padding) 0;
   width: calc(100% + $container-padding * 2);
+}
+
+.styleBlur,
+.styleSmile,
+.styleTalk,
+.styleHeart,
+.styleHashtags {
+  display: none;
 }
 
 @include media(lg) {
@@ -181,6 +197,7 @@
   }
 
   .designChange {
+    display: block;
     position: relative;
     margin-top: 180rem;
   }
@@ -211,6 +228,7 @@
   }
 
   .styleImageLg {
+    display: block;
     margin-top: 300rem;
     width: 100%;
   }
@@ -232,8 +250,15 @@
     display: none;
   }
 
-  .styleBlur {
+  .styleBlur,
+  .styleSmile,
+  .styleTalk,
+  .styleHeart,
+  .styleHashtags {
     display: block;
+  }
+
+  .styleBlur {
     margin-left: (-$container-padding);
     margin-top: -150rem;
     width: 600rem;
@@ -241,7 +266,6 @@
   }
 
   .styleSmile {
-    display: block;
     margin-top: -300rem;
     width: 139rem;
     height: 154rem;
@@ -255,7 +279,6 @@
   }
 
   .styleHashtags {
-    display: block;
     margin-left: -20rem;
     margin-top: -50rem;
     width: 375rem;

@@ -50,7 +50,7 @@ export default function InstepRealise() {
               <Star className={styles.designStarSm} />
               <h3 className='h3'>Дизайн-концепция</h3>
               <p className={cn('txt', styles.designText)}>По просьбе клиента мы оставили форму лого неизменной, лишь немного “взбодрили” цвет. Это дало возможность расширить цветовую палитру для оформления социальных сетей.</p>
-              <img className={styles.designImage} src="/images/projects/instep/design-box.png" alt="" />
+              <img className={styles.designImage} src='/images/projects/instep/design-box.png' alt='' />
               <p className='txt'>Позиционирование компании подразумевает не только индивидуальный подход, но и поддержку, обучение и очень сплочёное комьюнити. В концепции сайта это отражено с помощью использования графики, анимаций и светлой, но в тоже время яркой палитры.</p>
             </div>
           </div>
@@ -58,12 +58,12 @@ export default function InstepRealise() {
             <div className={styles.designChange}>
               <GreenBlur className={styles.designChangeBlur} />
               <Star className={styles.designChangeStar} />
-              <img className={styles.designChangeImage} src="/images/projects/instep/design-change.svg" alt="" />
+              <img className={styles.designChangeImage} src='/images/projects/instep/design-change.svg' alt='' />
             </div>
           </div>
           <div className='col col-6'>
-            <img className={styles.styleImage} src="/images/projects/instep/style-box.png" alt="" />
-            <img className={styles.styleImageLg} src="/images/projects/instep/style-scheme.png" alt="" />
+            <img className={styles.styleImage} src='/images/projects/instep/style-box.png' alt='' />
+            <img className={styles.styleImageLg} src='/images/projects/instep/style-scheme.png' alt='' />
           </div>
           <div className='col col-6 col-lg-2'>
             <VioletBlur2 className={styles.styleBlur} />
@@ -74,7 +74,7 @@ export default function InstepRealise() {
               <Talk className={styles.styleTalk} />
               Основным стилеобразующим элементом является нарисованная от руки графика. Она задумывалась как продолжение позиционирования бренда: компания помогает клиентам преодолеть страшный этап в жизни и вернуться к привычной жизни, без ограничений.
             </p>
-            <img className={styles.styleGraphic} src="/images/projects/instep/graphic-box.png" alt="" />
+            <img className={styles.styleGraphic} src='/images/projects/instep/graphic-box.png' alt='' />
           </div>
           <div className='col col-6 col-lg-2'>
             <Heart className={styles.styleHeart} />
