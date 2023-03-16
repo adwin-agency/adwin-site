@@ -216,10 +216,136 @@
   }
 
   .styleText {
+    position: relative;
     margin-top: 200rem;
+  }
+
+  .styleTalk {
+    position: absolute;
+    left: -120rem;
+    top: -90rem;
+    width: 138rem;
+    height: 96rem;
   }
 
   .styleGraphic {
     display: none;
+  }
+
+  .styleBlur {
+    display: block;
+    margin-left: (-$container-padding);
+    margin-top: -150rem;
+    width: 600rem;
+    pointer-events: none;
+  }
+
+  .styleSmile {
+    display: block;
+    margin-top: -300rem;
+    width: 139rem;
+    height: 154rem;
+  }
+
+  .styleHeart {
+    margin-left: 24rem;
+    margin-top: 200rem;
+    width: 126rem;
+    height: 103rem;
+  }
+
+  .styleHashtags {
+    display: block;
+    margin-left: -20rem;
+    margin-top: -50rem;
+    width: 375rem;
+    height: 175rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 172rem 0;
+  }
+
+  .areasBg {
+    top: -150rem;
+    right: (-$container-padding-xl);
+    width: 900rem;
+  }
+
+  .areasImage {
+    margin: -100rem 0 0 130rem;
+    width: 600rem;
+  }
+
+  .areaRight {
+    margin-left: 700rem;
+  }
+
+  .areaArrow {
+    right: 300rem;
+    bottom: -160rem;
+    width: 180rem;
+    height: 180rem;
+  }
+
+  .areaBottom {
+    width: 500rem;
+
+    .areaArrow {
+      top: -170rem;
+      width: 180rem;
+      height: 180rem;
+    }
+  }
+
+  .designChangeImage {
+    margin-left: 300rem;
+    width: 600rem;
+  }
+
+  .designChangeBlur {
+    right: (-$container-padding-xl);
+  }
+
+  .styleImageLg {
+    width: 90%;
+  }
+
+  .styleBlur {
+    margin-left: (-$container-padding-xl);
+    margin-top: -250rem;
+    width: 800rem;
+  }
+
+  .styleSmile {
+    margin-left: -30rem;
+    margin-top: -450rem;
+    width: 278rem;
+    height: 308rem;
+  }
+
+  .styleText {
+    margin-top: 300rem;
+  }
+
+  .styleTalk {
+    left: -160rem;
+    top: -140rem;
+    width: 208rem;
+    height: 144rem;
+  }
+
+  .styleHeart {
+    margin-top: 300rem;
+    width: 190rem;
+    height: 155rem;
+  }
+
+  .styleHashtags {
+    margin-top: -140rem;
+    width: 550rem;
+    height: 260rem;
   }
 }

@@ -8,6 +8,8 @@ import Arrow3 from '/icons/instep/arrow3.svg'
 import Star from '/icons/instep/star.svg'
 import Smile from '/icons/instep/smile.svg'
 import Talk from '/icons/instep/talk.svg'
+import Heart from '/icons/instep/heart.svg'
+import Hashtags from '/icons/instep/hashtags.svg'
 import styles from './InstepRealise.module.scss'
 
 export default function InstepRealise() {
@@ -74,7 +76,10 @@ export default function InstepRealise() {
             </p>
             <img className={styles.styleGraphic} src="/images/projects/instep/graphic-box.png" alt="" />
           </div>
-          <div className='col col-6 col-lg-2'></div>
+          <div className='col col-6 col-lg-2'>
+            <Heart className={styles.styleHeart} />
+            <Hashtags className={styles.styleHashtags} />
+          </div>
         </div>
       </div>
     </section>
