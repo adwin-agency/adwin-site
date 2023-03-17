@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import ShapeArrow from '/icons/instep/shape-arrow.svg'
 import ListStar from '/icons/instep/list-star.svg'
 import DescLight from '/icons/instep/desc-light.svg'
@@ -6,6 +7,8 @@ import DescArrow from '/icons/instep/desc-arrow.svg'
 import DescArrow2 from '/icons/instep/desc-arrow-2.svg'
 import DescBracket from '/icons/instep/desc-bracket.svg'
 import DescBracket2 from '/icons/instep/desc-bracket-2.svg'
+import GreenBlur2 from '/icons/instep/green-blur-2.svg'
+import media from '../../../data/media'
 import styles from './InstepParts.module.scss'
 
 export default function InstepParts() {
@@ -28,7 +31,7 @@ export default function InstepParts() {
             </li>
             <li className={styles.topListItem}>
               <ListStar className={styles.topListIcon} />
-              человеческая составляющая (команда и комьюнити)
+              человеческая составляющая (команда и&nbsp;комьюнити)
             </li>
           </ul>
         </div>
@@ -37,43 +40,64 @@ export default function InstepParts() {
         <div className='container'>
           <div className='row'>
             <div className='col col-6 col-lg-2'>
-              <div className={styles.desc}>
+              <div className={cn(styles.desc, styles.advantages)}>
                 <p className={styles.descText}>
                   <DescLight className={styles.descLight} />
                   Преимущества вынесены крупными блоками, сопровождаются уникальными изображениями, подробным описанием и графикой
                   <DescArrow className={styles.descArrow} />
                 </p>
                 <DescBracket className={styles.descBracket} />
-                <img className={styles.descImage} src='/images/projects/instep/desc-advantages.png' alt='' />
+                <picture>
+                  <source media={`(min-width: ${media.lg}px)`} srcSet='/' />
+                  <img className={styles.descImage} src='/images/projects/instep/desc-advantages.png' alt='' />
+                </picture>
               </div>
-              <div className={styles.desc}>
+              <div className={cn(styles.desc, styles.services)}>
                 <p className={styles.descText}>
                   <DescLight className={styles.descLight} />
                   Возможностям компании посвящён компактный, но информативный блок о разновидностях протезов, их функционале и особенностях. Всё это можно изучить во всплывающем по клику поп-апе
                   <DescArrow2 className={styles.descArrow} />
                 </p>
                 <DescBracket2 className={styles.descBracket} />
-                <img className={styles.descImage} src='/images/projects/instep/desc-services.png' alt='' />
+                <picture>
+                  <source media={`(min-width: ${media.lg}px)`} srcSet='/' />
+                  <img className={styles.descImage} src='/images/projects/instep/desc-services.png' alt='' />
+                </picture>
               </div>
             </div>
             <div className='col col-6 col-lg-4'>
-              <img className={styles.mainImage} src='/images/projects/instep/desktop.png' alt='' />
+              <picture>
+                <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desktop.png' />
+                <img className={cn(styles.mainImage, styles.mainImageTop)} src='/' alt='' />
+              </picture>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.inner}>
-        <img className={styles.innerImage} src='/images/projects/instep/desc-modal.png' alt='' />
+        <picture>
+          <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desc-modal-lg.png' />
+          <img className={styles.innerImage} src='/images/projects/instep/desc-modal.png' alt='' />
+        </picture>
       </div>
-      <div className={styles.main}>
+      <div className={cn(styles.main, styles.mainBottom)}>
         <div className='container'>
           <div className='row'>
             <div className='col col-6 col-lg-2'>
-              <img className={styles.descMobileImage} src='/images/projects/instep/desc-mobile-start.png' alt='' />
-              <img className={styles.descMobileImage} src='/images/projects/instep/desc-mobile-request.png' alt='' />
-              <img className={styles.descMobileImage} src='/images/projects/instep/desc-mobile-help.png' alt='' />
+              <picture>
+                <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desc-mobile-start-lg.png' />
+                <img className={styles.descMobStart} src='/images/projects/instep/desc-mobile-start.png' alt='' />
+              </picture>
+              <picture>
+                <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desc-mobile-request-lg.png' />
+                <img className={styles.descMobRequest} src='/images/projects/instep/desc-mobile-request.png' alt='' />
+              </picture>
+              <picture>
+                <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desc-mobile-help-lg.png' />
+                <img className={styles.descMobHelp} src='/images/projects/instep/desc-mobile-help.png' alt='' />
+              </picture>
               <div className={styles.setting}>
-                <p className={styles.settingTitle}>
+                <p className={cn('h3', styles.settingTitle)}>
                   Настройка
                   <DescLight2 className={styles.settingIcon} />
                 </p>
@@ -81,10 +105,14 @@ export default function InstepParts() {
               </div>
             </div>
             <div className='col col-6 col-lg-4'>
-              <img className={styles.mainImage} src='/images/projects/instep/desktop-2.png' alt='' />
+              <picture>
+                <source media={`(min-width: ${media.lg}px)`} srcSet='/images/projects/instep/desktop-2.png' />
+                <img className={styles.mainImage} src='/' alt='' />
+              </picture>
             </div>
           </div>
         </div>
+        <GreenBlur2 className={styles.mainBlur} />
       </div>
     </section>
   )

@@ -1,3 +1,351 @@
-.el {
-  overflow: hidden;
+.top {
+  padding-bottom: 60rem;
+  background-color: #fff;
+}
+
+.heading {
+  position: relative;
+  font-weight: 400;
+  font-size: 28rem;
+  line-height: 100%;
+  z-index: 1;
+}
+
+.headingIcon {
+  position: absolute;
+  left: -40rem;
+  bottom: -80rem;
+  width: 110rem;
+  height: 110rem;
+  transform: rotate(-20deg);
+  z-index: -1;
+}
+
+.topList {
+  margin-left: 76rem;
+  margin-top: 30rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.topListItem {
+  display: flex;
+  margin-bottom: 12rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.topListIcon {
+  margin-top: 8rem;
+  margin-right: 20rem;
+  flex-shrink: 0;
+  width: 16rem;
+  height: 16rem;
+}
+
+.main {
+  padding: 38rem 0;
+}
+
+.desc {
+  margin-bottom: 38rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.descText {
+  margin-bottom: 28rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.descLight,
+.descArrow,
+.descBracket {
+  display: none;
+}
+
+.descImage {
+  margin: 0 (-$container-padding);
+  width: calc(100% + $container-padding * 2);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.innerImage {
+  width: 100%;
+}
+
+.descMobStart {
+  display: block;
+  position: relative;
+  margin-left: 10%;
+  width: 90%;
+  z-index: 1;
+}
+
+.descMobRequest {
+  margin: -450rem (-$container-padding) 0;
+  width: calc(100% + $container-padding * 2);
+  pointer-events: none;
+}
+
+.descMobHelp {
+  margin: -250rem (-$container-padding) 0;
+  width: calc(100% + $container-padding * 2);
+  pointer-events: none;
+}
+
+.settingTitle {
+  display: inline-block;
+  position: relative;
+}
+
+.setting {
+  margin-top: -220rem;
+}
+
+.settingIcon {
+  position: absolute;
+  top: -18rem;
+  right: -25rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+.settingDesc {
+  margin-top: 20rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.mainBlur {
+  display: none;
+}
+
+@include media(lg) {
+  .heading {
+    width: 350rem;
+  }
+
+  .headingIcon {
+    left: -60rem;
+    transform: none;
+  }
+
+  .top {
+    padding-top: 220rem;
+    padding-bottom: 30rem;
+    background-image: linear-gradient(180deg, #fff 330rem, transparent 330rem);
+    background-color: transparent;
+  }
+
+  .topList {
+    margin-left: 30rem;
+    margin-top: 60rem;
+    width: 350rem;
+  }
+
+  .desc {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .advantages {
+    padding: 70rem 0 870rem;
+  }
+
+  .services {
+    padding: 70rem 0;
+  }
+
+  .descText {
+    position: relative;
+    margin-right: 50rem;
+    margin-bottom: 0;
+    font-size: 28rem;
+    line-height: 100%;
+  }
+
+  .descLight {
+    display: block;
+    position: absolute;
+    left: -30rem;
+    top: -30rem;
+    width: 43rem;
+    height: 47rem;
+  }
+
+  .descArrow {
+    display: block;
+    position: absolute;
+    right: -30rem;
+    bottom: -90rem;
+    width: 104rem;
+    height: 104rem;
+  }
+
+  .descBracket {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: (-$col-gap);
+    width: 18.5rem;
+  }
+
+  .mainImage {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mainImageTop {
+    margin-top: -630rem;
+  }
+
+  .inner {
+    position: relative;
+    margin-top: -80rem;
+    padding: 80rem 0 100rem;
+    background: #3E4D86;
+    z-index: 2;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 78rem;
+      background-image: url(/images/projects/instep/border-shape.png);
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      top: 100%;
+    }
+  }
+
+  .innerImage {
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 80rem);
+  }
+
+  .mainBottom {
+    margin-top: -60rem;
+  }
+
+  .descMobStart {
+    margin-left: 180rem;
+    margin-top: 150rem;
+    width: 300rem;
+    z-index: 2;
+  }
+
+  .descMobRequest {
+    position: relative;
+    margin: -160rem 0 0 -120rem;
+    width: 950rem;
+    z-index: 2;
+  }
+
+  .descMobHelp {
+    position: relative;
+    margin: 280rem 0 0 -140rem;
+    width: 900rem;
+    z-index: 2;
+  }
+
+  .setting {
+    margin-top: -60rem;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .mainBottom {
+    padding-bottom: 80rem;
+    overflow: hidden;
+  }
+
+  .mainBlur {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -150rem;
+    width: 500rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding-top: 180rem;
+    background-image: linear-gradient(180deg, #fff 290rem, transparent 290rem);
+  }
+
+  .descText {
+    margin-right: 150rem;
+  }
+
+  .descBracket {
+    width: 30rem;
+  }
+
+  .advantages {
+    padding: 450rem 0 1250rem;
+  }
+
+  .services {
+    padding: 270rem 0;
+  }
+
+  .inner {
+    margin-top: -120rem;
+  }
+
+  .innerImage {
+    width: calc(100% - 160rem);
+  }
+
+  .descMobStart {
+    margin-left: 270rem;
+    margin-top: 250rem;
+    width: 400rem;
+  }
+
+  .descMobRequest {
+    margin: -110rem 0 0 -90rem;
+    width: 1200rem;
+  }
+
+  .descMobHelp {
+    margin: 580rem 0 0 -110rem;
+    width: 1150rem;
+  }
+
+  .setting {
+    margin-top: 230rem;
+  }
+
+  .mainBottom {
+    padding-bottom: 170rem;
+  }
+
+  .mainBlur {
+    bottom: -250rem;
+    width: 700rem;
+  }
 }
