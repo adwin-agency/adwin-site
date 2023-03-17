@@ -48,5 +48,13 @@ export default [
     title: 'InStep',
     detailTitle: 'InStep: разработка лендинга',
     desc: 'instep'
+  },
+  {
+    id: 'stepmetall',
+    images: ['stepmetall.png', 'stepmetall-lg.png'],
+    tags: ['разработка', 'интернет-магазин', 'брендинг', 'анализ ниши'],
+    title: 'Step Metall',
+    detailTitle: 'Step Metall',
+    desc: 'stepmetall'
   }
 ]
