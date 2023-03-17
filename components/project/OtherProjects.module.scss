@@ -1,0 +1,50 @@
+.el {
+  padding: 28rem 0 64rem;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 30rem;
+  line-height: 110%;
+}
+
+.items {
+  margin-top: 35rem;
+}
+
+.item {
+  margin-bottom: 50rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include media(lg) {
+  .el {
+    border-top: 1px solid $color-grey-main;
+    padding: 80rem 0 60rem;
+  }
+
+  .heading {
+    font-size: 50rem;
+    line-height: 100%;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40rem;
+    margin-top: 78rem;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 98rem 0 125rem;
+  }
+}

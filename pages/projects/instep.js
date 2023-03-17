@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ProjectInstep from '../../components/project/instep/ProjectInstep'
+import ProjectInstep from '../../components/project/ProjectInstep'
 
 export default function ProjectInstepPage() {
   return (

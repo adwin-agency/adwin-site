@@ -1,0 +1,52 @@
+.el {
+  border-top: 1px solid $color-grey-main;
+  padding: 48rem 0 28rem;
+}
+
+.desc {
+  margin-top: 12rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.list {
+  margin-top: 26rem;
+}
+
+.item {
+  margin-bottom: 30rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemNum {
+  font-size: 72rem;
+  line-height: 100%;
+  color: $color-magenta;
+}
+
+.itemTitle {
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 75rem 0 90rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20rem;
+    margin-top: 56rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 150rem 0 180rem;
+  }
+}
