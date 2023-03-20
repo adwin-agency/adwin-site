@@ -1,0 +1,113 @@
+.main {
+  padding-top: 118rem;
+  background: #fff;
+}
+
+.heading {
+  color: #0561FC;
+}
+
+.desc {
+  margin-top: 24rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.image {
+  margin: 46rem (-$container-padding) 0;
+  width: calc(100% + $container-padding * 2);
+}
+
+.note {
+  margin-top: 32rem;
+  padding: 72rem $container-padding 78rem;
+  background: #0561FC;
+}
+
+.noteText {
+  color: #fff;
+}
+
+.boxImage {
+  display: block;
+  width: 100%;
+}
+
+.boxLogo {
+  display: none;
+}
+
+@include media(lg) {
+  .main {
+    padding-top: 195rem;
+  }
+
+  .desc {
+    margin-top: 0;
+    font-size: 26rem;
+    line-height: 140%;
+  }
+
+  .image {
+    position: relative;
+    margin: 86rem 0 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .note {
+    position: relative;
+    margin-left: auto;
+    margin-top: -312rem;
+    width: 500rem;
+    padding: 102rem 80rem 88rem 120rem;
+    z-index: 1;
+  }
+
+  .box {
+    position: relative;
+    margin-top: -300rem;
+    padding-bottom: 124rem;
+    overflow: hidden;
+  }
+
+  .boxLogo {
+    display: block;
+    position: absolute;
+    right: -30rem;
+    bottom: 0;
+    width: 214rem;
+    width: 238rem;
+  }
+}
+
+@include media(xl) {
+  .main {
+    padding-top: 294rem;
+  }
+
+  .desc {
+    max-width: 900rem;
+  }
+
+  .image {
+    margin-top: 128rem;
+  }
+
+  .note {
+    margin-top: -470rem;
+    width: 768rem;
+    padding: 218rem 88rem 166rem 188rem;
+  }
+
+  .box {
+    margin-top: -320rem;
+    padding-bottom: 188rem;
+  }
+
+  .boxLogo {
+    right: -44rem;
+    width: 320rem;
+    height: 356rem;
+  }
+}

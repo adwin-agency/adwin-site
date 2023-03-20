@@ -1,10 +1,7 @@
-.el {
-  padding-bottom: 62rem;
-  overflow: hidden;
-}
-
 .top {
   position: relative;
+  padding-bottom: 14rem;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -23,7 +20,7 @@
 .topLogo {
   position: absolute;
   right: -35rem;
-  bottom: -13rem;
+  bottom: 0;
   width: 152rem;
   height: 170rem;
 }
@@ -75,6 +72,7 @@
 .cjm {
   padding-top: 70rem;
   border-top: 1px solid $color-grey-light;
+  overflow: hidden;
 }
 
 .cjmDesc {
@@ -108,13 +106,12 @@
 }
 
 @include media(lg) {
-  .el {
-    padding-bottom: 100rem;
+  .top {
+    padding-bottom: 38rem;
   }
 
   .topLogo {
     right: 40rem;
-    bottom: -38rem;
     width: 186rem;
     height: 208rem;
   }
@@ -175,13 +172,12 @@
 }
 
 @include media(xl) {
-  .el {
-    padding-bottom: 150rem;
+  .top {
+    padding-bottom: 56rem;
   }
 
   .topLogo {
     right: 54rem;
-    bottom: -56rem;
     width: 280rem;
     height: 314rem;
   }
