@@ -1,0 +1,228 @@
+.el {
+  padding-bottom: 62rem;
+  overflow: hidden;
+}
+
+.top {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7rem;
+    background-image: linear-gradient(90deg, #0561FC 25%, #000000 25%, #000000 50%, #FFFFFF 50%, #FFFFFF 75%, #C0C0C0 75%);
+  }
+}
+
+.topImage {
+  display: block;
+  width: 100%;
+}
+
+.topLogo {
+  position: absolute;
+  right: -35rem;
+  bottom: -13rem;
+  width: 152rem;
+  height: 170rem;
+}
+
+.main {
+  padding: 40rem 0 88rem;
+}
+
+.title {
+  color: #0561FC;
+}
+
+.desc {
+  margin-top: 24rem;
+  font-size: 26rem;
+  line-height: 140%;
+}
+
+.tasks {
+  margin: 48rem (-$container-padding) 0;
+  padding: 50rem $container-padding 0;
+  border-top: 1px solid $color-grey-light;
+}
+
+.tasksList {
+  margin-top: 34rem;
+}
+
+.task {
+  margin-bottom: 55rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.taskNum {
+  font-size: 30rem;
+  line-height: 100%;
+  color: #0561FC;
+}
+
+.taskText {
+  margin-top: 6rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.cjm {
+  padding-top: 70rem;
+  border-top: 1px solid $color-grey-light;
+}
+
+.cjmDesc {
+  margin-top: 40rem;
+}
+
+.cjmImage {
+  width: 480rem;
+  margin-left: -30rem;
+  margin-top: -50rem;
+}
+
+.design {
+  margin-top: 104rem;
+}
+
+.designDesc {
+  margin-top: 30rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.designBox {
+  margin-top: 124rem;
+  background: #0561FC;
+}
+
+.designImage {
+  margin: -62rem 0;
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding-bottom: 100rem;
+  }
+
+  .topLogo {
+    right: 40rem;
+    bottom: -38rem;
+    width: 186rem;
+    height: 208rem;
+  }
+
+  .main {
+    padding: 68rem 0 94rem;
+  }
+
+  .tasks {
+    margin: 68rem (-$container-padding) 0 0;
+    padding: 60rem $container-padding 0 0;
+  }
+
+  .tasksList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20rem;
+    margin-top: 40rem;
+  }
+
+  .cjmMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 20rem;
+  }
+
+  .cjmImage {
+    grid-row: 1/5;
+    width: 600rem;
+  }
+
+  .cjmDesc {
+    margin-top: 38rem;
+  }
+
+  .cjmNote {
+    margin-top: 40rem;
+  }
+
+  .cjmTable {
+    margin-top: 100rem;
+    width: 100%;
+  }
+
+  .designDesc {
+    font-size: 26rem;
+    line-height: 140%;
+  }
+
+  .designBox {
+    margin-top: 200rem;
+  }
+
+  .designImage {
+    margin: -130rem 60rem -100rem;
+    width: calc(100% - 120rem);
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-bottom: 150rem;
+  }
+
+  .topLogo {
+    right: 54rem;
+    bottom: -56rem;
+    width: 280rem;
+    height: 314rem;
+  }
+
+  .main {
+    padding: 102rem 0 140rem;
+  }
+
+  .desc {
+    max-width: 900rem;
+  }
+
+  .tasks {
+    margin: 102rem (-$container-padding-xl) 0 0;
+    padding: 90rem $container-padding-xl 0 0;
+  }
+
+  .tasksList {
+    margin-top: 60rem;
+    max-width: 900rem;
+  }
+
+  .cjmImage {
+    width: 900rem;
+    margin-left: -70rem;
+    margin-top: -200rem;
+  }
+
+  .cjmTable {
+    margin-top: 50rem;
+  }
+
+  .designDesc {
+    max-width: 900rem;
+  }
+
+  .designBox {
+    margin-top: 300rem;
+  }
+
+  .designImage {
+    margin: -190rem 60rem -150rem;
+  }
+}
