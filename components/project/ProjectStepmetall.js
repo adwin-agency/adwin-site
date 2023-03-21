@@ -4,6 +4,7 @@ import StepmetallAdaptive from './stepmetall/StepmetallAdaptive'
 import StepmetallDesign from './stepmetall/StepmetallDesign'
 import StepmetallKit from './stepmetall/StepmetallKit'
 import StepmetallProto from './stepmetall/StepmetallProto'
+import StepmetallResults from './stepmetall/StepmetallResults'
 
 export default function ProjectStepmetall() {
   return (
@@ -14,6 +15,7 @@ export default function ProjectStepmetall() {
       <StepmetallKit />
       <StepmetallDesign />
       <StepmetallAdaptive />
+      <StepmetallResults />
     </>
   )
 }

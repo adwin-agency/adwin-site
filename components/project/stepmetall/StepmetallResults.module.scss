@@ -1,0 +1,88 @@
+.el {
+  position: relative;
+  border-top: 1px solid $color-grey-main;
+  padding-top: 48rem;
+}
+
+.logo {
+  position: absolute;
+  left: -102rem;
+  bottom: 0;
+  width: 366rem;
+  height: 408rem;
+}
+
+.heading {
+  position: relative;
+}
+
+.list {
+  position: relative;
+  margin-top: 32rem;
+}
+
+.item {
+  margin-bottom: 44rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.num {
+  font-size: 40rem;
+  line-height: 100%;
+  color: #0561FC;
+}
+
+.text {
+  margin-top: 10rem;
+}
+
+@include media(lg) {
+  .el {
+    padding-top: 98rem;
+    padding-bottom: 108rem;
+    overflow: hidden;
+  }
+
+  .logo {
+    left: auto;
+    right: -32rem;
+    bottom: 38rem;
+    width: 244rem;
+    height: 272rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70rem 40rem;
+    margin-top: 0;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .num {
+    font-size: 72rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 148rem;
+    padding-bottom: 162rem;
+  }
+
+  .logo {
+    right: -48rem;
+    width: 366rem;
+    height: 408rem;
+  }
+
+  .list {
+    grid-gap: 100rem 40rem;
+  }
+}
