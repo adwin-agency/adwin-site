@@ -1,0 +1,67 @@
+.top {
+  padding-top: 56rem;
+  padding-bottom: 618rem;
+  background: #000;
+}
+
+.heading {
+  color: #0561FC;
+}
+
+.desc {
+  margin-top: 20rem;
+  color: #fff;
+}
+
+.screens {
+  padding-bottom: 48rem;
+}
+
+.screensImage {
+  margin-top: -570rem;
+  width: 100%;
+}
+
+.screensDesc {
+  margin-top: 45rem;
+}
+
+@include media(lg) {
+  .top {
+    padding-top: 162rem;
+    padding-bottom: 228rem;
+  }
+
+  .desc {
+    margin-top: 40rem;
+  }
+
+  .screens {
+    padding-bottom: 74rem;
+  }
+
+  .screensDesc {
+    margin-top: -95rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding-top: 244rem;
+    padding-bottom: 344rem;
+  }
+
+  .screens {
+    padding-bottom: 112rem;
+  }
+
+  .screensImage {
+    margin-top: -670rem;
+  }
+
+  .screensDesc {
+    margin-left: 90rem;
+    margin-top: -115rem;
+    max-width: 375rem;
+  }
+}
