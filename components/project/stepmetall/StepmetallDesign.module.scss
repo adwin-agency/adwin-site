@@ -1,0 +1,202 @@
+.top {
+  padding-top: 70rem;
+}
+
+.heading {
+  color: #0561FC;
+}
+
+.desc {
+  margin-top: 14rem;
+}
+
+.topImage {
+  margin-top: 40rem;
+  width: 100%;
+}
+
+.main {
+  margin-top: 50rem;
+}
+
+.catalogPicture {
+  margin-top: 84rem;
+}
+
+.catalogImage {
+  width: 100%;
+}
+
+.cartPicture {
+  margin-left: (-$container-padding);
+  margin-top: 24rem;
+  width: 70%;
+}
+
+.cartImage {
+  width: 100%;
+}
+
+.cartSide {
+  display: none;
+}
+
+.cartInfo {
+  margin-top: 74rem;
+}
+
+.formDesc {
+  margin-top: 35rem;
+}
+
+.formImage {
+  margin-top: 32rem;
+  width: 100%;
+}
+
+.screens {
+  margin-top: -180rem;
+  padding-top: 250rem;
+  background: #000000;
+}
+
+.screensImage {
+  width: 100%;
+}
+
+@include media(lg) {
+  .top {
+    padding-top: 110rem;
+    padding-bottom: 116rem;
+    background: #fff;
+  }
+
+  .desc {
+    margin-top: 0;
+    max-width: 600rem;
+  }
+
+  .topImage {
+    margin-top: 68rem;
+    width: 72%;
+  }
+
+  .main {
+    position: relative;
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 770rem;
+      height: 980rem;
+      background: #fff;
+    }
+  }
+
+  .mainRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalogDesc {
+    margin-top: 50rem;
+    width: 26%;
+  }
+
+  .catalogPicture {
+    position: relative;
+    margin-left: auto;
+    margin-top: -50rem;
+    margin-right: (-$container-padding);
+    width: 71%;
+  }
+
+  .cartPicture {
+    position: relative;
+    margin-left: 0;
+    margin-top: 82rem;
+    width: 68%;
+  }
+
+  .cartSide {
+    display: block;
+    position: relative;
+    width: 25%;
+    align-self: flex-end;
+    margin-left: 50rem;
+    margin-bottom: 110rem;
+  }
+
+  .cartInfo {
+    margin-top: 75rem;
+    width: 48%;
+  }
+
+  .formImage {
+    margin-left: 90rem;
+    margin-top: 75rem;
+    width: 30%;
+    align-self: flex-start;
+  }
+
+  .screens {
+    margin-top: 50rem;
+    padding-top: 132rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding-top: 164rem;
+    padding-bottom: 174rem;
+  }
+
+  .desc {
+    max-width: 900rem;
+  }
+
+  .topImage {
+    margin-top: 102rem;
+  }
+
+  .main {
+    &::before {
+      width: 1100rem;
+      height: 1380rem;
+    }
+  }
+
+  .catalogDesc {
+    margin-top: 300rem;
+  }
+
+  .catalogPicture {
+    margin-top: -90rem;
+    margin-right: (-$container-padding-xl);
+  }
+
+  .cartPicture {
+    margin-top: 124rem;
+  }
+
+  .cartSide {
+    margin-left: 70rem;
+    margin-bottom: 170rem;
+  }
+
+  .cartInfo {
+    margin-top: 112rem;
+  }
+
+  .formImage {
+    margin-top: 112rem;
+  }
+
+  .screens {
+    margin-top: -160rem;
+    padding-top: 238rem;
+  }
+}
