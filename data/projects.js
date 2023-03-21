@@ -56,5 +56,13 @@ export default [
     title: 'Step Metall',
     detailTitle: 'Step Metall',
     desc: 'stepmetall'
+  },
+  {
+    id: 'tradex',
+    images: ['tradex.png', 'tradex-lg.png'],
+    tags: ['разработка', 'интернет-магазин', 'брендинг', 'анализ ниши'],
+    title: 'Tradex',
+    detailTitle: 'Tradex',
+    desc: 'tradex'
   }
 ]
