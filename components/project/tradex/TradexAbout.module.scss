@@ -1,0 +1,167 @@
+.el {
+  position: relative;
+  color: #fff;
+  background: #353535;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.logo {
+  position: relative;
+  margin-top: 34rem;
+  width: 146rem;
+  height: 28rem;
+}
+
+.main {
+  margin-top: 475rem;
+}
+
+.desc {
+  margin-top: 20rem;
+}
+
+.task {
+  margin-top: 88rem;
+}
+
+.taskDesc {
+  margin-top: 20rem;
+}
+
+.box {
+  margin-top: -68rem;
+  margin-bottom: -160rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.duck {
+  margin-left: 56rem;
+  width: 375rem;
+}
+
+.companyPicture {
+  position: relative;
+  top: 50rem;
+}
+
+.companyLine {
+  display: block;
+  width: 100%;
+}
+
+@include media(lg) {
+  .lines {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    div {
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #EEEEEA;
+      opacity: 0.2;
+
+      &:nth-child(1) {
+        left: 5%;
+      }
+
+      &:nth-child(2) {
+        left: 50%;
+      }
+
+      &:nth-child(3) {
+        left: 76%;
+      }
+    }
+  }
+
+  .logo {
+    position: relative;
+  }
+
+  .main {
+    position: relative;
+    margin-top: 420rem;
+  }
+
+  .info {
+    padding-left: 80rem;
+    padding-right: 80rem;
+  }
+
+  .desc {
+    margin-top: 34rem;
+  }
+
+  .task {
+    margin-top: 326rem;
+    padding-left: 30rem;
+    padding-right: 300rem;
+  }
+
+  .box {
+    position: relative;
+    margin-top: -180rem;
+    margin-bottom: -145rem;
+  }
+
+  .duck {
+    margin-left: 0;
+  }
+
+  .companyPicture {
+    top: 60rem;
+  }
+}
+
+@include media(xl) {
+  .logo {
+    margin-top: 70rem;
+    width: 185rem;
+    height: 36rem;
+  }
+
+  .main {
+    margin-top: 632rem;
+  }
+
+  .info {
+    padding-left: 122rem;
+    padding-right: 110rem;
+  }
+
+  .task {
+    margin-top: 490rem;
+    padding-right: 440rem;
+  }
+
+  .taskDesc {
+    margin-top: 30rem;
+  }
+
+  .box {
+    margin-top: -260rem;
+    margin-bottom: -205rem;
+  }
+
+  .duck {
+    width: 550rem;
+  }
+
+  .companyPicture {
+    top: 90rem;
+  }
+}

@@ -130,6 +130,16 @@ textarea {
   line-height: 1.6;
 }
 
+.quote-m {
+  font-size: 26rem;
+  line-height: 1.4;
+}
+
+.txt-quote-m {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
 .container {
   padding: 0 $container-padding;
 }
@@ -181,6 +191,14 @@ textarea {
     line-height: 1.4;
   }
 
+  .quote-m {
+    font-size: 18rem;
+  }
+
+  .txt-quote-m {
+    line-height: 1.4;
+  }
+
   @for $i from 1 through 6 {
     .col-lg-#{$i} {
       width: 100% / 6 * $i;
@@ -214,6 +232,14 @@ textarea {
   }
 
   .txt-quote {
+    font-size: 26rem;
+  }
+
+  .quote-m {
+    font-size: 26rem;
+  }
+
+  .txt-quote-m {
     font-size: 26rem;
   }
 
