@@ -1,0 +1,74 @@
+.el {
+  padding: 68rem 0;
+}
+
+.desc {
+  margin-top: 26rem;
+}
+
+.list {
+  margin-top: 32rem;
+}
+
+.item {
+  margin-bottom: 52rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemTitle {
+  font-size: 30rem;
+  line-height: 100%;
+}
+
+.itemDesc {
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 75rem 0 92rem;
+  }
+
+  .desc {
+    margin-top: 0;
+    max-width: 620rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60rem;
+    margin-top: 64rem;
+  }
+
+  .item {
+    margin-bottom: 0;
+  }
+
+  .itemDesc {
+    margin-top: 26rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 115rem 0 138rem;
+  }
+
+  .desc {
+    max-width: 920rem;
+  }
+
+  .list {
+    grid-gap: 90rem;
+    margin-top: 96rem;
+  }
+
+  .itemTitle {
+    font-size: 36rem;
+  }
+}
