@@ -1,0 +1,95 @@
+.el {
+  padding-top: 56rem;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.desc {
+  margin-top: 16rem;
+}
+
+.mainForm {
+  display: block;
+  position: relative;
+  margin-top: 30rem;
+}
+
+.bg {
+  display: block;
+  margin-top: -10rem;
+}
+
+@include media(lg) {
+  .el {
+    padding-top: 98rem;
+  }
+
+  .heading {
+    margin-right: 50rem;
+  }
+
+  .desc {
+    margin-top: 0;
+    max-width: 600rem;
+  }
+
+  .sideForm {
+    display: block;
+    margin-top: 50rem;
+    width: 656rem;
+  }
+
+  .deliveryForm {
+    display: block;
+    margin-left: auto;
+    margin-top: -100rem;
+    margin-right: 50rem;
+    width: 334rem;
+  }
+
+  .mainForm {
+    margin-top: -30rem;
+    width: 638rem;
+  }
+
+  .bg {
+    margin-top: -160rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 146rem;
+  }
+
+  .heading {
+    margin-right: 0;
+  }
+
+  .desc {
+    max-width: 890rem;
+  }
+
+  .sideForm {
+    margin-top: 74rem;
+    width: 985rem;
+  }
+
+  .deliveryForm {
+    margin-top: -150rem;
+    margin-right: 0;
+    width: 502rem;
+  }
+
+  .mainForm {
+    margin-top: -50rem;
+    width: 958rem;
+  }
+
+  .bg {
+    margin-top: -250rem;
+  }
+}
