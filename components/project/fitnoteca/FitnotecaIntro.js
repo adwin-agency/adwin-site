@@ -8,10 +8,10 @@ export default function FitnotecaIntro() {
 
   return (
     <section className={styles.el}>
-      <div className="container">
-        <div className="row">
-          <div className="col col-6 col-lg-4"></div>
-          <div className="col col-6 col-lg-2">
+      <div className='container'>
+        <div className='row'>
+          <div className='col col-6 col-lg-4'></div>
+          <div className='col col-6 col-lg-2'>
             <div className={styles.tags}>
               {tags.map(tag => (
                 <div key={tag} className={styles.tag}>{tag}</div>

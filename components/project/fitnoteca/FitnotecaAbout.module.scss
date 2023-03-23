@@ -1,0 +1,165 @@
+.el {
+  padding: 34rem 0 42rem;
+}
+
+.desc {
+  margin-top: 20rem;
+  margin-bottom: 34rem;
+}
+
+.divider {
+  border-top: 1px solid $color-grey-light;
+}
+
+.tasks {
+  margin-top: 38rem;
+}
+
+.taskItem {
+  margin-bottom: 24rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.taskList {
+  margin-left: 33%;
+  margin-top: 4rem;
+}
+
+.taskNum {
+  font-size: 40rem;
+  line-height: 100%;
+  color: $color-magenta;
+}
+
+.taskText {
+  margin-top: 4rem;
+  font-size: 18rem;
+  line-height: 160%;
+}
+
+.solutions {
+  margin-top: 48rem;
+}
+
+.solutionList {
+  margin-top: 32rem;
+}
+
+.solutionItem {
+  border-top: 2px solid $color-magenta;
+  padding-top: 20rem;
+  margin-bottom: 20rem;
+  font-size: 18rem;
+  line-height: 160%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include media(lg) {
+  .el {
+    padding: 74rem 0;
+  }
+
+  .desc {
+    max-width: 590rem;
+    margin-top: 0;
+    margin-bottom: 55rem;
+  }
+
+  .divider {
+    margin-right: (-$container-padding);
+  }
+
+  .title {
+    width: 230rem;
+    padding-right: 20rem;
+    flex-shrink: 0;
+  }
+
+  .tasks {
+    display: flex;
+    margin-top: 72rem;
+  }
+
+  .taskList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .taskItem {
+    margin-bottom: 0;
+  }
+
+  .taskNum {
+    font-size: 48rem;
+  }
+
+  .taskText {
+    margin-top: 0;
+    line-height: 1;
+  }
+
+  .solutions {
+    display: flex;
+    margin-top: 132rem;
+  }
+
+  .solutionList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 82rem 20rem;
+    margin-top: 0;
+  }
+
+  .solutionItem {
+    margin-bottom: 0;
+    line-height: 140%;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 110rem 0;
+  }
+
+  .desc {
+    max-width: 890rem;
+    margin-bottom: 82rem;
+  }
+
+  .divider {
+    margin-right: (-$container-padding-xl);
+  }
+
+  .title {
+    width: 300rem;
+  }
+
+  .tasks {
+    margin-top: 108rem;
+  }
+
+  .taskNum {
+    font-size: 72rem;
+  }
+
+  .taskText {
+    font-size: 28rem;
+  }
+
+  .solutions {
+    margin-top: 200rem;
+  }
+
+  .solutionItem {
+    font-size: 26rem;
+  }
+}
