@@ -1,0 +1,144 @@
+.el {
+  padding-top: 66rem;
+  color: #fff;
+  background: $color-grey-main;
+  overflow: hidden;
+}
+
+.name,
+.success,
+.note {
+  display: none;
+}
+
+.mobileTop {
+  margin-top: 38rem;
+  width: 100%;
+}
+
+.screensPicture {
+  display: block;
+  margin: 30rem (-$container-padding) 0;
+  width: calc(100% + $container-padding * 2);
+}
+
+.screensImage {
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding-top: 98rem;
+  }
+
+  .sideCol {
+    order: 1;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .name {
+    display: block;
+    position: absolute;
+    left: -60rem;
+    top: 210rem;
+    width: 296rem;
+  }
+
+  .desc,
+  .success,
+  .planePicture,
+  .note {
+    order: 1;
+  }
+
+  .mobileTop {
+    position: relative;
+    margin-left: 64rem;
+    margin-top: 130rem;
+    width: 196rem;
+  }
+
+  .screensPicture {
+    position: relative;
+    margin-left: 150rem;
+    margin-top: 168rem;
+    width: 210rem;
+  }
+
+  .desc {
+    position: relative;
+    margin-top: 144rem;
+    margin-left: 105rem;
+  }
+
+  .success {
+    display: block;
+    position: relative;
+    margin-left: 105rem;
+    margin-top: 90rem;
+    width: 270rem;
+  }
+
+  .planePicture {
+    margin-left: -275rem;
+    margin-top: -75rem;
+    width: 696rem;
+  }
+
+  .planeImage {
+    width: 100%;
+  }
+
+  .note {
+    display: block;
+    margin-left: 105rem;
+    margin-top: 50rem;
+  }
+
+  .desktopPicture {
+    position: relative;
+  }
+
+  .desktopImage {
+    width: 100%;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 146rem;
+  }
+
+  .name {
+    width: 380rem;
+  }
+
+  .mobileTop {
+    margin-top: 196rem;
+    width: 294rem;
+  }
+
+  .screensPicture {
+    margin-top: 252rem;
+    width: 316rem;
+  }
+
+  .desc {
+    margin-top: 216rem;
+    max-width: 360rem;
+  }
+
+  .planePicture {
+    margin-left: -390rem;
+    width: 1044rem;
+  }
+
+  .note {
+    max-width: 370rem;
+  }
+}
