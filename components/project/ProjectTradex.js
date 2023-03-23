@@ -1,5 +1,6 @@
 import ProjectTop from './ProjectTop'
 import TradexAbout from './tradex/TradexAbout'
+import TradexAdaptive from './tradex/TradexAdaptive'
 import TradexDesign from './tradex/TradexDesign'
 import TradexProto from './tradex/TradexProto'
 
@@ -10,6 +11,7 @@ export default function ProjectStepmetall() {
       <TradexAbout />
       <TradexProto />
       <TradexDesign />
+      <TradexAdaptive />
     </>
   )
 }

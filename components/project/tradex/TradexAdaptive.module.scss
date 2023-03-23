@@ -1,0 +1,158 @@
+.el {
+  margin-top: -210rem;
+  overflow: hidden;
+}
+
+.pathMobile {
+  margin-left: -50rem;
+  width: 550rem;
+  height: 550rem;
+}
+
+.pathDesktop {
+  display: none;
+}
+
+.heading {
+  display: none;
+}
+
+.desc {
+  margin-top: -190rem;
+}
+
+.pathLg {
+  display: none;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.screens {
+  display: block;
+  margin: 30rem auto 0;
+  width: 90%;
+}
+
+@include media(lg) {
+  .el {
+    margin-top: 0;
+    padding-top: 146rem;
+    color: #fff;
+    background: $color-grey-main;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .pathMobile {
+    display: none;
+  }
+
+  .pathDesktop {
+    display: block;
+    position: absolute;
+    right: -50rem;
+    top: -180rem;
+    width: 800rem;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .mediaLg {
+    display: block;
+    position: relative;
+    margin-top: 58rem;
+    margin-right: 106rem;
+  }
+
+  .mediaMdTop {
+    display: block;
+    position: relative;
+    margin-top: 264rem;
+  }
+
+  .mediaMdBottom {
+    display: block;
+    margin-top: 36rem;
+  }
+
+  .mediaSmLeft,
+  .mediaSmRight {
+    display: block;
+    margin-top: 90rem;
+    margin-right: 36rem;
+  }
+
+  .desc {
+    margin-top: 610rem;
+  }
+
+  .box {
+    position: relative;
+  }
+
+  .pathLg {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -230rem;
+    width: 1000rem;
+  }
+
+  .screens {
+    position: relative;
+    margin-left: 150rem;
+    margin-top: 134rem;
+    width: auto;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 220rem;
+  }
+
+  .mediaLg {
+    margin-top: 80rem;
+    margin-right: 160rem;
+  }
+
+  .mediaMdTop {
+    margin-top: 350rem;
+  }
+
+  .mediaMdBottom {
+    margin-top: 55rem;
+  }
+
+  .pathDesktop {
+    right: 50rem;
+    top: -260rem;
+    width: 1100rem;
+  }
+
+  .mediaSmLeft,
+  .mediaSmRight {
+    margin-right: 55rem;
+  }
+
+  .desc {
+    margin-top: 980rem;
+  }
+
+  .screens {
+    margin-left: 250rem;
+    margin-top: 200rem;
+  }
+
+  .pathLg {
+    top: -380rem;
+    width: 1500rem;
+  }
+}
