@@ -21,13 +21,6 @@ export default [
     desc: 'Как поднять выручку, не увеличивая бюджет?'
   },
   {
-    id: 'p4',
-    images: ['fitno.png', 'fitno-lg.png'],
-    tags: ['реклама', 'сквозная аналитика', 'я.аудитории', , 'контекстная реклама'],
-    title: 'Fitnoteca',
-    desc: 'Точечная сегментация пользователей и увеличение коэффициента конверсии на 35%'
-  },
-  {
     id: 'p5',
     images: ['bur-site.png', 'bur-site-lg.png'],
     tags: ['разработка', 'корпоративный сайт', 'анализ ниши'],
@@ -64,5 +57,13 @@ export default [
     title: 'Tradex',
     detailTitle: 'Tradex',
     desc: 'tradex'
+  },
+  {
+    id: 'fitnoteca',
+    images: ['fitno.png', 'fitno-lg.png'],
+    tags: ['разработка', 'интернет-магазин', 'брендинг', 'анализ ниши'],
+    title: 'Fitnoteca',
+    detailTitle: 'Fitnoteca:',
+    desc: 'Точечная сегментация пользователей и увеличение коэффициента конверсии на 35%'
   }
 ]

@@ -1,0 +1,69 @@
+.el {
+  padding: 32rem 0 25rem;
+  background-image: url('/images/projects/fitnoteca/intro.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem 10rem;
+}
+
+.tag {
+  border: 1px solid currentColor;
+  border-radius: 100rem;
+  padding: 9rem 20rem;
+  font-size: 12rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin-top: 190rem;
+}
+
+.desc {
+  margin-top: 14rem;
+  font-size: 30rem;
+  line-height: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 45rem 0;
+    background-image: url('/images/projects/fitnoteca/intro-lg.png');
+  }
+
+  .tags {
+    margin-top: 300rem;
+    margin-right: 10rem;
+  }
+
+  .heading {
+    margin-top: 20rem;
+  }
+}
+
+@include media(lg) {
+  .el {
+    padding: 68rem 0;
+  }
+
+  .tags {
+    margin-top: 430rem;
+    margin-right: 0;
+    max-width: 390rem;
+  }
+
+  .heading {
+    margin-top: 30rem;
+  }
+
+  .desc {
+    margin-top: 12rem;
+    font-size: 36rem;
+  }
+}
