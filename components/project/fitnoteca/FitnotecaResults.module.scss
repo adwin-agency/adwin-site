@@ -1,0 +1,66 @@
+.el {
+  padding: 66rem 0 24rem;
+}
+
+.list {
+  margin-top: 35rem;
+}
+
+.listItem {
+  border-top: 2px solid $color-magenta;
+  padding-top: 20rem;
+  margin-bottom: 20rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table {
+  display: block;
+  margin: 50rem (-$container-padding) 0;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding: 90rem 0 82rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40rem 20rem;
+    margin-top: 0;
+  }
+
+  .listItem {
+    margin-bottom: 0;
+  }
+
+  .table {
+    margin: 62rem 0 0;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 134rem 0 124rem;
+  }
+
+  .list {
+    grid-gap: 60rem 20rem;
+  }
+
+  .listItem {
+    padding-top: 28rem;
+  }
+
+  .table {
+    margin: 94rem 0 0;
+  }
+}
