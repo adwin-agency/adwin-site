@@ -1,0 +1,139 @@
+.el {
+  padding-top: 50rem;
+}
+
+.desc {
+  margin-top: 28rem;
+}
+
+.work {
+  position: relative;
+  margin-top: 85rem;
+}
+
+.taskTitle,
+.solutionTitle {
+  font-size: 36rem;
+  line-height: 100%;
+}
+
+.taskInfo {
+  margin-top: 28rem;
+  border: 1px solid #1C82A0;
+  border-radius: 10rem;
+  padding: 40rem 20rem;
+  background: rgba(#FFFFFF, .3);
+}
+
+.taskNum {
+  font-size: 114rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #1C82A0;
+}
+
+.solution {
+  margin-top: 48rem;
+}
+
+.solutionStep {
+  position: relative;
+  margin-top: -20rem;
+  border-radius: 0 0 10rem 10rem;
+  border: 1px solid #1C82A0;
+  border-left: none;
+  border-top: none;
+  padding: 60rem 20rem 30rem;
+  background: linear-gradient(0deg, rgba(28, 130, 160, 0.1) 0%, rgba(28, 130, 160, 0) 57.51%);
+}
+
+.bg {
+  display: block;
+  margin-top: -65rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+@include media(lg) {
+  .el {
+    padding-top: 74rem;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 28% 1fr;
+  }
+
+  .solution {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .solutionTitle {
+    padding-left: 70rem;
+  }
+
+  .solutionSteps {
+    display: flex;
+    margin-top: 28rem;
+    flex: 1;
+  }
+
+  .solutionStep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: -10rem;
+    border-radius: 0 10rem 10rem 0;
+    border-top: 1px solid #1C82A0;
+    border-bottom: none;
+    width: 32%;
+    padding: 30rem 30rem 30rem 70rem;
+    background: linear-gradient(270deg, rgba(28, 130, 160, 0.1) 0%, rgba(28, 130, 160, 0) 57.51%);
+  }
+
+  .bg {
+    margin-top: -212rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding-top: 110rem;
+  }
+
+  .work {
+    margin-top: 132rem;
+  }
+
+  .taskInfo,
+  .solutionSteps {
+    margin-top: 38rem;
+  }
+
+  .taskInfo {
+    padding: 80rem 40rem;
+  }
+
+  .taskNum {
+    font-size: 134rem;
+  }
+
+  .solutionStep {
+    width: 30%;
+    padding: 30rem 50rem 30rem 80rem;
+  }
+
+  .bg {
+    margin-top: -318rem;
+  }
+}
