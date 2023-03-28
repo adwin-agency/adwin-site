@@ -1,0 +1,52 @@
+.el {
+  position: relative;
+
+  &.active {
+    .overlay {
+      opacity: 0;
+    }
+  }
+}
+
+.line {
+  overflow-y: auto;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(43, 93, 170, 0.5);
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.icon {
+  width: 84rem;
+  height: 100rem;
+}
+
+.text {
+  margin-top: 8rem;
+  font-size: 26rem;
+  line-height: 140%;
+}
+
+@include media(lg) {
+  .line {
+    overflow-y: visible;
+  }
+
+  .overlay {
+    display: none;
+  }
+}

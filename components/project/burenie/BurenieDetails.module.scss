@@ -1,0 +1,515 @@
+.el {
+  overflow: hidden;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.top {
+  margin-top: 46rem;
+}
+
+.desc {
+  margin-top: 30rem;
+}
+
+.diffItems {
+  margin-top: 22rem;
+}
+
+.diffTitle {
+  display: inline-block;
+  padding: 10rem 20rem;
+  font-size: 14rem;
+  line-height: 100%;
+  color: #747474;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 10px -12px rgba(30, 74, 190, 0.25);
+}
+
+.diffImage {
+  margin-top: 16rem;
+  width: 100%;
+}
+
+.prepare {
+  margin-top: 30rem;
+}
+
+.prepareDesc {
+  margin-top: 20rem;
+}
+
+.callTracking {
+  margin-top: 40rem;
+}
+
+.callTrackingPicture {
+  display: block;
+  margin-top: 10rem;
+}
+
+.analyticsInfo {
+  margin-top: 40rem;
+}
+
+.analyticsSteps {
+  margin-top: 44rem;
+}
+
+.analyticsStep {
+  font-size: 18rem;
+  line-height: 160%;
+
+  span {
+    display: block;
+    font-size: 36rem;
+    line-height: 100%;
+  }
+
+  &.blue {
+    color: #1E4BBE;
+  }
+
+  &.green {
+    color: #6FAC14;
+  }
+}
+
+.analyticsArrow {
+  margin: 0rem 6rem 70rem;
+  width: 72rem;
+  height: 20rem;
+  transform: rotate(90deg);
+  transform-origin: left;
+}
+
+.analyticsDesc {
+  margin-top: 58rem;
+}
+
+.analyticsPicture {
+  display: block;
+  margin-top: 30rem;
+}
+
+.launch {
+  margin-top: 74rem;
+}
+
+.launchDesc {
+  margin-top: 20rem;
+}
+
+.launchTable {
+  margin: 42rem (-$container-padding) 0;
+}
+
+.launchTableImage {
+  width: 950rem;
+}
+
+.announcementDesc {
+  margin-top: 44rem;
+  margin-bottom: 28rem;
+}
+
+.announcementImage {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.announcementTable {
+  display: block;
+  margin-top: 30rem;
+}
+
+.setting {
+  position: relative;
+  margin-top: 60rem;
+}
+
+.settingLines {
+  position: absolute;
+  left: -100rem;
+  top: 220rem;
+  width: 415rem;
+  z-index: -1;
+}
+
+.settingDesc {
+  margin-top: 18rem;
+}
+
+.settingTable {
+  display: block;
+  margin-top: 66rem;
+}
+
+.settingDiagram {
+  display: block;
+  margin: 20rem (-$container-padding) 0;
+}
+
+.serviceDesc {
+  margin-top: 40rem;
+}
+
+.serviceTable {
+  margin: 40rem (-$container-padding) 0;
+}
+
+.serviceTableImage {
+  width: 1000rem;
+}
+
+.conversionDesc {
+  margin-top: 60rem;
+}
+
+.conversionText {
+  margin-top: 24rem;
+}
+
+.area {
+  margin-top: 36rem;
+}
+
+.areaMap {
+  display: block;
+  margin: 0 (-$container-padding);
+}
+
+.areaDescTop {
+  margin-top: 36rem;
+}
+
+.areaDescBottom {
+  margin-top: 30rem;
+}
+
+.summaryDesc {
+  margin-top: 40rem;
+}
+
+.summaryTable {
+  display: block;
+  margin-top: 48rem;
+}
+
+@include media(lg) {
+  .top {
+    margin-top: 86rem;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+
+  .diffItems {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-gap: 90rem;
+    margin-top: 80rem;
+  }
+
+  .diffTitle {
+    margin-left: 12rem;
+    padding: 14rem 24rem;
+    font-size: 18rem;
+  }
+
+  .diffImage {
+    margin-top: 22rem;
+  }
+
+  .prepare {
+    margin-top: 50rem;
+  }
+
+  .callTracking {
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-gap: 90rem;
+    margin-top: 0;
+  }
+
+  .callTrackingDesc {
+    order: 1;
+    margin-top: 40rem;
+  }
+
+  .analyticsInfo {
+    margin-top: 65rem;
+  }
+
+  .analyticsSteps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .analyticsStep {
+    span {
+      font-size: 24rem;
+    }
+  }
+
+  .analyticsArrow {
+    margin: 0;
+    flex-shrink: 0;
+    transform: none;
+  }
+
+  .analyticsDesc {
+    margin-top: 84rem;
+  }
+
+  .analyticsPicture {
+    margin-top: 64rem;
+  }
+
+  .launchTable {
+    margin: 40rem 0 0;
+  }
+
+  .launchTableImage {
+    width: 100%;
+  }
+
+  .announcementDesc {
+    margin-top: 40rem;
+    margin-bottom: 40rem;
+  }
+
+  .announcementImage {
+    margin-top: 0;
+  }
+
+  .setting {
+    margin-top: 98rem;
+  }
+
+  .settingLines {
+    left: 30rem;
+    top: 20rem;
+    width: 570rem;
+  }
+
+  .settingDesc {
+    margin-top: 22rem;
+  }
+
+  .settingTable {
+    margin-top: 78rem;
+  }
+
+  .settingDiagram {
+    margin: 25rem 0 0;
+  }
+
+  .serviceDesc {
+    margin-top: 34rem;
+  }
+
+  .serviceTable {
+    margin: 32rem 0 0;
+  }
+
+  .serviceTableImage {
+    width: 100%;
+  }
+
+  .conversionDesc {
+    margin-top: 34rem;
+  }
+
+  .conversionText {
+    margin-top: 18rem;
+  }
+
+  .area {
+    display: grid;
+    grid-template-columns: 1fr 900rem;
+    margin-top: 65rem;
+  }
+
+  .areaDescTop {
+    order: -1;
+    margin-top: 52rem;
+  }
+
+  .areaMap {
+    margin: 0;
+  }
+
+  .areaDescBottom {
+    grid-column: 2/3;
+    max-width: 390rem;
+    margin-left: auto;
+    margin-top: -50rem;
+    text-align: right;
+  }
+
+  .summaryDesc {
+    margin-top: 94rem;
+  }
+
+  .summaryTable {
+    margin-top: 36rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    margin-top: 130rem;
+  }
+
+  .diffItems {
+    margin-top: 120rem;
+  }
+
+  .diffTitle {
+    padding: 20rem 38rem;
+    font-size: 28rem;
+  }
+
+  .diffImage {
+    margin-top: 34rem;
+  }
+
+  .callTrackingDesc {
+    margin-top: 60rem;
+  }
+
+  .analyticsStep {
+    span {
+      font-size: 36rem;
+    }
+  }
+
+  .analyticsArrow {
+    width: 120rem;
+    height: 30rem;
+  }
+
+  .analyticsDesc {
+    margin-top: 120rem;
+  }
+
+  .analyticsPicture {
+    margin-top: 95rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400rem;
+  }
+
+  .launch {
+    margin-top: 95rem;
+  }
+
+  .launchDesc {
+    margin-top: 30rem;
+  }
+
+  .launchTable {
+    margin: 60rem auto 0;
+    max-width: 1620rem;
+  }
+
+  .announcementDesc {
+    margin-top: 60rem;
+    margin-bottom: 60rem;
+  }
+
+  .announcementImage {
+    width: auto;
+
+    &.left {
+      margin-left: 90rem;
+    }
+
+    &.right {
+      margin-right: 90rem;
+    }
+  }
+
+  .announcementTable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1620rem;
+  }
+
+  .setting {
+    margin-top: 148rem;
+  }
+
+  .settingLines {
+    left: -20rem;
+    top: 0;
+    width: 860rem;
+  }
+
+  .settingDesc {
+    margin-top: 34rem;
+  }
+
+  .settingTable {
+    margin-top: 118rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1550rem;
+  }
+
+  .settingDiagram {
+    margin: 38rem 0 0;
+  }
+
+  .serviceDesc {
+    margin-top: 50rem;
+  }
+
+  .serviceTable {
+    margin: 48rem auto 0;
+    max-width: 1520rem;
+  }
+
+  .conversionDesc {
+    margin-top: 50rem;
+  }
+
+  .conversionText {
+    margin-top: 28rem;
+  }
+
+  .area {
+    grid-template-columns: 1fr 1490rem;
+    margin-top: 98rem;
+  }
+
+  .areaDescTop {
+    max-width: 280rem;
+  }
+
+  .areaMap {
+    margin-right: 140rem;
+  }
+
+  .areaDescBottom {
+    max-width: 590rem;
+    margin-top: -140rem;
+  }
+
+  .summaryDesc {
+    margin-top: 140rem;
+  }
+
+  .summaryTable {
+    margin-top: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700rem;
+  }
+}
