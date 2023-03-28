@@ -4,7 +4,7 @@ import styles from './ProjectTop.module.scss'
 
 export default function ProjectTop({ name }) {
   const project = projects.find(item => item.id === name)
-  const { detailTitle, tags } = project
+  const { detailTitle, detailDesc, tags } = project
 
   return (
     <section className={styles.el}>
@@ -12,6 +12,7 @@ export default function ProjectTop({ name }) {
         <div className='row'>
           <div className={cn('col col-6 col-lg-4', styles.titleCol)}>
             <h1 className={cn('h1', styles.title)}>{detailTitle}</h1>
+            {detailDesc && <p className={cn('h3', styles.desc)}>{detailDesc}</p>}
           </div>
           <div className='col col-6 col-lg-2'>
             <div className={styles.tags}>

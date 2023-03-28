@@ -23,11 +23,13 @@ export default [
     desc: 'Как поднять выручку, не увеличивая бюджет?'
   },
   {
-    id: 'p5',
+    id: 'burenie-site',
     images: ['bur-site.png', 'bur-site-lg.png'],
     tags: ['разработка', 'корпоративный сайт', 'анализ ниши'],
     title: 'Burenie-spb',
-    desc: 'Докопались до сути и сделали сайт'
+    detailTitle: 'Burenie-spb',
+    desc: 'Докопались до сути и сделали сайт',
+    detailDesc: 'Докопались до сути и сделали сайт'
   },
   {
     id: 'p6',
