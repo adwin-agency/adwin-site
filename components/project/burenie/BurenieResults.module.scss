@@ -1,0 +1,89 @@
+.el {
+  padding: 40rem 0;
+}
+
+.picImage {
+  width: 100%;
+}
+
+.desc {
+  margin-top: 52rem;
+}
+
+.list {
+  margin-top: 28rem;
+}
+
+.listItem {
+  display: flex;
+  margin-bottom: 30rem;
+
+  &::before {
+    content: "";
+    width: 43rem;
+    height: 3rem;
+    margin-top: 14rem;
+    margin-right: 18rem;
+    flex-shrink: 0;
+    background: $color-magenta;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.diagram {
+  display: block;
+  margin: 56rem (-$container-padding) 0;
+}
+
+.table {
+  display: block;
+  margin-top: 78rem;
+}
+
+@include media(lg) {
+  .el {
+    padding: 70rem 0 126rem;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+
+  .list {
+    padding-left: 160rem;
+  }
+
+  .diagram {
+    margin: 56rem 0 0;
+  }
+  
+  .table {
+    margin-top: 106rem;
+    margin-left: 46rem;
+    margin-right: 46rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 105rem 0 190rem;
+  }
+
+  .list {
+    margin-top: 48rem;
+    padding-left: 240rem;
+  }
+
+  .diagram {
+    margin: 85rem 0 0;
+  }
+  
+  .table {
+    margin-top: 160rem;
+    margin-left: 70rem;
+    margin-right: 70rem;
+  }
+}
