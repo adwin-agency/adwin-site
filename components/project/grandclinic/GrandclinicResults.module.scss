@@ -1,0 +1,58 @@
+.el {
+  border-top: 1px solid $color-grey-main;
+  border-bottom: 1px solid $color-grey-main;
+  padding: 60rem 0 50rem;
+}
+
+.desc {
+  margin-top: 30rem;
+}
+
+.list {
+  display: grid;
+  grid-gap: 40rem;
+  margin-top: 32rem;
+}
+
+.listNum {
+  font-size: 40rem;
+  line-height: 100%;
+  color: #1C82A0;
+}
+
+@include media(lg) {
+  .el {
+    border-bottom: none;
+    padding: 38rem 0 78rem;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40rem;
+    margin-bottom: 48rem;
+  }
+
+  .listNum {
+    font-size: 48rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 56rem 0 118rem;
+  }
+
+  .list {
+    grid-gap: 100rem;
+    margin-top: 60rem;
+    margin-bottom: 72rem;
+  }
+
+  .listNum {
+    font-size: 72rem;
+  }
+}
