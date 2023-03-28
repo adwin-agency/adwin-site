@@ -1,0 +1,164 @@
+.el {
+  color: #fff;
+  background-image: url('/images/projects/burenie/intro-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.side {
+  padding: 30rem $container-padding 0;
+}
+
+.header {
+  padding: 40rem $container-padding;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem 10rem;
+}
+
+.tag {
+  border: 1px solid currentColor;
+  border-radius: 100rem;
+  padding: 9rem 20rem;
+  font-size: 12rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.desc {
+  margin-top: 10rem;
+}
+
+.info {
+  border-top: 1px solid #fff;
+  padding: 30rem $container-padding 46rem;
+}
+
+.text {
+  margin-top: 10rem;
+}
+
+.group {
+  margin-top: 44rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.list {
+  margin-top: 10rem;
+}
+
+.listItem {
+  display: flex;
+  margin-bottom: 22rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.listNum {
+  width: 40rem;
+  flex-shrink: 0;
+  font-size: 28rem;
+  line-height: 100%;
+  color: #20BF55;
+}
+
+.footer {
+  border-top: 1px solid #fff;
+  padding: 40rem $container-padding 34rem;
+}
+
+.feature {
+  margin-bottom: 20rem;
+  color: #20BF55;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include media(lg) {
+  .el {
+    display: flex;
+    background-image: url('/images/projects/burenie/intro-bg-lg.png');
+  }
+
+  .side {
+    width: 25%;
+    padding: 55rem $container-padding;
+    flex-shrink: 0;
+    border-right: 1px solid #fff;
+  }
+
+  .header {
+    padding: 40rem 250rem 40rem 126rem;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
+
+  .info {
+    padding: 64rem 250rem 64rem 126rem;
+  }
+
+  .list {
+    margin-top: 20rem;
+  }
+
+  .footer {
+    display: flex;
+    padding: 44rem 200rem 44rem 126rem;
+  }
+
+  .feature {
+    margin-right: 50rem;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include media(xl) {
+  .side {
+    padding: 82rem $container-padding-xl;
+  }
+
+  .header {
+    padding: 60rem 350rem 60rem 190rem;
+  }
+
+  .info {
+    padding: 96rem 350rem 96rem 190rem;
+  }
+
+  .group {
+    margin-top: 60rem;
+  }
+
+  .text {
+    margin-top: 20rem;
+  }
+
+  .list {
+    margin-top: 32rem;
+  }
+
+  .footer {
+    padding: 65rem 350rem 65rem 190rem;
+  }
+
+  .feature {
+    margin-right: 78rem;
+  }
+}
