@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import Geolines2 from '/icons/burenie-site/geolines-2.svg'
+import Geolines3 from '/icons/burenie-site/geolines-3.svg'
 import Sad from '/icons/burenie-site/sad.svg'
 import Surprised from '/icons/burenie-site/surprised.svg'
 import Happy from '/icons/burenie-site/happy.svg'
@@ -8,7 +9,8 @@ import styles from './BurenieSiteSolution.module.scss'
 export default function BurenieSiteSolution() {
   return (
     <section className={styles.el}>
-      <Geolines2 className={styles.lines} />
+      <Geolines2 className={styles.linesDesktop} />
+      <Geolines3 className={styles.linesMobile} />
       <div className='container'>
         <div className='row'>
           <div className='col col-6 col-lg-3'>

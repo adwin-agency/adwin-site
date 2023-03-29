@@ -1,10 +1,18 @@
 .el {
+  position: relative;
   padding: 44rem 0 0;
   background: #fff;
 }
 
-.lines {
+.linesDesktop {
   display: none;
+}
+
+.linesMobile {
+  position: absolute;
+  left: 0;
+  bottom: -210rem;
+  right: 0;
 }
 
 .type {
@@ -76,6 +84,7 @@
 }
 
 .accent {
+  position: relative;
   margin: 50rem (-$container-padding) 0;
   padding: 30rem ($container-padding) 66rem;
   color: #fff;
@@ -100,8 +109,12 @@
     position: relative;
     padding: 80rem 0 100rem;
   }
+
+  .linesMobile {
+    display: none;
+  }
   
-  .lines {
+  .linesDesktop {
     display: block;
     position: absolute;
     top: -100rem;
@@ -151,7 +164,7 @@
     padding: 118rem 0 150rem;
   }
   
-  .lines {
+  .linesDesktop {
     top: -200rem;
     width: 860rem;
   }
