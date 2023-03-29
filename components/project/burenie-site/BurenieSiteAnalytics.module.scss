@@ -1,0 +1,325 @@
+.el {
+  padding: 50rem 0;
+  background-image: url('/images/projects/burenie-site/card-bg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.lines {
+  display: none;
+}
+
+.type {
+  color: #20BF55;
+}
+
+.subheading {
+  margin-top: 20rem;
+}
+
+.desc {
+  margin-top: 30rem;
+}
+
+.graphics {
+  margin-top: 50rem;
+}
+
+.title {
+  font-size: 28rem;
+  line-height: 100%;
+}
+
+.graphicsItems {
+  margin-top: 46rem;
+}
+
+.graphicsItem {
+  position: relative;
+
+  &.left {
+    .graphicsName {
+      position: absolute;
+      top: 0;
+      right: 80rem;
+    }
+
+    .graphicsDiagram {
+      margin-left: -60rem;
+    }
+  }
+
+  &.right {
+    margin-top: -20rem;
+
+    .graphicsName {
+      position: absolute;
+      left: 20rem;
+      bottom: 40rem;
+    }
+
+    .graphicsDiagram {
+      margin-left: 40rem;
+    }
+  }
+
+  &.columns {
+    margin-top: 50rem;
+  }
+}
+
+.graphicsName {
+  font-size: 18rem;
+  line-height: 140%;
+}
+
+.graphicsDiagram {
+  width: 330rem;
+}
+
+.graphicsColumns {
+  display: block;
+  margin-top: 24rem;
+}
+
+.persons {
+  margin-top: 90rem;
+}
+
+.text {
+  margin-top: 14rem;
+}
+
+.personsImages {
+  display: flex;
+  margin: 25rem (-$container-padding) 0;
+  padding: 0 ($container-padding) 50rem;
+  overflow-y: auto;
+}
+
+.personsImage {
+  width: 220rem;
+  margin-right: 10rem;
+  box-shadow: 0 24rem 34rem -5rem rgba(0, 0, 0, 0.15);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.studying {
+  margin-top: 42rem;
+}
+
+.studyingImage {
+  display: none;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20rem;
+  margin-top: 36rem;
+}
+
+.statNum {
+  font-size: 40rem;
+  line-height: 100%;
+  color: #161A62;
+}
+
+@include media(lg) {
+  .el {
+    position: relative;
+    padding: 90rem 0;
+    background-image: url('/images/projects/burenie-site/card-bg-lg.png');
+  }
+
+  .subheading {
+    margin-top: 12rem;
+  }
+
+  .graphics {
+    margin-top: 90rem;
+  }
+
+  .graphicsItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24rem;
+  }
+
+  .graphicsItem {
+    &.left {
+      text-align: center;
+
+      .graphicsName {
+        position: static;
+      }
+
+      .graphicsDiagram {
+        margin-left: 0;
+      }
+    }
+
+    &.right {
+      margin-top: 0;
+      text-align: center;
+
+      .graphicsName {
+        position: static;
+      }
+
+      .graphicsDiagram {
+        margin-left: 0;
+      }
+    }
+
+    &.columns {
+      margin-top: 0;
+      margin-left: 50rem;
+    }
+  }
+
+  .graphicsDiagram {
+    margin-top: 22rem;
+    width: 310rem;
+  }
+
+  .graphicsColumns {
+    width: 450rem;
+  }
+
+  .persons {
+    margin-top: 156rem;
+  }
+
+  .text {
+    margin-top: 18rem;
+  }
+
+  .personsImages {
+    margin: 0 (-$container-padding) 0 24rem;
+  }
+
+  .personsImage {
+    width: 250rem;
+  }
+
+  .studying {
+    margin-top: 60rem;
+  }
+
+  .studyingImage {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .studyingContent {
+    margin-top: 112rem;
+    text-align: right;
+  }
+
+  .stats {
+    grid-gap: 40rem;
+  }
+
+  .statNum {
+    font-size: 48rem;
+  }
+
+  .lines {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -110rem;
+    width: 570rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 135rem 0;
+  }
+
+  .subheading {
+    margin-top: 18rem;
+  }
+
+  .graphics {
+    margin-top: 138rem;
+  }
+
+  .graphicsItems {
+    margin-top: 38rem;
+  }
+
+  .graphicsItem {
+    &.columns {
+      margin-left: 80rem;
+      margin-right: 80rem;
+    }
+  }
+
+  .graphicsName {
+    font-size: 26rem;
+  }
+
+  .graphicsDiagram {
+    margin-top: 32rem;
+    width: 460rem;
+  }
+
+  .graphicsColumns {
+    width: 600rem;
+  }
+
+  .persons {
+    margin-top: 180rem;
+  }
+
+  .text {
+    margin-top: 28rem;
+  }
+
+  .personsImages {
+    margin: 0 (-$container-padding-xl) 0 80rem;
+    padding: 0 30rem 50rem;
+  }
+
+  .personsImage {
+    width: 380rem;
+    margin-right: 30rem;
+  }
+
+  .studying {
+    margin-top: 80rem;
+  }
+
+  .studyingContent {
+    margin-top: 170rem;
+  }
+
+  .stats {
+    grid-gap: 60rem;
+    margin-left: 130rem;
+    margin-top: 48rem;
+  }
+
+  .statNum {
+    font-size: 72rem;
+  }
+
+  .lines {
+    bottom: -160rem;
+    width: 860rem;
+  }
+}
