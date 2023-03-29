@@ -1,0 +1,175 @@
+.el {
+  padding: 44rem 0 0;
+  background: #fff;
+}
+
+.lines {
+  display: none;
+}
+
+.type {
+  color: #20BF55;
+}
+
+.desc {
+  margin-top: 18rem;
+
+  span {
+    padding: 0 5rem;
+    color: #fff;
+    background: #20BF55;
+  }
+}
+
+.road {
+  margin-top: 40rem;
+}
+
+.roadItem {
+  display: flex;
+  margin-bottom: 5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    .roadTop::after {
+      display: none;
+    }
+  }
+}
+
+.roadSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  background: #161A62;
+
+  &.green {
+    background: #20BF55;
+  }
+}
+
+.roadIcon {
+  width: 18rem;
+  height: 18rem;
+}
+
+.roadTop {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-right: 18rem;
+
+  &::after {
+    content: "";
+    margin-top: 5rem;
+    width: 1px;
+    flex: 1;
+    background: #DFDFDF;
+  }
+}
+
+.roadInfo {
+  padding-bottom: 20rem;
+}
+
+.accent {
+  margin: 50rem (-$container-padding) 0;
+  padding: 30rem ($container-padding) 66rem;
+  color: #fff;
+  background-image: url('/images/projects/burenie-site/solution-accent.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 24px 34px -5px rgba(0, 0, 0, 0.15);
+}
+
+.accentTitle {
+  font-size: 28rem;
+  line-height: 100%;
+}
+
+.accentDesc {
+  margin-top: 20rem;
+}
+
+@include media(lg) {
+  .el {
+    position: relative;
+    padding: 80rem 0 100rem;
+  }
+  
+  .lines {
+    display: block;
+    position: absolute;
+    top: -100rem;
+    right: 0;
+    width: 570rem;
+  }
+  
+  .road {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16rem;
+    margin-top: 58rem;
+  }
+  
+  .roadItem {
+    display: block;
+    margin-bottom: 0;
+  }
+  
+  .roadTop {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 0;
+    margin-bottom: 16rem;
+  
+    &::after {
+      margin-left: 5rem;
+      margin-top: 0;
+      width: auto;
+      height: 1px;
+    }
+  }
+  
+  .roadInfo {
+    padding-bottom: 0;
+  }
+  
+  .accent {
+    position: relative;
+    margin: 86rem 0 0;
+    padding: 46rem;
+  }
+}
+
+@include media(xl) {
+  .el {
+    padding: 118rem 0 150rem;
+  }
+  
+  .lines {
+    top: -200rem;
+    width: 860rem;
+  }
+
+  .desc {
+    margin-top: 38rem;
+  }
+  
+  .road {
+    margin-top: 88rem;
+  }
+
+  .roadInfo {
+    padding-right: 40rem;
+  }
+  
+  .accent {
+    margin: 130rem 0 0;
+    padding: 76rem;
+  }
+}

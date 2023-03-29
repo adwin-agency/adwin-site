@@ -69,10 +69,12 @@
   }
 
   .step {
+    position: relative;
     margin-bottom: 0;
     padding: 44rem 32rem 20rem;
     background: #FFFFFF;
     box-shadow: 0px 24px 34px -5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
 
     &.accent {
       margin-left: 0;
