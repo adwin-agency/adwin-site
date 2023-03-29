@@ -1,0 +1,177 @@
+.el {
+  overflow: hidden;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.top {
+  padding: 30rem 0;
+  color: #fff;
+  background-color: #122380;
+  background-image: url('/images/projects/burenie-site/intro-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 188rem;
+  height: 48rem;
+}
+
+.topDesc {
+  margin-top: 12rem;
+}
+
+.topPicture {
+  display: block;
+  margin-left: auto;
+  margin-top: 12rem;
+  margin-bottom: -30rem;
+  width: 70%;
+}
+
+.main {
+  padding: 36rem 0;
+  background: #fff;
+}
+
+.lines {
+  display: none;
+}
+
+.type {
+  color: #20BF55;
+}
+
+.desc {
+  margin-top: 44rem;
+}
+
+.text {
+  margin-top: 30rem;
+}
+
+.need {
+  margin-top: 58rem;
+}
+
+.needList {
+  margin-top: 4rem;
+}
+
+.needItem {
+  position: relative;
+  padding-left: 50rem;
+  padding-top: 30rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #122380;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 44rem;
+    width: 40rem;
+    height: 2px;
+    background: #122380;
+  }
+
+  &:last-child {
+    &::before {
+      height: 44rem;
+    }
+  }
+}
+
+@include media(lg) {
+  .top {
+    position: relative;
+    padding: 40rem 0;
+    background-image: url('/images/projects/burenie-site/intro-bg-lg.png');
+    z-index: 1;
+  }
+  
+  .logo {
+    width: 240rem;
+    height: 62rem;
+  }
+  
+  .topDesc {
+    margin-top: 15rem;
+  }
+  
+  .topPicture {
+    margin-top: -74rem;
+    margin-bottom: -140rem;
+    width: 50%;
+  }
+  
+  .main {
+    position: relative;
+    padding: 152rem 0 98rem;
+  }
+  
+  .lines {
+    display: block;
+    position: absolute;
+    top: -68%;
+    right: 0;
+    width: 44%;
+  }
+
+  .sideCol {
+    order: -1;
+  }
+  
+  .desc {
+    margin-top: 30rem;
+  }
+  
+  .text {
+    margin-top: 14rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding: 60rem 0;
+  }
+  
+  .logo {
+    width: 360rem;
+    height: 92rem;
+  }
+  
+  .topDesc {
+    margin-top: 22rem;
+  }
+  
+  .topPicture {
+    margin-top: -110rem;
+    margin-bottom: -210rem;
+  }
+  
+  .main {
+    padding: 228rem 0 146rem;
+  }
+  
+  .lines {
+    top: -82%;
+  }
+  
+  .desc {
+    margin-top: 44rem;
+  }
+}
