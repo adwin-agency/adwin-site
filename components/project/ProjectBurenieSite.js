@@ -1,5 +1,6 @@
 import BurenieSiteAnalytics from './burenie-site/BurenieSiteAnalytics'
 import BurenieSiteIntro from './burenie-site/BurenieSiteIntro'
+import BurenieSiteProto from './burenie-site/BurenieSiteProto'
 import BurenieSiteSolution from './burenie-site/BurenieSiteSolution'
 import BurenieSiteStages from './burenie-site/BurenieSiteStages'
 import BurenieSiteTask from './burenie-site/BurenieSiteTask'
@@ -15,6 +16,7 @@ export default function ProjectBurenieSite() {
       <BurenieSiteSolution />
       <BurenieSiteStages />
       <BurenieSiteAnalytics />
+      <BurenieSiteProto />
       <OtherProjects />
     </>
   )
