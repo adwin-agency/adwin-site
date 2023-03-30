@@ -99,6 +99,7 @@
     right: 0;
     bottom: 200rem;
     width: 570rem;
+    z-index: -1;
   }
 
   .change {
@@ -147,6 +148,12 @@
         margin-bottom: -200rem;
       }
     }
+  }
+
+  .linesDesktop {
+    right: -60rem;
+    bottom: 50rem;
+    width: 860rem;
   }
 
   .change {

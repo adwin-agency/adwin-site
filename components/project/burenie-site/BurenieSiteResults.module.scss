@@ -1,0 +1,214 @@
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  padding: 92rem 0 66rem;
+  background: #fff;
+}
+
+.desc {
+  margin-top: 28rem;
+}
+
+.stats {
+  display: grid;
+  grid-gap: 44rem;
+  margin-top: 62rem;
+}
+
+.statNum {
+  font-size: 40rem;
+  line-height: 100%;
+  color: #00C04B;
+}
+
+.graphic {
+  display: block;
+  margin-top: 48rem;
+}
+
+.list {
+  margin-top: 55rem;
+
+  &.green {
+    .listTitle {
+      span {
+        background: #00C04B;
+      }
+    }
+
+    .listItem {
+      &::before,
+      &::after {
+        background: #00C04B;
+      }
+    }
+  }
+
+  &.blue {
+    .listTitle {
+      span {
+        background: #0C1364;
+      }
+    }
+
+    .listItem {
+      &::before,
+      &::after {
+        background: #0C1364;
+      }
+    }
+  }
+}
+
+.listTitle {
+  font-size: 28rem;
+  line-height: 120%;
+
+  span {
+    padding: 0 5rem;
+    color: #fff;
+  }
+}
+
+.listItems {
+  margin-top: 10rem;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 50rem;
+  padding-top: 30rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 44rem;
+    width: 40rem;
+    height: 2px;
+  }
+
+  &:last-child {
+    &::before {
+      height: 44rem;
+    }
+  }
+}
+
+.trends {
+  padding: 70rem 0 38rem;
+}
+
+.trendsDesc {
+  margin-top: 30rem;
+}
+
+.trendsStats {
+  display: grid;
+  grid-gap: 50rem;
+  margin-top: 62rem;
+}
+
+.trendsGraphic {
+  display: block;
+  margin: 60rem (-$container-padding) 0;
+}
+
+@include media(lg) {
+  .main {
+    padding: 160rem 0 86rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40rem;
+  }
+
+  .statNum {
+    font-size: 48rem;
+
+    span {
+      font-size: 28rem;
+    }
+  }
+
+  .graphic {
+    margin-top: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100rem;
+  }
+
+  .list {
+    margin-top: 110rem;
+  }
+
+  .trends {
+    padding: 60rem 0 134rem;
+  }
+
+  .trendsDesc {
+    margin-top: 0;
+  }
+
+  .trendsStats {
+    margin-top: 60rem;
+  }
+
+  .trendsGraphic {
+    margin: 120rem auto 0;
+    max-width: 900rem;
+  }
+}
+
+@include media(xl) {
+  .main {
+    padding: 240rem 0 130rem;
+  }
+
+  .stats {
+    grid-gap: 60rem;
+  }
+
+  .statNum {
+    font-size: 72rem;
+  }
+
+  .graphic {
+    margin-top: 182rem;
+    max-width: 1400rem;
+  }
+
+  .list {
+    margin-top: 165rem;
+  }
+
+  .trends {
+    padding: 92rem 0 202rem;
+  }
+
+  .trendsDesc {
+    margin-top: 0;
+  }
+
+  .trendsStats {
+    margin-top: 90rem;
+  }
+
+  .trendsGraphic {
+    margin: 120rem auto 0;
+    max-width: 1330rem;
+  }
+}
