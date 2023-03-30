@@ -1,0 +1,279 @@
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.top {
+  position: relative;
+  padding: 54rem 0 58rem;
+}
+
+.topLinesMobile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.topLinesDesktop {
+  display: none;
+}
+
+.topPlusMin {
+  display: none;
+}
+
+.topMain {
+  position: relative;
+}
+
+.topImage {
+  display: none;
+}
+
+.type {
+  color: #20BF55;
+}
+
+.subheading {
+  margin-top: 8rem;
+}
+
+.desc {
+  margin-top: 40rem;
+}
+
+.colorsImage {
+  margin-top: 44rem;
+  width: 100%;
+}
+
+.layersImage {
+  margin-top: 60rem;
+  width: 100%;
+}
+
+.fontsImage {
+  margin-top: 44rem;
+  width: 100%;
+}
+
+.design {
+  padding: 54rem 0 44rem;
+}
+
+.designLines {
+  display: none;
+}
+
+.designDesc {
+  margin-top: 16rem;
+}
+
+.designNote {
+  margin-top: 34rem;
+
+  span {
+    margin-right: 16rem;
+    font-size: 40rem;
+    line-height: 100%;
+    color: #00C04B;
+  }
+}
+
+.designPicture {
+  display: block;
+  margin-top: 46rem;
+}
+
+.adaptive {
+  padding: 54rem 0 0;
+  background: #fff;
+}
+
+.adaptivePicture {
+  display: block;
+  margin: 54rem (-$container-padding) 0;
+}
+
+.adaptiveInfo {
+  margin-top: 70rem;
+}
+
+.adaptiveText {
+  margin-top: 20rem;
+}
+
+.mobilePicture {
+  display: block;
+  margin: 30rem (-$container-padding) -290rem;
+}
+
+@include media(lg) {
+  .top {
+    padding: 90rem 0 40rem;
+  }
+
+  .topLinesMobile {
+    display: none;
+  }
+
+  .topLinesDesktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 50rem;
+    width: 570rem;
+  }
+
+  .topPlusMin {
+    display: block;
+    position: absolute;
+    left: 20rem;
+    bottom: 40rem;
+    width: 170rem;
+  }
+
+  .topImage {
+    display: block;
+    width: 90%;
+    margin-left: (-$container-padding);
+    margin-top: -70rem;
+  }
+
+  .desc {
+    margin-top: 24rem;
+  }
+
+  .colorsImage {
+    margin-top: 70rem;
+    width: 95%;
+  }
+
+  .layersImage {
+    display: block;
+    margin-top: -90rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .fontsImage {
+    margin-top: 78rem;
+    width: 75%;
+  }
+
+  .design {
+    position: relative;
+    padding: 40rem 0 58rem;
+  }
+
+  .designLines {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    width: 570rem;
+  }
+
+  .designNote {
+    margin-top: 45rem;
+
+    span {
+      display: block;
+    }
+  }
+
+  .designPicture {
+    position: relative;
+    margin-top: 0;
+    margin-right: (-$container-padding);
+  }
+
+  .adaptive {
+    padding: 82rem 0 50rem;
+  }
+
+  .adaptiveDesc {
+    position: relative;
+  }
+
+  .adaptivePicture {
+    margin: -190rem (-$container-padding) 0;
+  }
+
+  .adaptiveInfo {
+    position: relative;
+    margin-top: 100rem;
+  }
+
+  .mobilePicture {
+    margin: 70rem (-$container-padding) -290rem -120rem;
+  }
+}
+
+@include media(xl) {
+  .top {
+    padding: 134rem 0 85rem;
+  }
+
+  .topLinesDesktop {
+    width: 860rem;
+  }
+
+  .topPlusMin {
+    left: 60rem;
+    width: 255rem;
+  }
+
+  .topImage {
+    margin-left: (-$container-padding-xl);
+    margin-top: -114rem;
+    width: 95%;
+  }
+
+  .desc {
+    margin-top: 36rem;
+  }
+
+  .colorsImage {
+    margin-top: 106rem;
+  }
+
+  .fontsImage {
+    margin-top: 106rem;
+  }
+
+  .design {
+    padding: 85rem 0;
+  }
+
+  .designLines {
+    bottom: 22%;
+    width: 860rem;
+  }
+
+  .designNote {
+    padding-right: 30rem;
+  }
+
+  .designPicture {
+    margin-right: (-$container-padding-xl);
+  }
+
+  .adaptive {
+    padding: 124rem 0 74rem;
+  }
+
+  .adaptivePicture {
+    margin: -200rem (-$container-padding-xl) 0;
+  }
+
+  .adaptiveInfo {
+    margin-top: 150rem;
+  }
+
+  .mobilePicture {
+    margin: 70rem (-$container-padding-xl) -290rem -180rem;
+  }
+}
