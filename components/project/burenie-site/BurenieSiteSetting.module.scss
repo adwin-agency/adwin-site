@@ -1,0 +1,258 @@
+.el {
+  overflow: hidden;
+}
+
+.picImage {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  padding: 294rem 0 50rem;
+  color: #fff;
+  background: #102180;
+}
+
+.type {
+  color: #20BF55;
+}
+
+.subheading {
+  margin-top: 28rem;
+}
+
+.stat {
+  display: flex;
+  margin-top: 25rem;
+}
+
+.statNum {
+  margin-right: 22rem;
+  font-size: 40rem;
+  line-height: 100%;
+  color: #00C04B;
+}
+
+.desc {
+  margin-top: 54rem;
+}
+
+.video {
+  margin: 65rem 0;
+  width: 100%;
+}
+
+.elementsText {
+  margin-top: 30rem;
+}
+
+.target {
+  margin-top: 82rem;
+}
+
+.targetTitle {
+  font-size: 28rem;
+  line-height: 100%;
+}
+
+.targetList {
+  margin-top: 10rem;
+}
+
+.targetItem {
+  position: relative;
+  padding-left: 50rem;
+  padding-top: 30rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #00C04B;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 44rem;
+    width: 40rem;
+    height: 2px;
+    background: #00C04B;
+  }
+
+  &:last-child {
+    &::before {
+      height: 44rem;
+    }
+  }
+}
+
+.interactive {
+  position: relative;
+}
+
+.interactiveStar {
+  position: absolute;
+  right: 0;
+  bottom: -280rem;
+  width: 100%;
+}
+
+.interactiveMain {
+  position: relative;
+}
+
+.interactiveTitle {
+  font-size: 36rem;
+  line-height: 100%;
+}
+
+.interactivePicture {
+  display: block;
+  margin-top: 45rem;
+}
+
+.interactiveText {
+  margin-top: 102rem;
+}
+
+.interactiveDesc {
+  margin-top: 32rem;
+}
+
+.setup {
+  margin-top: 130rem;
+}
+
+.setupText {
+  margin-top: 14rem;
+}
+
+.setupImage {
+  margin-top: 20rem;
+  margin-left: 30%;
+  margin-bottom: -80rem;
+  width: 100%;
+}
+
+.add {
+  padding: 102rem 0 76rem;
+  background-image: url('/images/projects/burenie-site/build-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.addText {
+  margin-top: 30rem;
+}
+
+@include media(lg) {
+  .main {
+    padding: 255rem 0 80rem;
+  }
+
+  .subheading {
+    margin-top: 5rem;
+  }
+
+  .stat {
+    display: block;
+  }
+
+  .statNum {
+    margin-right: 0;
+    font-size: 48rem;
+  }
+
+  .desc {
+    margin-top: 30rem;
+  }
+
+  .video {
+    margin: 80rem 0;
+  }
+
+  .target {
+    margin-top: 0;
+  }
+
+  .interactiveStar {
+    bottom: -110rem;
+    width: 30%;
+  }
+
+  .setup {
+    margin-top: 150rem;
+  }
+
+  .setupText {
+    margin-top: 22rem;
+  }
+
+  .setupImage {
+    margin-left: 0;
+    margin-top: 100rem;
+    margin-bottom: -150rem;
+  }
+
+  .add {
+    padding: 140rem 0 110rem;
+    background-image: url('/images/projects/burenie-site/build-bg-lg.png');
+  }
+
+  .addText {
+    margin-top: 0;
+  }
+}
+
+@include media(xl) {
+  .main {
+    padding: 428rem 0 122rem;
+  }
+
+  .stat {
+    margin-top: 50rem;
+  }
+
+  .statNum {
+    font-size: 72rem;
+  }
+
+  .video {
+    margin: 120rem 0;
+  }
+
+  .interactiveStar {
+    bottom: -180rem;
+  }
+
+  .interactivePicture {
+    margin-top: 58rem;
+  }
+
+  .interactiveDesc {
+    margin-top: 60rem;
+  }
+
+  .setup {
+    margin-top: 230rem;
+  }
+
+  .setupText {
+    margin-top: 34rem;
+  }
+
+  .setupImage {
+    margin-top: 10rem;
+    margin-bottom: -200rem;
+  }
+
+  .add {
+    padding: 212rem 0 165rem;
+  }
+}
