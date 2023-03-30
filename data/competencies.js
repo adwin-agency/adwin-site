@@ -14,7 +14,10 @@ export default [
     title: 'Работа с брендом',
     items: [
       { id: 'b1', title: 'сувенирная продукция' },
-      { id: 'b2', title: 'pos-материалы' }
+      { id: 'b2', title: 'pos-материалы' },
+      { id: 'b3', title: 'гайдлайн' },
+      { id: 'b4', title: 'брендбук' },
+      { id: 'b5', title: 'коммуникация' }
     ]
   },
   {
@@ -34,7 +37,7 @@ export default [
       { id: 'd1', title: 'комплексная реклама', link: '/' },
       { id: 'd2', title: 'мессенджеры' },
       { id: 'd3', title: 'таргетированная реклама', link: '/' },
-      { id: 'd4', title: 'я.аудитории', link: '/' },
+      // { id: 'd4', title: 'я.аудитории', link: '/' },
       { id: 'd5', title: 'контекстная реклама', link: '/' },
       { id: 'd6', title: 'seo', link: '/' },
       { id: 'd7', title: 'медийная реклама', link: '/' }

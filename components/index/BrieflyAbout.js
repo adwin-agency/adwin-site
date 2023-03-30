@@ -30,7 +30,7 @@ export default function BrieflyAbout({ className }) {
             </div>
           </div>
           <div className={styles.actions}>
-            <Button className={styles.btn} link='/about' size='textlg' color='grey' bordered>Узнать больше о нас</Button>
+            <Button className={styles.btn} link='/about' size='textlg' color='grey' bordered>Узнать больше</Button>
           </div>
         </div>
       </div>

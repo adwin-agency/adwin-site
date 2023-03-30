@@ -13,6 +13,7 @@ export default function ServiceProjects() {
       <h2 className={cn('h2', styles.heading)}>Реализованные проекты</h2>
       <div className={styles.items}>
         <ProjectCard
+          id={projects[0].id}
           className={styles.item}
           images={projects[0].images}
           tags={projects[0].tags}
@@ -20,6 +21,7 @@ export default function ServiceProjects() {
           desc={projects[0].desc}
         />
         <ProjectCard
+          id={projects[1].id}
           className={styles.item}
           images={projects[1].images}
           tags={projects[1].tags}

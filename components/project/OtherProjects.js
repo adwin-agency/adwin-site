@@ -9,6 +9,7 @@ export default function OtherProjects() {
         <h2 className={styles.heading}>Другие проекты</h2>
         <div className={styles.items}>
           <ProjectCard
+            id={projects[0].id}
             className={styles.item}
             images={projects[0].images}
             tags={projects[0].tags}
@@ -16,6 +17,7 @@ export default function OtherProjects() {
             desc={projects[0].desc}
           />
           <ProjectCard
+            id={projects[1].id}
             className={styles.item}
             images={projects[1].images}
             tags={projects[1].tags}

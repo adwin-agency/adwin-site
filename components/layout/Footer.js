@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
-import TelegramIcon from '/icons/telegram.svg'
+import WhatsappIcon from '/icons/whatsapp-line.svg'
 import ArrowIcon from '/icons/arrow.svg'
 import Logo from '/icons/logo-lg.svg'
 import AppContext from '../../context/AppContext'
@@ -18,7 +18,7 @@ export default function Footer({ className }) {
           <p className={cn('h3', styles.title)}>
             Хотите обсудить проект?
             <br />
-            Напишите нам в <a href={contacts.telegram} target='_blank' rel='noreferrer' className={styles.link}>Telegram <TelegramIcon className={styles.linkIconLg} /></a>
+            Напишите нам в <a href={contacts.telegram} target='_blank' rel='noreferrer' className={styles.link}>Whatsapp <WhatsappIcon className={styles.linkIconLg} /></a>
             <br />
             или <button className={cn(styles.link, styles.linkColored)} onClick={ctx.openModal('request')}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
           </p>

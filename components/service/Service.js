@@ -30,7 +30,7 @@ export default function Service({ category, type }) {
             <Divider className={styles.divider} />
             <ServiceAdvantages />
             <Divider className={styles.divider} />
-            <ServicePrice />
+            <ServicePrice category={category} type={type} />
           </>
         )}
         {category === 'advertisement' && (
@@ -47,7 +47,7 @@ export default function Service({ category, type }) {
             <Divider className={styles.divider} />
             <ServiceWork category={category} />
             <Divider className={styles.divider} />
-            <ServicePrice />
+            <ServicePrice category={category} type={type} />
           </>
         )}
       </ServiceMain>

@@ -20,6 +20,7 @@ export default function ProjectsList({ className, bordered, items, slide, fade }
           {items.map(item => (
             <div key={item.id} className={styles.item}>
               <ProjectCard
+                id={item.id}
                 className={styles.card}
                 images={item.images}
                 tags={item.tags}

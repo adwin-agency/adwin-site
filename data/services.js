@@ -6,17 +6,17 @@ export default {
         id: 'complex',
         tag: 'самый обстоятельный подход',
         title: 'Комплексная реклама',
-        price: 'от 100 500 ₽'
+        price: 'от 90 000 ₽'
       },
       {
         id: 'context',
         title: 'Контекстная реклама',
-        price: 'от 100 500 ₽'
+        price: 'от 50 000 ₽'
       },
       {
         id: 'target',
         title: 'Таргетированная реклама',
-        price: 'от 100 500 ₽'
+        price: 'от 50 000 ₽'
       }
     ]
   },
@@ -27,17 +27,17 @@ export default {
       {
         id: 'landing',
         title: 'Лендинг или промо-страница',
-        price: 'от 100 500 ₽'
+        price: 'от 60 000 ₽'
       },
       {
         id: 'corporate',
         title: 'Корпоративный сайт',
-        price: 'от 100 500 ₽'
+        price: 'от 250 000 ₽'
       },
       {
         id: 'store',
         title: 'Интернет-магазин',
-        price: 'от 100 500 ₽'
+        price: 'от 450 000 ₽'
       }
     ]
   }

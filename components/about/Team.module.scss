@@ -177,6 +177,7 @@
     align-self: flex-end;
     width: 100vw;
     padding-left: 25%;
+    padding-top: 10rem;
     cursor: grab;
   }
 
@@ -279,12 +280,12 @@
       transition-delay: .6s;
 
       .info {
-        left: 75%;
-        bottom: 95%;
+        left: 62%;
+        bottom: 102%;
       }
 
       .arrow {
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
       }
     }
 

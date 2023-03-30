@@ -13,7 +13,7 @@ export default [
     id: 'irina',
     figure: Irina,
     name: 'Ирина',
-    position: 'директор'
+    position: 'генеральный директор'
   },
   {
     id: 'vladimir',
@@ -25,7 +25,7 @@ export default [
     id: 'kristina',
     figure: Kristina,
     name: 'Кристина',
-    position: 'контекстная реклама'
+    position: 'веб-аналитика'
   },
   {
     id: 'olga',
@@ -43,24 +43,24 @@ export default [
     id: 'igor',
     figure: Igor,
     name: 'Игорь',
-    position: 'репутация'
+    position: 'работа с репутацией'
   },
   {
     id: 'egor',
     figure: Egor,
     name: 'Егор',
-    position: 'менеджер'
+    position: 'project-менеджер'
   },
   {
     id: 'mariya',
     figure: Mariya,
     name: 'Мария',
-    position: 'таргет'
+    position: 'таргетированная реклама'
   },
   {
     id: 'vyacheslav',
     figure: Vyacheslav,
     name: 'Вячеслав',
-    position: 'менеджер'
+    position: 'аккаунт-менеджер'
   }
 ]

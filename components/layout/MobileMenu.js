@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
 import Button from '../ui/Button'
-import TelegramIcon from '/icons/telegram.svg'
+import WhatsappIcon from '/icons/whatsapp.svg'
 import VkIcon from '/icons/vk.svg'
 import AppContext from '../../context/AppContext'
 import contacts from '/data/contacts'
@@ -50,8 +50,8 @@ export default function MobileMenu({ className, onLinkClick }) {
             <a href={`tel:${contacts.phone}`} className={styles.phone}>{contacts.phone}</a>
             <a href={`mailto:${contacts.email}`} className={styles.mail}>{contacts.email}</a>
             <div className={styles.social}>
-              <a href={contacts.telegram} className={styles.socialItem} target='_blank' rel='noreferrer'>
-                <TelegramIcon className={styles.socialIcon} />
+              <a href={contacts.whatsapp} className={styles.socialItem} target='_blank' rel='noreferrer'>
+                <WhatsappIcon className={styles.socialIcon} />
               </a>
               <a href={contacts.social.find(item => item.title === 'vk').href} className={styles.socialItem} target='_blank' rel='noreferrer'>
                 <VkIcon className={styles.socialIcon} />
