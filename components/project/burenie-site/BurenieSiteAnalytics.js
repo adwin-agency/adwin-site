@@ -64,7 +64,7 @@ export default function BurenieSiteAnalytics() {
             <div className='col col-6 col-lg-2'>
               <div className={styles.studyingContent}>
                 <p className={styles.title}>Изучение конкурентов</p>
-                <p className={cn('txt-m', styles.text)}>'Знай врага в лицо и умей от него отстроиться' - вот наш девиз на этом этапе. Наша задача здраво оценить сильные и слабые стороны компаний на рынке, оценить их стратегии и придумать, как  выгодно подать материал по-другому.</p>
+                <p className={cn('txt-m', styles.text)}>&lsquo;Знай врага в лицо и умей от него отстроиться&rsquo; - вот наш девиз на этом этапе. Наша задача здраво оценить сильные и слабые стороны компаний на рынке, оценить их стратегии и придумать, как  выгодно подать материал по-другому.</p>
                 <div className={styles.stats}>
                   <div className={styles.stat}>
                     <p className={styles.statNum}>&lt;15%</p>

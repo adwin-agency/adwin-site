@@ -30,7 +30,7 @@ export default function BurenieSiteLaunch() {
         <div className={cn(styles.changes, styles.map)}>
           <p className={cn('quote-m', styles.change)}>Была доработана страница с картой выполненных работ и добавлена галерея работ</p>
           <img className={styles.changesImage} src='/images/projects/burenie-site/gs-map.png' alt='' />
-          <p className={cn('quote-m', styles.change)}>Страница 'Бурение скважин' (основная посадочная страница) перенесена на адрес bureniespb.ru</p>
+          <p className={cn('quote-m', styles.change)}>Страница &lsquo;Бурение скважин&rsquo; (основная посадочная страница) перенесена на адрес bureniespb.ru</p>
         </div>
       </div>
     </section>
