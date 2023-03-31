@@ -1,121 +1,193 @@
+const development = [
+  {
+    id: 'webpack',
+    image: '/images/tools/webpack.svg'
+  },
+  {
+    id: 'node',
+    image: '/images/tools/node.svg'
+  },
+  {
+    id: 'html',
+    image: '/images/tools/html.svg'
+  },
+  {
+    id: 'css',
+    image: '/images/tools/css.svg'
+  },
+  {
+    id: 'git',
+    image: '/images/tools/git.svg'
+  },
+  {
+    id: 'bitrix',
+    image: '/images/tools/bitrix.svg'
+  },
+  {
+    id: 'react',
+    image: '/images/tools/react.svg'
+  },
+  {
+    id: 'vue',
+    image: '/images/tools/vue.svg'
+  },
+  {
+    id: 'mysql',
+    image: '/images/tools/mysql.svg'
+  },
+  {
+    id: 'php',
+    image: '/images/tools/php.svg'
+  },
+  {
+    id: 'laravel',
+    image: '/images/tools/laravel.svg'
+  },
+  {
+    id: 'bem',
+    image: '/images/tools/bem.svg'
+  },
+  {
+    id: 'sass',
+    image: '/images/tools/sass.svg'
+  },
+  {
+    id: 'js',
+    image: '/images/tools/js.svg'
+  },
+  {
+    id: 'ts',
+    image: '/images/tools/ts.svg'
+  },
+  {
+    id: 'redux',
+    image: '/images/tools/redux.svg'
+  },
+  {
+    id: 'graphql',
+    image: '/images/tools/graphql.svg'
+  },
+  {
+    id: 'next',
+    image: '/images/tools/next.svg'
+  }
+]
+
 export default {
-  development: [
+  landing: development,
+  corporate: development,
+  store: development,
+  complex: [
     {
-      id: 'td1',
-      image: '/images/tools/webpack.svg'
-    },
-    {
-      id: 'td2',
-      image: '/images/tools/node.svg'
-    },
-    {
-      id: 'td3',
-      image: '/images/tools/html.svg'
-    },
-    {
-      id: 'td4',
-      image: '/images/tools/css.svg'
-    },
-    {
-      id: 'td5',
-      image: '/images/tools/git.svg'
-    },
-    {
-      id: 'td6',
-      image: '/images/tools/bitrix.svg'
-    },
-    {
-      id: 'td7',
-      image: '/images/tools/react.svg'
-    },
-    {
-      id: 'td8',
-      image: '/images/tools/vue.svg'
-    },
-    {
-      id: 'td9',
-      image: '/images/tools/mysql.svg'
-    },
-    {
-      id: 'td10',
-      image: '/images/tools/php.svg'
-    },
-    {
-      id: 'td11',
-      image: '/images/tools/laravel.svg'
-    },
-    {
-      id: 'td12',
-      image: '/images/tools/bem.svg'
-    },
-    {
-      id: 'td13',
-      image: '/images/tools/sass.svg'
-    },
-    {
-      id: 'td14',
-      image: '/images/tools/js.svg'
-    },
-    {
-      id: 'td15',
-      image: '/images/tools/ts.svg'
-    },
-    {
-      id: 'td16',
-      image: '/images/tools/redux.svg'
-    },
-    {
-      id: 'td17',
-      image: '/images/tools/graphql.svg'
-    },
-    {
-      id: 'td18',
-      image: '/images/tools/next.svg'
-    }
-  ],
-  advertisement: [
-    {
-      id: 'ta1',
+      id: 'comagic',
       image: '/images/tools/comagic.svg'
     },
     {
-      id: 'ta2',
+      id: 'vk-pixel',
       image: '/images/tools/vk-pixel.svg'
     },
     {
-      id: 'ta3',
+      id: 'telegram',
       image: '/images/tools/telegram.svg'
     },
     {
-      id: 'ta4',
+      id: 'calltouch',
       image: '/images/tools/calltouch.svg'
     },
     {
-      id: 'ta5',
+      id: 'ya-direct',
       image: '/images/tools/ya-direct.svg'
     },
     {
-      id: 'ta6',
+      id: 'mytarget',
       image: '/images/tools/mytarget.svg'
     },
     {
-      id: 'ta7',
+      id: 'vk',
       image: '/images/tools/vk.svg'
     },
     {
-      id: 'ta8',
+      id: 'whatsapp',
       image: '/images/tools/whatsapp.svg'
     },
     {
-      id: 'ta9',
+      id: 'yametrika',
       image: '/images/tools/yametrika.svg'
     },
     {
-      id: 'ta10',
+      id: 'puls',
       image: '/images/tools/puls.svg'
     },
     {
-      id: 'ta11',
+      id: 'odnoklassniki',
+      image: '/images/tools/odnoklassniki.svg'
+    },
+    {
+      id: 'avito',
+      image: '/images/tools/avito.svg'
+    }
+  ],
+  context: [
+    {
+      id: 'comagic',
+      image: '/images/tools/comagic.svg'
+    },
+    {
+      id: 'telegram',
+      image: '/images/tools/telegram.svg'
+    },
+    {
+      id: 'calltouch',
+      image: '/images/tools/calltouch.svg'
+    },
+    {
+      id: 'ya-direct',
+      image: '/images/tools/ya-direct.svg'
+    },
+    {
+      id: 'whatsapp',
+      image: '/images/tools/whatsapp.svg'
+    },
+    {
+      id: 'yametrika',
+      image: '/images/tools/yametrika.svg'
+    }
+  ],
+  target: [
+    {
+      id: 'comagic',
+      image: '/images/tools/comagic.svg'
+    },
+    {
+      id: 'vk-pixel',
+      image: '/images/tools/vk-pixel.svg'
+    },
+    {
+      id: 'telegram',
+      image: '/images/tools/telegram.svg'
+    },
+    {
+      id: 'calltouch',
+      image: '/images/tools/calltouch.svg'
+    },
+    {
+      id: 'mytarget',
+      image: '/images/tools/mytarget.svg'
+    },
+    {
+      id: 'vk',
+      image: '/images/tools/vk.svg'
+    },
+    {
+      id: 'whatsapp',
+      image: '/images/tools/whatsapp.svg'
+    },
+    {
+      id: 'puls',
+      image: '/images/tools/puls.svg'
+    },
+    {
+      id: 'odnoklassniki',
       image: '/images/tools/odnoklassniki.svg'
     }
   ]

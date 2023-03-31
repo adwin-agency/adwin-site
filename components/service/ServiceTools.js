@@ -3,8 +3,8 @@ import tools from '../../data/tools'
 import useAnim from '../../helpers/useAnim'
 import styles from './ServiceTools.module.scss'
 
-export default function ServiceTools({ category }) {
-  const items = tools[category]
+export default function ServiceTools({ type }) {
+  const items = tools[type]
 
   const { anim, animRef } = useAnim()
 

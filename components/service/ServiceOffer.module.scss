@@ -5,7 +5,7 @@
 }
 
 .title {
-  font-size: 22rem;
+  font-size: 30rem;
   line-height: 1;
 }
 
@@ -36,7 +36,6 @@
 
   .title {
     max-width: 600rem;
-    font-size: 28rem;
     opacity: 0;
     transform: translateX(-50%);
     transition: opacity .65s ease 2.75s, transform .65s ease 2.75s;
@@ -71,6 +70,10 @@
 
   .main {
     padding: 0;
+  }
+
+  .title {
+    font-size: 36rem;
   }
 
   .btn {

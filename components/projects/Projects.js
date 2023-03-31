@@ -36,8 +36,8 @@ export default function Projects() {
   }
 
   return (
-    <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
-      <div className={styles.top}>
+    <section className={cn(styles.el, { [styles.anim]: anim })}>
+      <div className={styles.top} ref={animRef}>
         <div className='container'>
           <div className={styles.topRow}>
             <h1 className='h1'>Портфолио</h1>
