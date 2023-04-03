@@ -107,7 +107,7 @@
 
   .inputs {
     display: grid;
-    grid-template-columns: 328rem 1fr;
+    grid-template-columns: 328rem minmax(0, 1fr);
     grid-gap: 32rem;
   }
 
@@ -157,7 +157,7 @@
   }
 
   .inputs {
-    grid-template-columns: 352rem 1fr;
+    grid-template-columns: 352rem minmax(0, 1fr);
     grid-gap: 70rem;
   }
 
