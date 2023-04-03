@@ -5,8 +5,9 @@ import work from '../../data/work'
 import useAnim from '../../helpers/useAnim'
 import styles from './ServiceWork.module.scss'
 
-export default function ServiceWork({ category }) {
-  const items = work[category]
+export default function ServiceWork({ type }) {
+  const items = work[type].stages
+  const time = work[type].time
 
   const [activeStep, setActiveStep] = useState(null)
 
@@ -26,7 +27,7 @@ export default function ServiceWork({ category }) {
     <section className={cn(styles.el, { [styles.anim]: anim })} id='work' ref={animRef}>
       <div className={styles.top}>
         <h2 className={cn('h2', styles.heading)}>Как проходит работа над проектом</h2>
-        {category === 'development' && <p className={styles.desc}>Срок разработки проекта: <br /><span>от 20 дней</span></p>}
+        {time && <p className={styles.desc}>Срок разработки проекта: <br /><span>{time}</span></p>}
       </div>
       <div className={styles.steps}>
         {items.map((item, index) => (

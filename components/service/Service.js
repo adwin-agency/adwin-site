@@ -24,7 +24,7 @@ export default function Service({ category, type }) {
             <Divider className={styles.divider} />
             <ServiceTools type={type} />
             <Divider className={styles.divider} />
-            <ServiceWork category={category} />
+            <ServiceWork type={type} />
             <Divider className={styles.divider} />
             <ServiceProjects />
             <Divider className={styles.divider} />
@@ -45,7 +45,7 @@ export default function Service({ category, type }) {
             <Divider className={styles.divider} />
             <ServiceProjects />
             <Divider className={styles.divider} />
-            <ServiceWork category={category} />
+            <ServiceWork type={type} />
             <Divider className={styles.divider} />
             <ServicePrice category={category} type={type} />
           </>

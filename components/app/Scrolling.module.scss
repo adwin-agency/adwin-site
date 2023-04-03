@@ -30,9 +30,28 @@
   transition: opacity .3s ease;
 }
 
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10rem);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .icon {
   width: 84rem;
   height: 100rem;
+  animation: swipe 2s linear infinite;
 }
 
 .text {
