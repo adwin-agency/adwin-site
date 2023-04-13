@@ -5,7 +5,7 @@ import AppContext from '../../context/AppContext'
 import useAnim from '../../helpers/useAnim'
 import styles from './ServiceOffer.module.scss'
 
-export default function ServiceOffer() {
+export default function ServiceOffer({ animDelay }) {
   const ctx = useContext(AppContext)
 
   const { anim, animRef } = useAnim()
@@ -14,8 +14,8 @@ export default function ServiceOffer() {
     <section className={cn(styles.el, { [styles.anim]: anim })} ref={animRef}>
       <div className='container'>
         <div className={styles.main}>
-          <p className={styles.title}>Оставьте заявку и получите медиа-план продвижения БЕСПЛАТНО</p>
-          <div className={styles.side}>
+          <p className={styles.title} style={{transitionDelay: animDelay}}>Оставьте заявку и получите медиа-план продвижения БЕСПЛАТНО</p>
+          <div className={styles.side} style={{transitionDelay: animDelay}}>
             <Button className={styles.btn} size='xl' bordered icon='arrow' onClick={ctx.openModal('request')}>Хочу медиа-план</Button>
           </div>
         </div>

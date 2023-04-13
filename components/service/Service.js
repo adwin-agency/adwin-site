@@ -3,7 +3,6 @@ import Divider from '../ui/Divider'
 import ServiceAdvantages from './ServiceAdvantages'
 import ServiceFeatures from './ServiceFeatures'
 import ServiceMain from './ServiceMain'
-import ServiceOffer from './ServiceOffer'
 import ServicePrice from './ServicePrice'
 import ServiceProjects from './ServiceProjects'
 import ServiceTools from './ServiceTools'
@@ -16,7 +15,6 @@ export default function Service({ category, type }) {
   return (
     <>
       <ServiceTop type={type} />
-      <ServiceOffer />
       <ServiceMain category={category}>
         {category === 'development' && (
           <>

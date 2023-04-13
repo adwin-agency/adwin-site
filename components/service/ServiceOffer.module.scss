@@ -38,7 +38,7 @@
     max-width: 600rem;
     opacity: 0;
     transform: translateX(-50%);
-    transition: opacity .65s ease 2.75s, transform .65s ease 2.75s;
+    transition: opacity .65s ease, transform .65s ease;
   }
 
   .btn {
@@ -50,7 +50,7 @@
   .side {
     opacity: 0;
     transform: translateX(50rem);
-    transition: opacity .65s ease 2.75s, transform .65s ease 2.75s;
+    transition: opacity .65s ease, transform .65s ease;
   }
 
   .anim {
