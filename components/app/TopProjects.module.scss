@@ -17,7 +17,6 @@
     align-items: flex-end;
     position: sticky;
     top: 0;
-    margin-bottom: 700rem;
     height: 144rem;
     padding: 32rem 0 32rem;
     background-color: $color-grey-paper;
@@ -25,7 +24,6 @@
   }
 
   .main {
-    margin-top: -700rem;
     padding-bottom: 44rem;
   }
 
@@ -36,13 +34,11 @@
 
 @include media(xl) {
   .top {
-    margin-bottom: 940rem;
     height: 212rem;
     padding: 64rem 0 64rem;
   }
 
   .main {
-    margin-top: -940rem;
     padding-bottom: 52rem;
   }
 

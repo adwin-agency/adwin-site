@@ -73,7 +73,7 @@ export default function Modal() {
                   <TextInput className={styles.field} name='name' placeholder='Ваше имя' />
                   <TextInput className={styles.field} type='tel' name='phone' placeholder='Контактный телефон' />
                   <TextInput className={styles.field} type='email' name='email' placeholder='Mail' />
-                  <TextInput className={styles.field} name='company' placeholder='Название компании' />
+                  <TextInput className={styles.field} name='company' placeholder='Сайт' />
                 </div>
                 <div className={styles.expand}>
                   <p className={styles.expandTitle} onClick={toggleAbout}>

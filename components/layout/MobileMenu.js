@@ -50,9 +50,9 @@ export default function MobileMenu({ className, onLinkClick }) {
             <a href={`tel:${contacts.phone}`} className={styles.phone}>{contacts.phone}</a>
             <a href={`mailto:${contacts.email}`} className={styles.mail}>{contacts.email}</a>
             <div className={styles.social}>
-              <a href={contacts.whatsapp} className={styles.socialItem} target='_blank' rel='noreferrer'>
+              {/* <a href={contacts.whatsapp} className={styles.socialItem} target='_blank' rel='noreferrer'>
                 <WhatsappIcon className={styles.socialIcon} />
-              </a>
+              </a> */}
               <a href={contacts.social.find(item => item.title === 'vk').href} className={styles.socialItem} target='_blank' rel='noreferrer'>
                 <VkIcon className={styles.socialIcon} />
               </a>

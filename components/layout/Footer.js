@@ -17,10 +17,10 @@ export default function Footer({ className }) {
         <div className={styles.main}>
           <p className={cn('h3', styles.title)}>
             Хотите обсудить проект?
+            {/* <br /> */}
+            {/* Напишите нам в <a href={contacts.telegram} target='_blank' rel='noreferrer' className={styles.link}>Whatsapp <WhatsappIcon className={styles.linkIconLg} /></a> */}
             <br />
-            Напишите нам в <a href={contacts.telegram} target='_blank' rel='noreferrer' className={styles.link}>Whatsapp <WhatsappIcon className={styles.linkIconLg} /></a>
-            <br />
-            или <button className={cn(styles.link, styles.linkColored)} onClick={ctx.openModal('request')}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
+            {/* или  */} <button className={cn(styles.link, styles.linkColored)} onClick={ctx.openModal('request')}>оставьте заявку <ArrowIcon className={styles.linkIcon} /></button>
           </p>
           <div className={styles.steps}>
             <p className={styles.step}>1. <br />Созвонимся и обсудим ваш проект</p>
