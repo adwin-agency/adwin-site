@@ -5,27 +5,27 @@ export default {
       {
         id: 'fl1',
         title: 'Рассказать о конкретном или новом продукте',
-        image: '/images/features/rect-square.svg'
+        icon: 'rect-square'
       },
       {
         id: 'fl2',
         title: 'Анонсировать событие или сайт',
-        image: '/images/features/triple-square.svg'
+        icon: 'triple-square'
       },
       {
         id: 'fl3',
         title: 'Проверить рекламную гипотезу',
-        image: '/images/features/pyramide.svg'
+        icon: 'pyramide'
       },
       {
         id: 'fl4',
         title: 'Быстро запустить продажи в интернете',
-        image: '/images/features/diagram.svg'
+        icon: 'diagram'
       },
       {
         id: 'fl5',
         title: 'Собрать контакты пользователей',
-        image: '/images/features/list.svg'
+        icon: 'list'
       }
     ]
   },
@@ -35,32 +35,32 @@ export default {
       {
         id: 'fc1',
         title: 'Повысить имидж и доверие к компании',
-        image: '/images/features/pyramide.svg'
+        icon: 'pyramide'
       },
       {
         id: 'fc2',
         title: 'Информировать о широком ассортименте товаров и услуг',
-        image: '/images/features/four-square.svg'
+        icon: 'four-square'
       },
       {
         id: 'fc3',
         title: 'Размещать актуальные новости о своей деятельности',
-        image: '/images/features/column.svg'
+        icon: 'column'
       },
       {
         id: 'fc4',
         title: 'Формировать бренд компании',
-        image: '/images/features/double-square.svg'
+        icon: 'double-square'
       },
       {
         id: 'fc5',
         title: 'Систематизировать всю информацию о компании',
-        image: '/images/features/grid.svg'
+        icon: 'grid'
       },
       {
         id: 'fc6',
         title: 'Увеличить рост продаж',
-        image: '/images/features/diagram.svg'
+        icon: 'diagram'
       }
     ]
   },
@@ -70,32 +70,32 @@ export default {
       {
         id: 'fs1',
         title: 'Упорядочить процесс общения с клиентом и продажи',
-        image: '/images/features/triple-rect.svg'
+        icon: 'triple-rect'
       },
       {
         id: 'fs2',
         title: 'Создать гибкий инструмент продаж',
-        image: '/images/features/double-square-alt.svg'
+        icon: 'double-square-alt'
       },
       {
         id: 'fs3',
         title: 'Повысить имидж и доверие к компании',
-        image: '/images/features/squares-bottom.svg'
+        icon: 'squares-bottom'
       },
       {
         id: 'fs4',
         title: 'Отслеживать поведение пользователя',
-        image: '/images/features/squares-inner.svg'
+        icon: 'squares-inner'
       },
       {
         id: 'fs5',
         title: 'Не зависеть от региона продаж',
-        image: '/images/features/double-rect.svg'
+        icon: 'double-rect'
       },
       {
         id: 'fs6',
         title: 'Продавать товары круглосуточно',
-        image: '/images/features/box-square.svg'
+        icon: 'box-square'
       }
     ]
   },
@@ -105,32 +105,32 @@ export default {
       {
         id: 'fcm1',
         title: 'Заявить о своей кампании или предложении в интернете',
-        image: '/images/features/rect-square.svg'
+        icon: 'rect-square'
       },
       {
         id: 'fcm2',
         title: 'Увеличить число трафика на сайт и расширить охваты',
-        image: '/images/features/four-square.svg'
+        icon: 'four-square'
       },
       {
         id: 'fcm3',
         title: 'Снизить стоимость привлечения клиента',
-        image: '/images/features/diagram-alt.svg'
+        icon: 'diagram-alt'
       },
       {
         id: 'fcm4',
         title: 'Проверить новую маркетинговую гипотезу',
-        image: '/images/features/pyramide.svg'
+        icon: 'pyramide'
       },
       {
         id: 'fcm5',
         title: 'Правильно распределить маркетинговый бюджет',
-        image: '/images/features/blocks.svg'
+        icon: 'blocks'
       },
       {
         id: 'fcm6',
         title: 'Отслеживать результаты в режиме реального времени',
-        image: '/images/features/box-square-alt.svg'
+        icon: 'box-square-alt'
       }
     ]
   },
@@ -140,27 +140,27 @@ export default {
       {
         id: 'fcn1',
         title: 'Проверить новую маркетинговую гипотезу',
-        image: '/images/features/pyramide.svg'
+        icon: 'pyramide'
       },
       {
         id: 'fcn2',
         title: 'Правильно распределить маркетинговый бюджет',
-        image: '/images/features/blocks.svg'
+        icon: 'blocks'
       },
       {
         id: 'fcn3',
         title: 'Получать клиентов здесь и сейчас',
-        image: '/images/features/squares-middle.svg'
+        icon: 'squares-middle'
       },
       {
         id: 'fcn4',
         title: 'Отслеживать результаты в режиме реального времени',
-        image: '/images/features/box-square-alt.svg'
+        icon: 'box-square-alt'
       },
       {
         id: 'fcn5',
         title: 'Снизить стоимость привлечения клиента',
-        image: '/images/features/diagram-alt.svg'
+        icon: 'diagram-alt'
       }
     ]
   },
@@ -170,27 +170,27 @@ export default {
       {
         id: 'ft1',
         title: 'Проверить новую маркетинговую гипотезу',
-        image: '/images/features/pyramide.svg'
+        icon: 'pyramide'
       },
       {
         id: 'ft2',
         title: 'Правильно распределить маркетинговый бюджет',
-        image: '/images/features/blocks.svg'
+        icon: 'blocks'
       },
       {
         id: 'ft3',
         title: 'Получать клиентов здесь и сейчас',
-        image: '/images/features/squares-middle.svg'
+        icon: 'squares-middle'
       },
       {
         id: 'ft4',
         title: 'Отслеживать результаты в режиме реального времени',
-        image: '/images/features/box-square-alt.svg'
+        icon: 'box-square-alt'
       },
       {
         id: 'ft5',
         title: 'Снизить стоимость привлечения клиента',
-        image: '/images/features/diagram-alt.svg'
+        icon: 'diagram-alt'
       }
     ]
   }
