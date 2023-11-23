@@ -241,7 +241,10 @@ export default function Modal() {
                   >
                     Отправить
                   </Button>
-                  <p className={styles.note}>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+                  <p className={styles.note}>
+                    Нажав на кнопку, соглашаюсь c
+                    <a href="/policy.pdf" target='_blank' className={styles.policy}> Политикой конфиденциальности</a>
+                  </p>
                 </div>
               </form>
             </div>
@@ -282,7 +285,10 @@ export default function Modal() {
                     >
                       Отправить
                     </Button>
-                    <p className={styles.note}>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+                    <p className={styles.note}>
+                      Нажав на кнопку, соглашаюсь c
+                      <a href="/policy.pdf" target='_blank' className={styles.policy}> Политикой конфиденциальности</a>
+                    </p>
                   </div>
                 </form>
                 <div className={cn(styles.success, { [styles.active]: success })}>

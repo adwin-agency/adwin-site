@@ -29,9 +29,17 @@ export default function Footer({ className }) {
           </div>
         </div>
         <div className={styles.side}>
-          <Link href='/'>
-            <Logo className={styles.logo} />
-          </Link>
+          <div>
+            <Link href='/'>
+              <Logo className={styles.logo} />
+            </Link>
+            <div className={styles.info}>
+              <p>ООО "Бизнес- Решения"</p>
+              <p>ИНН: 7810894983</p>
+              <p>ОГРН: 1129847004880</p>
+            </div>
+            <a href="#" target='_blank' className={styles.policy}>Политика конфиденциальности</a>
+          </div>
           <div className={styles.contacts}>
             <div className={styles.contact}>
               <p className={styles.contactTitle}>Заходите</p>
@@ -55,7 +63,7 @@ export default function Footer({ className }) {
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </div >
+    </footer >
   )
 }

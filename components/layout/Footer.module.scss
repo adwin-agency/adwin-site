@@ -95,8 +95,36 @@
   text-decoration: underline;
 }
 
+.info {
+  margin-top: 17px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 14rem;
+  line-height: 1.6;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  order: -1;
+}
+
+.policy {
+  font-weight: 400;
+  font-size: 14rem;
+}
+
 .social {
   margin-right: 30rem;
+}
+
+@include media(lg) {
+  .info {
+    margin-top: 17px;
+    margin-bottom: 62px;
+    font-size: 14px;
+    line-height: 18px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
 
 @include media(lg) {
