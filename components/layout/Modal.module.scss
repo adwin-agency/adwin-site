@@ -225,6 +225,11 @@
   width: 100%;
 }
 
+.disabled{
+  background: #8a8888;
+  pointer-events: none;
+}
+
 @include media(lg) {
   .area {
     padding: 50rem;

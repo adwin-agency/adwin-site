@@ -5,7 +5,7 @@ import Clip from '/icons/clip.svg'
 import Remove from '/icons/remove.svg'
 import styles from './FileInput.module.scss'
 
-export default function FileInput({ className, name }) {
+export default function FileInput({ className, name, onChange, onBlur }) {
   const [fileName, setFileName] = useState(null)
   const [fileSize, setFileSize] = useState(null)
   const [fileError, setFileError] = useState(null)
@@ -29,9 +29,17 @@ export default function FileInput({ className, name }) {
       setFileName(file.name)
       setFileSize(size)
       setFileError(null)
+
+      if (onChange) {
+        onChange(e)
+      }
     } else {
       setFileName(null)
       setFileSize(null)
+
+      if (onChange) {
+        onChange(e)
+      }
     }
   }
 
@@ -39,16 +47,20 @@ export default function FileInput({ className, name }) {
     fileInputRef.current.value = ''
     setFileName(null)
     setFileSize(null)
+
+    if (onBlur) {
+      onBlur()
+    }
   }
 
   return (
     <div className={className}>
-      <label className={cn(styles.label, { [styles.hidden]: fileName })}>
-        <input type='file' name={name} className={styles.input} onChange={handleFileChange} ref={fileInputRef} />
+      <label className={cn(styles.label, { [styles.hidden]: fileName, [styles.error]: fileError })}>
+        <input type='file' name={name} className={styles.input} onChange={handleFileChange} ref={fileInputRef} onBlur={onBlur} />
         <Clip className={styles.icon} />
         <span className={styles.title}>Прикрепить файл</span>
         <span className={styles.desc}>Если у несколько эскизов или наработок, их можно отправить одним архивом до&nbsp;50&nbsp;Мб</span>
-        {fileError && <span className={styles.error}>{fileError}</span>}
+        {fileError && <span className={styles.error}>{error}</span>}  
       </label>
       {fileName && (
         <div className={styles.uploaded}>

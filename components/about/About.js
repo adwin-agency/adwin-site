@@ -8,9 +8,15 @@ import Team from './Team'
 import menu from '../../data/menu'
 import useAnim from '../../helpers/useAnim'
 import styles from './About.module.scss'
+import { useContext } from 'react'
+import AppContext from '../../context/AppContext'
 
 export default function About() {
   const menuItems = menu.about
+  const ctx = useContext(AppContext)
+  const { utmParams } = ctx;
+
+  console.log(utmParams);
 
   const { anim: menuAnim, animRef: menuAnimRef } = useAnim()
   const { anim: divider1Anim, animRef: divider1AnimRef } = useAnim()

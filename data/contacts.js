@@ -6,11 +6,11 @@ export default {
   social: [
     {
       title: 'vk',
-      href: '/'
+      href: 'https://vk.com/adwin.agency'
     },
     {
       title: 'behance',
-      href: '/'
+      href: 'https://www.behance.net/adwinagency'
     }
   ],
   telegram: '/',

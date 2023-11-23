@@ -64,6 +64,15 @@
   line-height: 1;
 }
 
+.error{
+  border-bottom: 1px solid red;
+}
+
+.disabled{
+  background: #8a8888;
+  pointer-events: none;
+}
+
 @include media(lg) {
   .el {
     display: flex;

@@ -3,7 +3,19 @@ import Link from 'next/link'
 import Arrow from '/icons/arrow.svg'
 import styles from './Button.module.scss'
 
-export default function Button({ className, link, mod, size, color, bordered, type, icon, onClick, children }) {
+export default function Button({
+  className,
+  link,
+  mod,
+  size,
+  color,
+  bordered,
+  type,
+  icon,
+  onClick,
+  children,
+  disabled
+}) {
   if (link) {
     return (
       <Link
@@ -40,6 +52,7 @@ export default function Button({ className, link, mod, size, color, bordered, ty
       )}
       type={type || 'button'}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
       {icon === 'arrow' && <Arrow className={styles.icon} />}

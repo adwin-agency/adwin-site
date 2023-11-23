@@ -12,7 +12,7 @@
 
 .item {
   margin-bottom: 30rem;
-  padding: 0 $container-padding 20rem;
+  padding: 0 $container-padding 22rem;
   border-bottom: 1px solid $color-grey-main;
 }
 
@@ -20,7 +20,7 @@
   .el {
     &.slide {
       .row {
-        position: sticky;
+        // position: sticky;    
         top: 144rem;
       }
     }
@@ -65,7 +65,7 @@
 
   .item {
     margin-bottom: 0;
-    padding: 20rem;
+    padding: 20rem 20rem 45rem;
     border-right: 1px solid $color-grey-main;
     border-bottom: none;
 
@@ -91,7 +91,7 @@
   .el {
     &.slide {
       .row {
-        position: sticky;
+        // position: sticky;
         top: 212rem;
       }
     }

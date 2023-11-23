@@ -1,7 +1,17 @@
 import cn from 'classnames'
 import styles from './TextInput.module.scss'
 
-export default function TextInput({ className, type, textarea, title, name, placeholder }) {
+export default function TextInput({
+  className,
+  type,
+  textarea,
+  title,
+  name,
+  placeholder,
+  onChange,
+  onBlur,
+  value
+}) {
 
   function onInput(e) {
     if (e.target.type === 'tel') {
@@ -13,7 +23,7 @@ export default function TextInput({ className, type, textarea, title, name, plac
         }
 
         val = val.match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/)
-        val = '+7' + (val[2] ? '(' + val[1]  + ')' + val[2] : (val[1] ? val[1] : '')) + (val[3] ? '-' + val[3] : '') + (val[4] ? '-' + val[4] : '')
+        val = '+7' + (val[2] ? '(' + val[1] + ')' + val[2] : (val[1] ? val[1] : '')) + (val[3] ? '-' + val[3] : '') + (val[4] ? '-' + val[4] : '')
       }
 
       e.target.value = val
@@ -23,10 +33,13 @@ export default function TextInput({ className, type, textarea, title, name, plac
   let input = (
     <input
       type={type || 'text'}
+      value={value}
       name={name}
       placeholder={placeholder}
       className={styles.input}
       onInput={onInput}
+      onBlur={onBlur}
+      onChange={onChange}
     />
   )
 
@@ -34,7 +47,10 @@ export default function TextInput({ className, type, textarea, title, name, plac
     input = (
       <textarea
         name={name}
+        value={value}
         placeholder={placeholder}
+        onBlur={onBlur}
+        onChange={onChange}
         className={cn(styles.input, styles.textarea)}
       ></textarea>
     )
